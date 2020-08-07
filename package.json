@@ -25,8 +25,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode production",
-    "postinstall": "webpack",
-    "dev-server": "webpack-dev-server --port 9000 -w --mode=development"
+    "postinstall": "webpack"
   },
   "keywords": [],
   "author": "",
