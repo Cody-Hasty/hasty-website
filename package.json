@@ -19,13 +19,15 @@
     "webpack-dev-server": "^3.11.0"
   },
   "engines": {
-    "node": ">=10.13.0"
+    "node": "10.13.0",
+    "npm": "6.14.5"
   },
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode production",
     "prebuild": "rimraf ./build && mkdir ./build",
     "build": "webpack --mode production",
+    "postinstall": "webpack",
     "dev-server": "webpack-dev-server --port 9000 -w --mode=development"
   },
   "keywords": [],
