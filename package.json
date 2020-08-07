@@ -19,8 +19,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "webpack -w --mode=production",
-    "postinstall": "webpack",
+    "start": "webpack-dev-server --mode development --hot --open --port $PORT",
+    "build": "npm i -dev && webpack --mode production",
+    "heroku-postbuild": "npm build",
     "dev": "webpack-dev-server --port 9000 -w --mode=development"
   },
   "keywords": [],
