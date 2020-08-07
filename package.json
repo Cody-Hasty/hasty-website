@@ -26,7 +26,7 @@
     "start": "webpack-dev-server --mode development",
     "prebuild": "rimraf ./build && mkdir ./build",
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --port 9000 -w --mode=development"
+    "dev-server": "webpack-dev-server --port 9000 -w --mode=development"
   },
   "keywords": [],
   "author": "",
