@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from './resume.pdf';
 
 class Resume extends React.Component {
     render() {
@@ -9,7 +10,7 @@ class Resume extends React.Component {
                     <h2>My Resume</h2>
                     <br /><br />
                     <div className="document">
-                        <iframe src="src/assets/resume.pdf" width="800" height="1000px"></iframe>
+                        <iframe src={resume} width="800" height="1000px"></iframe>
                     </div>
                     <br /><br />
                 </div>

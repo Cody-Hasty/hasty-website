@@ -1,10 +1,19 @@
 import React from 'react';
+import demozenLogo from '../../images/projects/demozen.png'
+import lootLogo from '../../images/projects/loot.png'
+import queryLogo from '../../images/projects/query.png'
+import songmatchLogo from '../../images/projects/songMatchIcon.png'
+import ultraheatedLogo from '../../images/projects/ultraheated.png'
+import arpomLogo from '../../images/projects/arpom.png'
+import arageLogo from '../../images/projects/arage.png'
+import qwertyLogo from '../../images/projects/qwerty.png'
 
 class Homepage extends React.Component {
     render() {
+        
         return (
             <div className="page">
-                <div class="alert alert-info">
+                <div className="alert alert-info">
                     <strong>Site Changes!</strong> Website is currently being updated, changes should be completed by 8/14/2020. Please check back in later for full projects and their descriptions.
                 </div>
                 <div className="jumbotron">
@@ -19,19 +28,19 @@ class Homepage extends React.Component {
                     <div className="row">
                         <div className="col-sm-3">
                             <p>Demozen</p>
-                            <img src="src/images/projects/demozen.png" className="img-responsive" style={{width: '100%'}} alt="Image" />
+                            <img src={demozenLogo} className="img-responsive" style={{width: '100%'}} alt="" />
                         </div>
                         <div className="col-sm-3"> 
                             <p>LOOT</p>
-                            <img src="src/images/projects/loot.png" className="img-responsive" style={{width: '100%'}} alt="Image" />
+                            <img src={lootLogo} className="img-responsive" style={{width: '100%'}} alt="" />
                         </div>
                         <div className="col-sm-3"> 
                             <p>Query</p>
-                            <img src="src/images/projects/query.png" className="img-responsive" style={{width: '100%'}} alt="Image" />
+                            <img src={queryLogo} className="img-responsive" style={{width: '100%'}} alt="" />
                         </div>
                         <div className="col-sm-3">
                             <p>Song Match</p>
-                            <img src="src/images/projects/songMatchIcon.png" className="img-responsive" style={{width: '100%'}} alt="Image" />
+                            <img src={songmatchLogo} className="img-responsive" style={{width: '100%'}} alt="" />
                         </div>
                     </div>
                 </div><br />
@@ -40,19 +49,19 @@ class Homepage extends React.Component {
                 <div className="row">
                     <div className="col-sm-3">
                         <p>Ultra Heated</p>
-                        <img src="src/images/projects/ultraheated.png" className="img-responsive" style={{width: '100%'}} alt="Image" />
+                        <img src={ultraheatedLogo} className="img-responsive" style={{width: '100%'}} alt="" />
                     </div>
                     <div className="col-sm-3"> 
                         <p>ARPOM</p>
-                            <img src="src/images/projects/arpom.png" className="img-responsive" style={{width: '100%'}} alt="Image" />
+                            <img src={arpomLogo} className="img-responsive" style={{width: '100%'}} alt="" />
                     </div>
                     <div className="col-sm-3"> 
                         <p>ARAGE</p>
-                            <img src="src/images/projects/arage.png" className="img-responsive" style={{width: '100%'}} alt="Image" />
+                            <img src={arageLogo} className="img-responsive" style={{width: '100%'}} alt="" />
                     </div>
                     <div className="col-sm-3">
                         <p>QWERTY</p>
-                        <img src="src/images/projects/qwerty.png" className="img-responsive" style={{width: '100%'}} alt="Image" />
+                        <img src={qwertyLogo} className="img-responsive" style={{width: '100%'}} alt="" />
                     </div>
                 </div>
                 </div><br /><br />

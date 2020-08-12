@@ -1,8 +1,12 @@
 import React from 'react';
+import Unity, { UnityContent } from 'react-unity-webgl';
 
 class UltraHeated extends React.Component {
     render() {
-        var gameInstance;
+        const unityContent = new UnityContent(
+            "./Build/assets.json",
+            "./Build/UnityLoader.js"
+        );
         
         return (
             <div className="page">
@@ -13,16 +17,7 @@ class UltraHeated extends React.Component {
                 <br></br>
 
                 <div className="content">
-                    <script src="src/assets/TemplateData/UnityProgress.js" type="text/javascript"></script>
-                    <script src="src/assets/Build/UnityLoader.js" type="text/javascript"></script>
-                    {() => {gameInstance = UnityLoader.instantiate("gameContainer", "assets/Build/assets.json", {onProgress: UnityProgress});}}
-                    <div id="gameContainer" className="content"></div>
-                    <br />
-                    <div id="gameFooter">
-                        <img src="assets/TemplateData/webgl-logo.png" alt="UnityLogo" />&nbsp;
-                        <img src="assets/TemplateData/fullscreen.png" alt="FullScreen" onclick={gameInstance.SetFullscreen(1)} />
-                    </div>
-                    <br />
+                    <Unity unityContent={unityContent} />
                 </div>
             </div>
 

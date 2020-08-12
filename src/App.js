@@ -1,26 +1,27 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Homepage from './homepage/homepage';
-import Navbar from './navbar/navbar';
-import Footer from './footer/footer';
+import Homepage from './components/homepage/homepage';
+import Navbar from './components/navbar/navbar';
+import Footer from './components/footer/footer';
 
-import Apps from './projects/apps/apps';
-import Games from './projects/games/games';
-import Others from './projects/others/others';
-import Websites from './projects/websites/websites';
+import Apps from './components/projects/apps/apps';
+import Games from './components/projects/games/games';
+import Others from './components/projects/others/others';
+import Websites from './components/projects/websites/websites';
 
-import Qwerty from './projects/others/qwerty';
-import SongMatch from './projects/games/song_match';
-import UltraHeated from './projects/games/ultra_heated';
-import Arage from './projects/apps/arage';
-import Arpom from './projects/apps/arpom';
+import Qwerty from './components/projects/others/qwerty';
+import SongMatch from './components/projects/games/song_match';
+import UltraHeated from './components/projects/games/ultra_heated';
+import Arage from './components/projects/apps/arage';
+import Arpom from './components/projects/apps/arpom';
 
-import Contact from './about/contact';
-import Repository from './about/repository';
-import Resume from './about/resume';
+import Contact from './components/about/contact';
+import Repository from './components/about/repository';
+import Resume from './components/about/resume';
 
-export default () => (
+function App() {
+  return (
     <div id="routes">
         <Route path="/" component={Navbar} />
         <Switch>
@@ -42,4 +43,7 @@ export default () => (
         </Switch>
         <Route path="/" component={Footer} />
     </div>
-);
+  );
+}
+
+export default App;
