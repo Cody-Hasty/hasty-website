@@ -6,10 +6,10 @@ class Repository extends React.Component {
             <div className="page">
                 <div className="jumbotron">
                     <div className="container text-center">
-                        <h1>My Github Repository</h1>
-                        <p>My open-source projects can be on my Github repository <a href="https://github.com/Brittany-Hasty">here</a>.</p>
+                        <h2><strong>My Github Repository</strong></h2>
+                        <p>My open-source projects can be on my Github repository <a className="repo-link" href="https://github.com/Brittany-Hasty">here</a>.</p>
                         <br></br>
-                    </div>.
+                    </div>
                 </div>
             </div>
         )

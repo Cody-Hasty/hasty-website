@@ -6,11 +6,13 @@ class Resume extends React.Component {
         return (
             <div className="page">
                 <div className="container-fluid bg-3 text-center">  
-                    <br /><br />
-                    <h2>My Resume</h2>
-                    <br /><br />
+                    <div className="jumbotron">
+                        <div className="container text-center">
+                            <h2><strong>My Resume</strong></h2>
+                        </div>
+                    </div>
                     <div className="document">
-                        <iframe src={resume} width="800" height="1000px"></iframe>
+                        <iframe src={resume} title="Resume Window" width="800" height="1000px"></iframe>
                     </div>
                     <br /><br />
                 </div>

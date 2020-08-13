@@ -11,10 +11,13 @@ import Others from './components/projects/others/others';
 import Websites from './components/projects/websites/websites';
 
 import Qwerty from './components/projects/others/qwerty';
-import SongMatch from './components/projects/games/song_match';
-import UltraHeated from './components/projects/games/ultra_heated';
+import SongMatch from './components/projects/games/songmatch';
+import UltraHeated from './components/projects/games/ultraheated';
+import Demozen from './components/projects/games/demozen';
 import Arage from './components/projects/apps/arage';
 import Arpom from './components/projects/apps/arpom';
+import Loot from './components/projects/websites/loot';
+import Query from './components/projects/websites/query';
 
 import Contact from './components/about/contact';
 import Repository from './components/about/repository';
@@ -28,8 +31,11 @@ function App() {
             <Route path="/projects/others/qwerty" component={Qwerty} />
             <Route path="/projects/games/songmatch" component={SongMatch} />
             <Route path="/projects/games/ultraheated" component={UltraHeated} />
+            <Route path="/projects/games/demozen" component={Demozen} />
             <Route path="/projects/apps/arage" component={Arage} />
             <Route path="/projects/apps/arpom" component={Arpom} />
+            <Route path="/projects/websites/loot" component={Loot} />
+            <Route path="/projects/websites/query" component={Query} />
 
             <Route path="/about/contact" component={Contact} />
             <Route path="/about/repository" component={Repository} />
