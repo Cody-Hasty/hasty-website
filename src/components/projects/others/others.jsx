@@ -13,6 +13,7 @@ class Others extends React.Component {
                 </div>
                 <div className="container-fluid">
                     <div className="row">
+                        <div className="col-sm-3"></div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/others/qwerty">
                                 <h3 className="page-link"><strong>QWERTY</strong></h3>
@@ -22,6 +23,7 @@ class Others extends React.Component {
                             <p>QWERTY is an unfinished side project with the eventual goal being an autonomous interactive ai pet fox.</p>
                         </div>
                     </div>
+                    <div className="col-sm-3"></div>
                 </div>
             </div>
         )

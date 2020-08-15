@@ -29,7 +29,7 @@ class Games extends React.Component {
                                 <img src={ultraheatedLogo} className="img-responsive" alt="" />
                             </Link>
                             <br />
-                            <p>Ultra Heated is a 2d game inspired by SUPERHOT, where time only moves when you do.</p>
+                            <p>Ultra Heated is a 2-dimensional Unity game inspired by SUPERHOT, where time only moves when you do.</p>
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/songmatch">

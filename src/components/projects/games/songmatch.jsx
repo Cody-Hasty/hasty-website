@@ -4,7 +4,11 @@ class SongMatch extends React.Component {
     render() {
         return (
             <div className="page">
-                <h2>Song Match - Interactive Alexa Skill</h2>
+                <div className="jumbotron">
+                    <div className="container text-center">
+                        <h2><strong>Song Match</strong></h2>
+                    </div>
+                </div>
                 <p>As part of a programming challenge, I was asked to develop an Alexa skill for the Amazon Echo. Given a user's favorite music artist, the skill would then ask 3 questions which would select that artist's song that best matches the user's personality.</p>
                 <br></br>
     

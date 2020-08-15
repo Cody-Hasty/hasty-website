@@ -4,7 +4,11 @@ class Demozen extends React.Component {
     render() {
         return (
             <div className="page">
-                <h2>Demozen</h2>
+                <div className="jumbotron">
+                    <div className="container text-center">
+                        <h2><strong>Demozen</strong></h2>
+                    </div>
+                </div>
             </div>
         )
     }
