@@ -21,7 +21,7 @@ class Games extends React.Component {
                                 <img src={demozenLogo} className="img-responsive" alt="" />
                             </Link>
                             <br />
-                            <p>Demozen is </p>
+                            <p>Demozen is a three-dimensional abstract world exploration game using three.js and WebGL</p>
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/ultraheated">
@@ -29,7 +29,7 @@ class Games extends React.Component {
                                 <img src={ultraheatedLogo} className="img-responsive" alt="" />
                             </Link>
                             <br />
-                            <p>Ultra Heated is </p>
+                            <p>Ultra Heated is a 2d game inspired by SUPERHOT, where time only moves when you do.</p>
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/songmatch">
@@ -37,7 +37,7 @@ class Games extends React.Component {
                                 <img src={songmatchLogo} className="img-responsive" alt="" />
                             </Link>
                             <br />
-                            <p>Song Match is </p>
+                            <p>Song Match is an Alexa skill that matches your personality with a song from your favorite artist.</p>
                         </div>
                     </div>
                 </div>

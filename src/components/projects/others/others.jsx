@@ -19,7 +19,7 @@ class Others extends React.Component {
                                 <img src={qwertyLogo} className="img-responsive" alt="" />
                             </Link>
                             <br />
-                            <p>QWERTY is </p>
+                            <p>QWERTY is an unfinished side project with the eventual goal being an autonomous interactive ai pet fox.</p>
                         </div>
                     </div>
                 </div>
