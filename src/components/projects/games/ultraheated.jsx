@@ -20,7 +20,7 @@ class UltraHeated extends React.Component {
                 <h5>Press escape or F5 to exit fullscreen, game includes sound effects so please be prepared for audio!</h5>
                 <br></br>
 
-                <div className="content">
+                <div className="container">
                     <Unity unityContent={unityContent} />
                 </div>
             </div>
