@@ -7,6 +7,10 @@ class Arpom extends React.Component {
                 <div className="jumbotron">
                     <div className="container text-center">
                         <h2><strong>ARPOM</strong></h2>
+                        <br />
+                        <p>"ARPOM is an augmented reality app designed 
+                        to help heavy equipment operators stay safe and 
+                        easily access pre-operation checklists."</p>
                     </div>
                 </div>
                 <br></br>

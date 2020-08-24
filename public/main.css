@@ -35,6 +35,14 @@ footer {
   font-weight: bold;
 }
 
+.wiki-link {
+  text-decoration: underline solid black;
+}
+
+.wiki-link:hover {
+
+}
+
 a {
   color: black;
 }

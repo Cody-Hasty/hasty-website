@@ -7,6 +7,10 @@ class Arage extends React.Component {
                 <div className="jumbotron">
                     <div className="container text-center">
                         <h2><strong>ARAGE</strong></h2>
+                        <br/>
+                        <p>"ARAGE is an instructional augmented reality app 
+                        designed to aid repairmen (and repairwomen) in 
+                        performing common repair procedures."</p>
                     </div>
                 </div>
                 <br></br>
