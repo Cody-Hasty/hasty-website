@@ -17,6 +17,24 @@ footer {
   margin-top: 50px;
 }
 
+.link-left {
+  float: left;
+  text-decoration: underline solid black;
+}
+
+.link-left:hover {
+  font-weight: bold;
+}
+
+.link-right {
+  float: right;
+  text-decoration: underline solid black;
+}
+
+.link-right:hover {
+  font-weight: bold;
+}
+
 a {
   color: black;
 }

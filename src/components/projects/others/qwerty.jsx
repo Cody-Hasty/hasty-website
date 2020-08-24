@@ -7,14 +7,16 @@ class Qwerty extends React.Component {
                 <div className="jumbotron">
                     <div className="container text-center">
                         <h2><strong>QWERTY</strong></h2>
+                        <br/>
+                        <p>"This is a side project I have been working on in my free time. Once fully coded, QWERTY will be an interactive AI pet fox with the ability to learn new people, objects, and environments."</p>
                     </div>
                 </div>
-                <p>This is a side project I have been working on in my free time. Once fully coded, QWERTY will be an interactable AI pet fox with the ability to learn new people, objects, and environments.</p>
-                <br></br>
+                <br/>
                 <div className="container text-center">
+                    <p>Current 3D model</p>
                     <iframe height='420' width='620' frameborder='0' src='https://render.githubusercontent.com/view/3d?url=https://raw.githubusercontent.com/brittany-hasty/hasty-website/master/src/components/projects/others/QWERTY.stl' title='QWERTY.stl'></iframe>
                 </div>
-                <br></br>
+                <br/>
             </div>
         )
     }
