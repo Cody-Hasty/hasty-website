@@ -18,29 +18,35 @@ footer {
 }
 
 .link-left {
+  color: blue;
   float: left;
   text-decoration: underline solid black;
 }
 
 .link-left:hover {
+  color: blue;
   font-weight: bold;
 }
 
 .link-right {
+  color: blue;
   float: right;
-  text-decoration: underline solid black;
+  text-decoration: underline solid blue;
 }
 
 .link-right:hover {
+  color: blue;
   font-weight: bold;
 }
 
 .wiki-link {
-  text-decoration: underline solid black;
+  text-decoration: underline solid blue;
+  color: blue;
 }
 
 .wiki-link:hover {
-
+  color: blue;
+  font-weight: bold;
 }
 
 a {
