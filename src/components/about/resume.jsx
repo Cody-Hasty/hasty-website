@@ -11,10 +11,17 @@ class Resume extends React.Component {
                             <h2><strong>My Resume</strong></h2>
                         </div>
                     </div>
-                    <div className="document">
-                        <iframe src={resume} title="Resume Window" width="800" height="1000px"></iframe>
+                    <div className="container-fluid bg-3 text-center">
+                        <div className="row">
+                            <div className="col-sm-2" />
+                            <div className="col-sm-8">
+                                <div className="expand-document">
+                                    <iframe src={resume} title="Resume Window" width="800" height="1000px"></iframe>
+                                </div>
+                            </div>
+                            <div className="col-sm-2" />
+                        </div>
                     </div>
-                    <br /><br />
                 </div>
             </div>
         )

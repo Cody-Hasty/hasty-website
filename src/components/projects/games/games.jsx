@@ -17,24 +17,24 @@ class Games extends React.Component {
                     <div className="row">
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/demozen">
-                                <h3 className="page-link"><strong>Demozen</strong></h3>
-                                <img src={demozenLogo} className="img-responsive" alt="" />
+                                <h3 className="normal-link">Demozen</h3>
+                                <img src={demozenLogo} className="img-responsive" alt="demozen" />
                             </Link>
                             <br />
                             <p>Demozen is a three-dimensional abstract world exploration game using three.js and WebGL</p>
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/ultraheated">
-                                <h3 className="page-link"><strong>Ultra Heated</strong></h3>
-                                <img src={ultraheatedLogo} className="img-responsive" alt="" />
+                                <h3 className="normal-link">Ultra Heated</h3>
+                                <img src={ultraheatedLogo} className="img-responsive" alt="ultra heated" />
                             </Link>
                             <br />
                             <p>Ultra Heated is a 2-dimensional Unity game inspired by SUPERHOT, where time only moves when you do.</p>
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/songmatch">
-                                <h3 className="page-link"><strong>Song Match</strong></h3>
-                                <img src={songmatchLogo} className="img-responsive" alt="" />
+                                <h3 className="normal-link">Song Match</h3>
+                                <img src={songmatchLogo} className="img-responsive" alt="song match" />
                             </Link>
                             <br />
                             <p>Song Match is an Alexa skill that matches your personality with a song from your favorite artist.</p>

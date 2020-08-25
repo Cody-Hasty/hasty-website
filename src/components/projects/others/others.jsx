@@ -16,8 +16,8 @@ class Others extends React.Component {
                         <div className="col-sm-3"></div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/others/qwerty">
-                                <h3 className="page-link"><strong>QWERTY</strong></h3>
-                                <img src={qwertyLogo} className="img-responsive" alt="" />
+                                <h3 className="normal-link">QWERTY</h3>
+                                <img src={qwertyLogo} className="img-responsive img-center" alt="qwerty" />
                             </Link>
                             <br />
                             <p>QWERTY is an unfinished side project with the eventual goal being an autonomous interactive ai pet fox.</p>

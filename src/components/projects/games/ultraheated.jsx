@@ -1,5 +1,6 @@
 import React from 'react';
-import Unity, { UnityContent } from 'react-unity-webgl';
+import Unity, { UnityContent } from 'react-unity-webgl'
+import ultraHeatedPic1 from '../../../images/projects/ultraheated.png';
 
 class UltraHeated extends React.Component {
     render() {
@@ -12,19 +13,45 @@ class UltraHeated extends React.Component {
             <div className="page">
                 <div className="jumbotron">
                     <div className="container text-center">
-                        <h2><strong>Ultra Heated</strong></h2>
-                        <br/>
-                        <p>"As part of a programming challenge, I was asked to create a 2-dimensional clone of the popular game "SuperHot". The physics of the game were entirely hard-coded, as the player's movement (or lack thereof!) determined the speed of the enemies and their projectiles."</p>
+                        <h2><strong>Ultra Heated</strong></h2><br/>
+                        <p>"As part of a coding interview, I was asked to create a 2-dimensional clone of the popular game "SuperHot". The physics of the game were entirely hard-coded, as the player's movement (or lack thereof!) determined the speed of the enemies and their projectiles."</p>
                     </div>
                 </div>
-                <div className="container text-center">
-                    <h5>Press escape or F5 to exit fullscreen, game includes sound effects so please be prepared for audio!</h5>
-                    <br/>
-                    <Unity unityContent={unityContent} />
+                <div className="container-fluid bg-3 text-center">
+                    <div className="row">
+                        <div className="col-sm-1" />
+                        <div className="col-sm-5 text-center">
+                            <h4 className="list-title">Sample Level Start:</h4>
+                            <div className="expand-element">
+                                <img src={ultraHeatedPic1} alt="ultra heated level 5" />
+                            </div>
+                        </div>
+                        <div className="col-sm-5 text-left">
+                            <h4 className="list-title">Concept:</h4>
+                            <ul>
+
+                            </ul><br />
+                            <h4 className="list-title">Technology:</h4>
+                            <ul>
+
+                            </ul>
+                        </div>
+                        <div className="col-sm-1" />
+                    </div>
+                </div>
+                <div className="container-fluid bg-3 text-center">
+                    <div className="row">
+                        <div className="col-sm-1" />
+                        <div className="col-sm-10">
+                            <br/><br/>
+                            <h4 className="list-title">Full Game:</h4>
+                            <br/><p>Press escape or F5 to exit fullscreen, game includes sound effects so please be prepared for audio!</p><br/>
+                            <Unity unityContent={unityContent} />
+                        </div>
+                        <div className="col-sm-1" />
+                    </div>
                 </div>
             </div>
-
-
         )
     }
 }

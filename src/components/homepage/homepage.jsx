@@ -25,30 +25,38 @@ class Homepage extends React.Component {
                 </div>
 
                 <div className="container-fluid bg-3 text-center">    
-                    <h3>Some of my Work</h3><br />
+                    <h3>Some of my Work:</h3><br />
                     <div className="row">
                         <div className="col-sm-3">
                             <Link to="/projects/games/demozen">
-                                <p>Demozen</p>
-                                <img src={demozenLogo} className="img-responsive" style={{width: '100%'}} alt="" />
+                                <p className="normal-link">Demozen</p>
+                                <div className="expand-element">
+                                    <img src={demozenLogo} className="img-responsive" style={{width: '100%'}} alt="demozen" />
+                                </div>
                             </Link>
                         </div>
                         <div className="col-sm-3"> 
                             <Link to="/projects/websites/loot">
-                                <p>LOOT</p>
-                                <img src={lootLogo} className="img-responsive" style={{width: '100%'}} alt="" />
+                                <p className="normal-link">LOOT</p>
+                                <div className="expand-element">
+                                    <img src={lootLogo} className="img-responsive" style={{width: '100%'}} alt="loot" />
+                                </div>
                             </Link>
                         </div>
                         <div className="col-sm-3"> 
                             <Link to="/projects/websites/query">
-                                <p>Query</p>
-                                <img src={queryLogo} className="img-responsive" style={{width: '100%'}} alt="" />
+                                <p className="normal-link">Query</p>
+                                <div className="expand-element">
+                                    <img src={queryLogo} className="img-responsive" style={{width: '100%'}} alt="query" />
+                                </div>
                             </Link>
                         </div>
                         <div className="col-sm-3">
                             <Link to="/projects/games/songmatch">
-                                <p>Song Match</p>
-                                <img src={songmatchLogo} className="img-responsive" style={{width: '100%'}} alt="" />
+                                <p className="normal-link">Song Match</p>
+                                <div className="expand-element">
+                                    <img src={songmatchLogo} className="img-responsive" style={{width: '100%'}} alt="song match" />
+                                </div>
                             </Link>
                         </div>
                     </div>
@@ -58,26 +66,34 @@ class Homepage extends React.Component {
                 <div className="row">
                     <div className="col-sm-3">
                         <Link to="/projects/games/ultraheated">
-                            <p>Ultra Heated</p>
-                            <img src={ultraheatedLogo} className="img-responsive" style={{width: '100%'}} alt="" />
+                            <p className="normal-link">Ultra Heated</p>
+                            <div className="expand-element">
+                                <img src={ultraheatedLogo} className="img-responsive" style={{width: '100%'}} alt="ultra heated" />
+                            </div>
                         </Link>
                     </div>
                     <div className="col-sm-3"> 
                         <Link to="/projects/apps/arpom">
-                            <p>ARPOM</p>
-                            <img src={arpomLogo} className="img-responsive" style={{width: '100%'}} alt="" />
+                            <p className="normal-link">ARPOM</p>
+                            <div className="expand-element">
+                                <img src={arpomLogo} className="img-responsive" style={{width: '100%'}} alt="arpom" />
+                            </div>
                         </Link>
                     </div>
                     <div className="col-sm-3"> 
                         <Link to="/projects/apps/arage">
-                            <p>ARAGE</p>
-                            <img src={arageLogo} className="img-responsive" style={{width: '100%'}} alt="" />
+                            <p className="normal-link">ARAGE</p>
+                            <div className="expand-element">
+                                <img src={arageLogo} className="img-responsive" style={{width: '100%'}} alt="arage" />
+                            </div>
                         </Link>
                     </div>
                     <div className="col-sm-3">
                         <Link to="/projects/others/qwerty">
-                            <p>QWERTY</p>
-                            <img src={qwertyLogo} className="img-responsive" style={{width: '100%'}} alt="" />
+                            <p className="normal-link">QWERTY</p>
+                            <div className="expand-element">
+                                <img src={qwertyLogo} className="img-responsive" style={{width: '100%'}} alt="qwerty" />
+                            </div>
                         </Link>
                     </div>
                 </div>
