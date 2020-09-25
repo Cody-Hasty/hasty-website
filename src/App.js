@@ -23,12 +23,14 @@ import Contact from './components/about/contact';
 import Repository from './components/about/repository';
 import Resume from './components/about/resume';
 import ReactGA from 'react-ga';
+
 function initializeReactGA() {
   ReactGA.initialize('UA-179077363-4');
   ReactGA.pageview('/homepage');
 }
 
 function App() {
+  initializeReactGA();
   return (
     <div id="routes">
         <Route path="/" component={Navbar} />
