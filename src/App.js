@@ -28,9 +28,9 @@ function initializeReactGA() {
   ReactGA.initialize('UA-179077363-4');
   ReactGA.pageview('/homepage');
 }
+initializeReactGA();
 
 function App() {
-  initializeReactGA();
   return (
     <div id="routes">
         <Route path="/" component={Navbar} />
