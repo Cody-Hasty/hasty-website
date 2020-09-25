@@ -22,6 +22,11 @@ import Query from './components/projects/websites/query';
 import Contact from './components/about/contact';
 import Repository from './components/about/repository';
 import Resume from './components/about/resume';
+import ReactGA from 'react-ga';
+function initializeReactGA() {
+  ReactGA.initialize('UA-179077363-4');
+  ReactGA.pageview('/homepage');
+}
 
 function App() {
   return (
