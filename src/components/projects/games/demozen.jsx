@@ -1,13 +1,8 @@
 import React from 'react';
-import ReactGA from 'react-ga'
 import demozenPic1 from '../../../images/projects/demozen.png';
 import demozenPic2 from '../../../images/projects/demozen2.png';
 
 class Demozen extends React.Component {
-    componentDidMount() {
-        ReactGA.pageview(window.location.pathname)
-    }
-
     render() {
         return (
             <div className="page">

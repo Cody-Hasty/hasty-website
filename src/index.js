@@ -7,7 +7,18 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-179077363-4');
+function initializeReactGA() {
+  ReactGA.initialize('UA-179077363-4');
+  let page = window.location.pathname;
+  // console.log(window.location.pathname);
+  ReactGA.pageview(`/${page}`);
+}
+
+let pushState = window.history.pushState;
+window.history.pushState = function () {
+  initializeReactGA();
+  pushState.apply(window.history, arguments);
+};
 
 ReactDOM.render(
   <HashRouter>

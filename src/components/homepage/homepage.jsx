@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactGA from 'react-ga'
 import { Link } from 'react-router-dom';
 import demozenLogo from '../../images/projects/demozen.png'
 import lootLogo from '../../images/projects/loot.png'
@@ -11,10 +10,6 @@ import arageLogo from '../../images/projects/arage.png'
 import qwertyLogo from '../../images/projects/qwerty.png'
 
 class Homepage extends React.Component {
-    componentDidMount() {
-        ReactGA.pageview(window.location.pathname)
-    }
-    
     render() {
         return (
             <div className="page">

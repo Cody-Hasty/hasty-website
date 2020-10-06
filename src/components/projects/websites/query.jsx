@@ -1,13 +1,8 @@
 import React from 'react';
-import ReactGA from 'react-ga'
 import queryPic1 from '../../../images/projects/query.png';
 import queryPic2 from '../../../images/projects/query2.png';
 
 class Query extends React.Component {
-    componentDidMount() {
-        ReactGA.pageview(window.location.pathname)
-    }
-
     render() {
         return (
             <div className="page">

@@ -1,14 +1,9 @@
 import React from 'react';
-import ReactGA from 'react-ga'
 import songMatchPic1 from '../../../images/projects/songMatchIcon.png';
 import songMatchPic2 from '../../../images/projects/Sample-Dialogue.png';
 import songMatchPic3 from '../../../images/projects/Song-Match.png';
 
 class SongMatch extends React.Component {
-    componentDidMount() {
-        ReactGA.pageview(window.location.pathname)
-    }
-
     render() {
         return (
             <div className="page">

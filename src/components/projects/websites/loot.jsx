@@ -1,12 +1,7 @@
 import React from 'react';
-import ReactGA from 'react-ga'
 import lootPic1 from '../../../images/projects/loot.png';
 
 class Loot extends React.Component {
-    componentDidMount() {
-        ReactGA.pageview(window.location.pathname)
-    }
-
     render() {
         return (
             <div className="page">

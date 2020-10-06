@@ -7,7 +7,6 @@ import youtubeIcon from '../../images/icons/youtube.png';
 class Footer extends React.Component {
     render() {
         return (
-
             <footer className="container-fluid text-center">
                 <h4>About</h4>
                 <p><em>My name is Brittany Hasty, and I am a software engineer in San Francisco. To learn more about what I've worked on, please visit my "About" or "Projects" page. </em></p>

@@ -1,7 +1,5 @@
 import React from 'react';
-import { Route, Switch, Router } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-import ReactGA from 'react-ga'
+import { Route, Switch } from 'react-router-dom';
 
 import Homepage from './components/homepage/homepage';
 import Navbar from './components/navbar/navbar';
@@ -25,40 +23,32 @@ import Contact from './components/about/contact';
 import Repository from './components/about/repository';
 import Resume from './components/about/resume';
 
-const customHistory = createBrowserHistory();
-customHistory.listen(location => {
-  ReactGA.set({ page: location.pathname })
-  ReactGA.pageview(location.pathname)
-})
-
 function App() {
   return (
-    <Router history={customHistory}>
-      <div id="routes">
-          <Route path="/" component={Navbar} />
-          <Switch>
-              <Route path="/projects/others/qwerty" component={Qwerty} />
-              <Route path="/projects/games/songmatch" component={SongMatch} />
-              <Route path="/projects/games/ultraheated" component={UltraHeated} />
-              <Route path="/projects/games/demozen" component={Demozen} />
-              <Route path="/projects/apps/arage" component={Arage} />
-              <Route path="/projects/apps/arpom" component={Arpom} />
-              <Route path="/projects/websites/loot" component={Loot} />
-              <Route path="/projects/websites/query" component={Query} />
+    <div id="routes">
+        <Route path="/" component={Navbar} />
+        <Switch>
+            <Route path="/projects/others/qwerty" component={Qwerty} />
+            <Route path="/projects/games/songmatch" component={SongMatch} />
+            <Route path="/projects/games/ultraheated" component={UltraHeated} />
+            <Route path="/projects/games/demozen" component={Demozen} />
+            <Route path="/projects/apps/arage" component={Arage} />
+            <Route path="/projects/apps/arpom" component={Arpom} />
+            <Route path="/projects/websites/loot" component={Loot} />
+            <Route path="/projects/websites/query" component={Query} />
 
-              <Route path="/about/contact" component={Contact} />
-              <Route path="/about/repository" component={Repository} />
-              <Route path="/about/resume" component={Resume} />
+            <Route path="/about/contact" component={Contact} />
+            <Route path="/about/repository" component={Repository} />
+            <Route path="/about/resume" component={Resume} />
 
-              <Route path="/projects/apps" component={Apps} />
-              <Route path="/projects/games" component={Games} />
-              <Route path="/projects/websites" component={Websites} /> 
-              <Route path="/projects/others" component={Others} />
-              <Route exact path="/" component={Homepage} />
-          </Switch>
-          <Route path="/" component={Footer} />
-      </div>
-    </Router>
+            <Route path="/projects/apps" component={Apps} />
+            <Route path="/projects/games" component={Games} />
+            <Route path="/projects/websites" component={Websites} /> 
+            <Route path="/projects/others" component={Others} />
+            <Route exact path="/" component={Homepage} />
+        </Switch>
+        <Route path="/" component={Footer} />
+    </div>
   );
 }
 

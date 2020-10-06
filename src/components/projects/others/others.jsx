@@ -1,13 +1,8 @@
 import React from 'react';
-import ReactGA from 'react-ga'
 import { Link } from 'react-router-dom';
 import qwertyLogo from '../../../images/projects/qwerty.png'
 
 class Others extends React.Component {
-    componentDidMount() {
-        ReactGA.pageview(window.location.pathname)
-    }
-
     render() {
         return (
             <div className="page">
