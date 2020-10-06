@@ -1,9 +1,14 @@
 import React from 'react';
+import ReactGA from 'react-ga'
 import { Link } from 'react-router-dom';
 import lootLogo from '../../../images/projects/loot.png'
 import queryLogo from '../../../images/projects/query.png'
 
 class Websites extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname)
+    }
+
     render() {
         return (
             <div className="page">

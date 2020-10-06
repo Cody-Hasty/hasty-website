@@ -1,7 +1,12 @@
 import React from 'react';
+import ReactGA from 'react-ga'
 import aragePic1 from '../../../images/projects/arage.png';
 
 class Arage extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname)
+    }
+
     render() {
         return (
             <div className="page">

@@ -5,6 +5,9 @@ import {
 } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-179077363-4');
 
 ReactDOM.render(
   <HashRouter>

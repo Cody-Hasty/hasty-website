@@ -1,10 +1,15 @@
 import React from 'react';
+import ReactGA from 'react-ga'
 import { Link } from 'react-router-dom';
 import demozenLogo from '../../../images/projects/demozen.png'
 import ultraheatedLogo from '../../../images/projects/ultraheated.png'
 import songmatchLogo from '../../../images/projects/songMatchIcon.png'
 
 class Games extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname)
+    }
+
     render() {
         return (
             <div className="page">

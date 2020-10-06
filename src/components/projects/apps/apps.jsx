@@ -1,9 +1,14 @@
 import React from 'react';
+import ReactGA from 'react-ga'
 import { Link } from 'react-router-dom';
 import arpomLogo from '../../../images/projects/arpom.png'
 import arageLogo from '../../../images/projects/arage.png'
 
 class Apps extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname)
+    }
+    
     render() {
         return (
             <div className="page">

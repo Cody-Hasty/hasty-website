@@ -1,7 +1,12 @@
 import React from 'react';
 import resume from './resume.pdf';
+import ReactGA from 'react-ga'
 
 class Resume extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname)
+    }
+
     render() {
         return (
             <div className="page">

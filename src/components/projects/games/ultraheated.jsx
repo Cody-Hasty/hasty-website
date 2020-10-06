@@ -1,8 +1,13 @@
 import React from 'react';
+import ReactGA from 'react-ga'
 import Unity, { UnityContent } from 'react-unity-webgl'
 import ultraHeatedPic1 from '../../../images/projects/ultraheated.png';
 
 class UltraHeated extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname)
+    }
+
     render() {
         const unityContent = new UnityContent(
             "./Build/assets.json",

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga'
 import { Link } from 'react-router-dom';
 import demozenLogo from '../../images/projects/demozen.png'
 import lootLogo from '../../images/projects/loot.png'
@@ -10,12 +11,15 @@ import arageLogo from '../../images/projects/arage.png'
 import qwertyLogo from '../../images/projects/qwerty.png'
 
 class Homepage extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname)
+    }
+    
     render() {
-        
         return (
             <div className="page">
                 <div className="alert alert-info">
-                    <strong>Site Changes!</strong> Website is currently being updated, changes should be completed by 8/29/2020. Please check back in later for full project descriptions.
+                    <strong>Site Changes!</strong> Website is currently being updated, changes should be completed by 10/29/2020. Please check back in later for full project descriptions.
                 </div>
                 <div className="jumbotron">
                     <div className="container text-center">
@@ -63,41 +67,64 @@ class Homepage extends React.Component {
                 </div><br />
 
                 <div className="container-fluid bg-3 text-center">    
-                <div className="row">
-                    <div className="col-sm-3">
-                        <Link to="/projects/games/ultraheated">
-                            <p className="normal-link">Ultra Heated</p>
-                            <div className="expand-element">
-                                <img src={ultraheatedLogo} className="img-responsive" style={{width: '100%'}} alt="ultra heated" />
-                            </div>
-                        </Link>
+                    <div className="row">
+                        <div className="col-sm-3">
+                            <Link to="/projects/games/ultraheated">
+                                <p className="normal-link">Ultra Heated</p>
+                                <div className="expand-element">
+                                    <img src={ultraheatedLogo} className="img-responsive" style={{width: '100%'}} alt="ultra heated" />
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-sm-3"> 
+                            <Link to="/projects/apps/arpom">
+                                <p className="normal-link">ARPOM</p>
+                                <div className="expand-element">
+                                    <img src={arpomLogo} className="img-responsive" style={{width: '100%'}} alt="arpom" />
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-sm-3"> 
+                            <Link to="/projects/apps/arage">
+                                <p className="normal-link">ARAGE</p>
+                                <div className="expand-element">
+                                    <img src={arageLogo} className="img-responsive" style={{width: '100%'}} alt="arage" />
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-sm-3">
+                            <Link to="/projects/others/qwerty">
+                                <p className="normal-link">QWERTY</p>
+                                <div className="expand-element">
+                                    <img src={qwertyLogo} className="img-responsive" style={{width: '100%'}} alt="qwerty" />
+                                </div>
+                            </Link>
+                        </div>
                     </div>
-                    <div className="col-sm-3"> 
-                        <Link to="/projects/apps/arpom">
-                            <p className="normal-link">ARPOM</p>
-                            <div className="expand-element">
-                                <img src={arpomLogo} className="img-responsive" style={{width: '100%'}} alt="arpom" />
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="col-sm-3"> 
-                        <Link to="/projects/apps/arage">
-                            <p className="normal-link">ARAGE</p>
-                            <div className="expand-element">
-                                <img src={arageLogo} className="img-responsive" style={{width: '100%'}} alt="arage" />
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="col-sm-3">
-                        <Link to="/projects/others/qwerty">
-                            <p className="normal-link">QWERTY</p>
-                            <div className="expand-element">
-                                <img src={qwertyLogo} className="img-responsive" style={{width: '100%'}} alt="qwerty" />
-                            </div>
-                        </Link>
-                    </div>
-                </div>
                 </div><br /><br />
+
+                {/* <div className="container-fluid bg-3 text-center">
+                    <div className="row">
+                        <div className="col-sm-3"></div>
+                        <div className="col-sm-3">
+                            <Link to="/projects/apps/arpom">
+                                <p className="normal-link">Repeat That</p>
+                                <div className="expand-element">
+                                    <img src={arpomLogo} className="img-responsive" style={{ width: '100%' }} alt="arpom" />
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-sm-3">
+                            <Link to="/projects/apps/arage">
+                                <p className="normal-link">Dice Roll</p>
+                                <div className="expand-element">
+                                    <img src={arageLogo} className="img-responsive" style={{ width: '100%' }} alt="arage" />
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-sm-3"></div>
+                    </div>
+                </div><br /><br /> */}
             </div>
         )
     }
