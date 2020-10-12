@@ -1,17 +1,16 @@
 import React from 'react';
-import arpomPic1 from '../../../images/projects/arpom.png';
+import repeatthatLogo from '../../../images/projects/repeatthat.png';
 
-class Arpom extends React.Component {
+class RepeatThat extends React.Component {
     render() {
         return (
             <div className="page">
                 <div className="jumbotron">
                     <div className="container text-center">
-                        <h2><strong>ARPOM</strong></h2>
-                        <br />
-                        <p>"ARPOM is an augmented reality app designed 
-                        to help heavy equipment operators stay safe and 
-                        easily access pre-operation checklists."</p>
+                        <h2><strong>Repeat That</strong></h2><br />
+                        <p>"Repeat That is a repeat-the-sequence style game, 
+                            with each correctly repeated sequence adding one to 
+                            the player's score."</p>
                     </div>
                 </div>
                 <div className="container-fluid bg-3 text-center">
@@ -20,11 +19,7 @@ class Arpom extends React.Component {
                         <div className="col-sm-5 text-center">
                             <h4 className="list-title">Logo:</h4>
                             <div className="expand-element">
-                                <img src={arpomPic1} alt="arpom logo" />
-                            </div>
-                            <br /><h4 className="list-title">Product Pitch:</h4>
-                            <div className="expand-element">
-                                <iframe src="https://www.youtube.com/embed/whykdv8uMl4" title="ARPOM Demo" frameBorder="0" />
+                                <img src={repeatthatLogo} alt="repeat that logo" />
                             </div>
                         </div>
                         <div className="col-sm-5 text-left">
@@ -34,12 +29,12 @@ class Arpom extends React.Component {
                             </ul><br />
                             <h4 className="list-title">Technology:</h4>
                             <ul>
-                                <li>C# Scripting</li>
-                                <li>Unity</li>
-                                <li>Vuforia</li>
-                                <li>Augmented Reality</li>
-                                <li>Xcode</li>
-                                <li>Android Studio</li>
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>Express</li>
+                                <li>Heroku</li>
                             </ul>
                         </div>
                         <div className="col-sm-1" />
@@ -50,4 +45,4 @@ class Arpom extends React.Component {
     }
 }
 
-export default Arpom;
+export default RepeatThat;

@@ -14,7 +14,11 @@ class UltraHeated extends React.Component {
                 <div className="jumbotron">
                     <div className="container text-center">
                         <h2><strong>Ultra Heated</strong></h2><br/>
-                        <p>"As part of a coding interview, I was asked to create a 2-dimensional clone of the popular game "SuperHot". The physics of the game were entirely hard-coded, as the player's movement (or lack thereof!) determined the speed of the enemies and their projectiles."</p>
+                        <p>"Ultra Heated is a 2-dimensional clone of the popular 
+                            game "SuperHot". The physics of the game were 
+                            entirely hard-coded, as the player's movement 
+                            (or lack thereof!) determined the speed of the 
+                            enemies and their projectiles."</p>
                     </div>
                 </div>
                 <div className="container-fluid bg-3 text-center">
@@ -33,7 +37,8 @@ class UltraHeated extends React.Component {
                             </ul><br />
                             <h4 className="list-title">Technology:</h4>
                             <ul>
-
+                                <li>Unity</li>
+                                <li>C# Scripting</li>
                             </ul>
                         </div>
                         <div className="col-sm-1" />

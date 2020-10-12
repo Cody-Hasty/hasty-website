@@ -10,7 +10,7 @@ import ReactGA from 'react-ga';
 function initializeReactGA() {
   ReactGA.initialize('UA-179077363-4');
   let page = window.location.pathname;
-  // console.log(window.location.pathname);
+  console.log(window.location.pathname);
   ReactGA.pageview(`/${page}`);
 }
 
@@ -20,13 +20,15 @@ window.history.pushState = function () {
   pushState.apply(window.history, arguments);
 };
 
-ReactDOM.render(
-  <HashRouter>
-      <App />
-  </HashRouter>,
-  document.getElementById('root')
-);
-
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('root');
+  ReactDOM.render(
+    <HashRouter>
+        <App />
+    </HashRouter>,
+    root
+  );
+});
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

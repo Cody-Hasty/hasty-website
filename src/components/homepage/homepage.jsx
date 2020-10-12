@@ -8,6 +8,8 @@ import ultraheatedLogo from '../../images/projects/ultraheated.png'
 import arpomLogo from '../../images/projects/arpom.png'
 import arageLogo from '../../images/projects/arage.png'
 import qwertyLogo from '../../images/projects/qwerty.png'
+import repeatthatLogo from '../../images/projects/repeatthat.png';
+import dicerollLogo from '../../images/projects/diceroll.png';
 
 class Homepage extends React.Component {
     render() {
@@ -51,10 +53,10 @@ class Homepage extends React.Component {
                             </Link>
                         </div>
                         <div className="col-sm-3">
-                            <Link to="/projects/games/songmatch">
-                                <p className="normal-link">Song Match</p>
+                            <Link to="/projects/games/repeatthat">
+                                <p className="normal-link">Repeat That</p>
                                 <div className="expand-element">
-                                    <img src={songmatchLogo} className="img-responsive" style={{width: '100%'}} alt="song match" />
+                                    <img src={repeatthatLogo} className="img-responsive" style={{ width: '100%' }} alt="repeat that" />
                                 </div>
                             </Link>
                         </div>
@@ -98,28 +100,28 @@ class Homepage extends React.Component {
                     </div>
                 </div><br /><br />
 
-                {/* <div className="container-fluid bg-3 text-center">
+                <div className="container-fluid bg-3 text-center">
                     <div className="row">
                         <div className="col-sm-3"></div>
                         <div className="col-sm-3">
-                            <Link to="/projects/apps/arpom">
-                                <p className="normal-link">Repeat That</p>
+                            <Link to="/projects/games/songmatch">
+                                <p className="normal-link">Song Match</p>
                                 <div className="expand-element">
-                                    <img src={arpomLogo} className="img-responsive" style={{ width: '100%' }} alt="arpom" />
+                                    <img src={songmatchLogo} className="img-responsive" style={{ width: '100%' }} alt="song match" />
                                 </div>
                             </Link>
                         </div>
                         <div className="col-sm-3">
-                            <Link to="/projects/apps/arage">
+                            <Link to="/projects/games/diceroll">
                                 <p className="normal-link">Dice Roll</p>
                                 <div className="expand-element">
-                                    <img src={arageLogo} className="img-responsive" style={{ width: '100%' }} alt="arage" />
+                                    <img src={dicerollLogo} className="img-responsive" style={{ width: '100%' }} alt="dice roll" />
                                 </div>
                             </Link>
                         </div>
                         <div className="col-sm-3"></div>
                     </div>
-                </div><br /><br /> */}
+                </div><br /><br />
             </div>
         )
     }

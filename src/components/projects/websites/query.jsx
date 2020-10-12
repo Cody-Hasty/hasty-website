@@ -34,7 +34,15 @@ class Query extends React.Component {
                             </ul><br />
                             <h4 className="list-title">Technology:</h4>
                             <ul>
-
+                                <li>Ruby on Rails</li>
+                                <li>Javascript</li>
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>CSS3</li>
+                                <li>Webpack</li>
+                                <li>PostgreSQL</li>
+                                <li>Git</li>
+                                <li>Heroku</li>
                             </ul>
                         </div>
                         <div className="col-sm-1" />

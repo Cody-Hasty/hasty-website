@@ -11,7 +11,8 @@ class Demozen extends React.Component {
                         <h4><a href="https://brittany-hasty.github.io/demozen/" className="link-left">Website</a></h4>
                         <h4><a href="https://github.com/Brittany-Hasty/demozen" className="link-right">Github</a></h4>
                         <h2><strong>Demozen</strong></h2><br/>
-                        <p>"Demozen is a three-dimensional abstract world exploration game using three.js and WebGL. 
+                        <p>"Demozen is a three-dimensional abstract world 
+                            exploration game using three.js and WebGL. 
                             It was styled as a fusion between <a href="https://en.wikipedia.org/wiki/Synthwave" className="normal-link">Synthwave</a> and <a href="https://en.wikipedia.org/wiki/Demoscene" className="normal-link">Demoscene</a> culture, 
                             where 'Demozen' refers to an in-game character, a.k.a. the denizen of the Demoscene."</p>
                     </div>
@@ -36,7 +37,11 @@ class Demozen extends React.Component {
                             </ul><br/>
                             <h4 className="list-title">Technology:</h4>
                             <ul>
-
+                                <li>Javascript</li>
+                                <li>Three.js</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Webpack</li>
                             </ul>
                         </div>
                         <div className="col-sm-1" />

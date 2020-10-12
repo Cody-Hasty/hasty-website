@@ -20,9 +20,10 @@ class Apps extends React.Component {
                                 <img src={arpomLogo} className="img-responsive" alt="arpom logo" />
                             </Link>
                             <br/>
-                            <p>ARPOM is an augmented reality app designed 
-                                to help heavy equipment operators stay safe and 
-                                easily access pre-operation checklists.</p>
+                            <p><strong>ARPOM</strong> is an augmented reality 
+                                app designed to help heavy equipment operators 
+                                stay safe and easily access pre-operation 
+                                checklists.</p>
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/apps/arage">
@@ -30,9 +31,10 @@ class Apps extends React.Component {
                                 <img src={arageLogo} className="img-responsive" alt="arage logo" />
                             </Link>
                             <br/>
-                            <p>ARAGE is an instructional augmented reality app 
-                                designed to aid repairmen (and repairwomen) in 
-                                performing common repair procedures.</p>
+                            <p><strong>ARAGE</strong> is an instructional 
+                            augmented reality app designed to aid repairmen 
+                            (and repairwomen) in performing common repair 
+                            procedures.</p>
                         </div>
                     </div>
                 </div>

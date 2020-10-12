@@ -20,7 +20,9 @@ class Websites extends React.Component {
                                 <img src={lootLogo} className="img-responsive" alt="loot logo" />
                             </Link>
                             <br />
-                            <p>LOOT is a website based on building recursive recipe tree diagrams for gamers playing crafting video games.</p>
+                            <p><strong>LOOT</strong> is a website based on 
+                            building recursive recipe tree diagrams for gamers 
+                            playing crafting video games.</p>
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/websites/query">
@@ -28,7 +30,8 @@ class Websites extends React.Component {
                                 <img src={queryLogo} className="img-responsive" alt="query logo" />
                             </Link>
                             <br />
-                            <p>Query is a Q&A style website inspired by Quora</p>
+                            <p><strong>Query</strong> is a Q&A style website 
+                            inspired by Quora</p>
                         </div>
                     </div>
                 </div>

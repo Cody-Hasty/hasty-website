@@ -27,7 +27,9 @@ class Qwerty extends React.Component {
                             </ul><br />
                             <h4 className="list-title">Technology:</h4>
                             <ul>
-                                
+                                <li>Git</li>
+                                <li>TinkerCAD</li>
+                                <li>3D Printing</li>
                             </ul><br/>
                             <h4 className="list-title">Current 3D model:</h4>
                             <div className="expand-element">

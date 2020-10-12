@@ -10,7 +10,11 @@ class SongMatch extends React.Component {
                 <div className="jumbotron">
                     <div className="container text-center">
                         <h2><strong>Song Match</strong></h2><br/>
-                        <p>"As part of a coding interview, I was asked to develop an Alexa skill for the Amazon Echo. Given a user's favorite music artist, the skill would then ask 3 questions which would select that artist's song that best matches the user's personality."</p>
+                        <p>"Song Match is an Alexa skill for the Amazon Echo. 
+                            Given a user's favorite music artist, the skill 
+                            would then ask 3 questions which would select that 
+                            artist's song that best matches the user's 
+                            personality."</p>
                     </div>
                 </div>
                 <div className="container-fluid bg-3 text-center">
@@ -37,7 +41,9 @@ class SongMatch extends React.Component {
                             </ul><br/>
                             <h4 className="list-title">Technology:</h4>
                             <ul>
-                                
+                                <li>Alexa SDK</li>
+                                <li>Spotify API</li>
+                                <li>Alexa Developer Console</li>
                             </ul>
                         </div>
                         <div className="col-sm-1" />

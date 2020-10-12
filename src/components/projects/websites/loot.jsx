@@ -29,7 +29,16 @@ class Loot extends React.Component {
                                 </ul><br />
                                 <h4 className="list-title">Technology:</h4>
                                 <ul>
-
+                                    <li>Node.js</li>
+                                    <li>React</li>
+                                    <li>Redux</li>
+                                    <li>Axios</li>
+                                    <li>CSS3</li>
+                                    <li>Express</li>
+                                    <li>MongoDB</li>
+                                    <li>AWS</li>
+                                    <li>Git</li>
+                                    <li>Heroku</li>
                                 </ul>
                             </div>
                             <div className="col-sm-1" />
