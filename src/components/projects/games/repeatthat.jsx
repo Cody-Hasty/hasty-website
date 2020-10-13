@@ -35,6 +35,7 @@ class RepeatThat extends React.Component {
                                 <li>MongoDB</li>
                                 <li>Express</li>
                                 <li>Heroku</li>
+                                <li>Git</li>
                             </ul>
                         </div>
                         <div className="col-sm-1" />

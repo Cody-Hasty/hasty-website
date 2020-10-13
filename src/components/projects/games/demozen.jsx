@@ -42,6 +42,7 @@ class Demozen extends React.Component {
                                 <li>HTML5</li>
                                 <li>CSS3</li>
                                 <li>Webpack</li>
+                                <li>Git</li>
                             </ul>
                         </div>
                         <div className="col-sm-1" />
