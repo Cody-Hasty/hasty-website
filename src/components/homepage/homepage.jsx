@@ -16,7 +16,7 @@ class Homepage extends React.Component {
         return (
             <div className="page">
                 <div className="alert alert-info">
-                    <strong>Site Changes!</strong> Website is currently being updated, changes should be completed by 10/29/2020. Please check back in later for full project descriptions.
+                    <strong>Site Changes!</strong> Website is currently being updated, changes should be completed by 11/16/2020. Please check back in later for full project descriptions.
                 </div>
                 <div className="jumbotron">
                     <div className="container text-center">
