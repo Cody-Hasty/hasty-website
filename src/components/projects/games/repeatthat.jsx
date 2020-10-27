@@ -7,6 +7,8 @@ class RepeatThat extends React.Component {
             <div className="page">
                 <div className="jumbotron">
                     <div className="container text-center">
+                        <h4><a href="https://repeat-that.herokuapp.com/#/" className="link-left">Website</a></h4>
+                        <h4><a href="https://github.com/Brittany-Hasty/repeat-that" className="link-right">Github</a></h4>
                         <h2><strong>Repeat That</strong></h2><br />
                         <p>"Repeat That is a repeat-the-sequence style game, 
                             with each correctly repeated sequence adding one to 
