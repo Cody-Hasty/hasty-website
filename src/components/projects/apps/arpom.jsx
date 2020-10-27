@@ -32,10 +32,11 @@ class Arpom extends React.Component {
                             <h4 className="list-title">Overview:</h4>
                             <ul>
                                 <p>
-                                    ARPOM is the result of a SBIR (Small 
-                                    Business Initiative Research) grant into the 
-                                    use of augmented reality within the air 
-                                    force. Heavy equipment operators need to 
+                                    ARPOM (The Augmented Reality Pre-Operations 
+                                    Maintenance Tool) is the result of a SBIR 
+                                    (Small Business Initiative Research) grant 
+                                    into the use of augmented reality within the 
+                                    air force. Heavy equipment operators need to 
                                     complete checklists before operation can 
                                     take place according to OSHA (Occupational 
                                     Safety and Health Administration). Through 
@@ -99,6 +100,14 @@ class Arpom extends React.Component {
                                 <li>Augmented Reality</li>
                                 <li>Xcode</li>
                                 <li>Android Studio</li>
+                            </ul><br />
+                            <h4 className="list-title">Award:</h4>
+                            <ul>
+                                Phase I SBIR Research Grant (FA865019P5046): 
+                                AFWERX Research grant awarded for the 
+                                development of the Augmented Reality 
+                                Pre-Operations Maintenance Tool (ARPOM) in 
+                                September 2018.
                             </ul>
                         </div>
                         <div className="col-sm-1" />

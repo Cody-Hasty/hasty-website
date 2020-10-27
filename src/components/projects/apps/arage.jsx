@@ -23,7 +23,7 @@ class Arage extends React.Component {
                             </div>
                         </div>
                         <div className="col-sm-5 text-left">
-                            <h4 className="list-title">Concept:</h4>
+                            <h4 className="list-title">Overview:</h4>
                             <ul>
 
                             </ul><br/>
