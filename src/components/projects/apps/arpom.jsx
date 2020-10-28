@@ -103,11 +103,14 @@ class Arpom extends React.Component {
                             </ul><br />
                             <h4 className="list-title">Award:</h4>
                             <ul>
-                                Phase I SBIR Research Grant (FA865019P5046): 
-                                AFWERX Research grant awarded for the 
-                                development of the Augmented Reality 
-                                Pre-Operations Maintenance Tool (ARPOM) in 
-                                September 2018.
+                                <p>
+                                    Phase I SBIR Research Grant (FA865019P5046): 
+                                    AFWERX research grant awarded for the 
+                                    development of the Augmented Reality 
+                                    Pre-Operations Maintenance Tool (ARPOM) in 
+                                    September 2018.
+                                </p>
+                                
                             </ul>
                         </div>
                         <div className="col-sm-1" />
