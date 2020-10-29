@@ -39,7 +39,7 @@ class Arage extends React.Component {
                                 frameBorder="0" />
                             </div>
                         </div>
-                        <div className="col-sm-5 text-left over">
+                        <div className="col-sm-5 text-left">
                             <h4 className="list-title">Overview:</h4>
                             <ul>
                                 <p>
