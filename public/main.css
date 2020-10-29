@@ -124,6 +124,10 @@ a {
   color: rgb(255, 123, 0);
 }
 
+#title:hover {
+  text-decoration: none;
+}
+
 .list-title {
   color: rgb(255, 123, 0);
   font-weight: bold;

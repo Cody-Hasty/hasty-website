@@ -25,7 +25,7 @@ class Loot extends React.Component {
                             <div className="col-sm-5 text-left">
                                 <h4 className="list-title">Overview:</h4>
                                 <ul>
-                                    <p></p>
+                                    Please check back later for description.
                                 </ul><br />
                                 <h4 className="list-title">Technology:</h4>
                                 <ul>
