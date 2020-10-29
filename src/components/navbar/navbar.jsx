@@ -12,7 +12,7 @@ class Navbar extends React.Component {
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <Link to="/" className="navbar-brand navlink">Brittany Hasty's Portfolio</Link>
+                        <Link to="/" className="navbar-brand navlink" id="title">Brittany Hasty's Portfolio</Link>
                     </div>
                     <div className="collapse navbar-collapse" id="myNavbar">
                         <ul className="nav navbar-nav">

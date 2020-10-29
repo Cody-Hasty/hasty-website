@@ -8,7 +8,7 @@ class Resume extends React.Component {
                 <div className="container-fluid bg-3 text-center">  
                     <div className="jumbotron">
                         <div className="container text-center">
-                            <h2><strong>My Resume</strong></h2>
+                            <h2><strong>My </strong><strong className="orange">Resume</strong></h2>
                         </div>
                     </div>
                     <div className="container-fluid bg-3 text-center">
