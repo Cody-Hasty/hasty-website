@@ -19,21 +19,21 @@ class Games extends React.Component {
                     <div className="row">
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/demozen">
-                                <h3 className="normal-link">Demozen</h3>
+                                <h3 className="h3-link">Demozen</h3>
                                 <img src={demozenLogo} className="img-responsive" alt="demozen" />
                             </Link>
                             <br />
-                            <p><strong>Demozen</strong> is a three-dimensional 
+                            <p className="caption"><strong>Demozen</strong> is a three-dimensional 
                             abstract world exploration game using three.js and 
                             WebGL</p>
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/ultraheated">
-                                <h3 className="normal-link">Ultra Heated</h3>
+                                <h3 className="h3-link">Ultra Heated</h3>
                                 <img src={ultraheatedLogo} className="img-responsive" alt="ultra heated" />
                             </Link>
                             <br />
-                            <p><strong>Ultra Heated</strong> is a 2-dimensional 
+                            <p className="caption"><strong>Ultra Heated</strong> is a 2-dimensional 
                             Unity game inspired by SUPERHOT, where time only 
                             moves when you do.</p>
                         </div>
@@ -41,21 +41,21 @@ class Games extends React.Component {
                     <div className="row">
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/repeatthat">
-                                <h3 className="normal-link">Repeat That</h3>
+                                <h3 className="h3-link">Repeat That</h3>
                                 <img src={repeatthatLogo} className="img-responsive" alt="repeat that" />
                             </Link>
                             <br />
-                            <p><strong>Repeat That</strong> is a 
+                            <p className="caption"><strong>Repeat That</strong> is a 
                             repeat-the-sequence style memory game using vanilla 
                             DOM manipulation.</p>
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/diceroll">
-                                <h3 className="normal-link">Dice Roll</h3>
+                                <h3 className="h3-link">Dice Roll</h3>
                                 <img src={dicerollLogo} className="img-responsive" alt="dice roll" />
                             </Link>
                             <br />
-                            <p><strong>Dice Roll</strong> is an Alexa game where 
+                            <p className="caption"><strong>Dice Roll</strong> is an Alexa game where 
                             the goal is to roll the greatest score.</p>
                         </div>
                     </div>
@@ -63,11 +63,11 @@ class Games extends React.Component {
                         <div className="col-sm-3"></div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/songmatch">
-                                <h3 className="normal-link">Song Match</h3>
+                                <h3 className="h3-link">Song Match</h3>
                                 <img src={songmatchLogo} className="img-responsive" alt="song match" />
                             </Link>
                             <br />
-                            <p><strong>Song Match</strong> is an Alexa skill 
+                            <p className="caption"><strong>Song Match</strong> is an Alexa skill 
                             that matches your personality with a song from your 
                             favorite artist.</p>
                         </div>

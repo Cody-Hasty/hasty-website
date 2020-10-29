@@ -9,7 +9,7 @@ class Contact extends React.Component {
                         <h2><strong>Contact Information</strong></h2>
                     </div>
                 </div>
-                <div className="container text-center">
+                <div className="container text-center caption">
                     <h4><strong>Brittany Hasty</strong></h4>
                     <br />
                     <strong>Phone:</strong> 757-650-5676<br />

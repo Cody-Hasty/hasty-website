@@ -13,7 +13,7 @@ class Loot extends React.Component {
                         <p>"If you've ever played a video game that is based on crafting - you've probably needed to make some item using a set of ingredients. You then have to take that item, and use a number of them to make some greater object later, but alas - you already have a few of the items you need- what more do you need to collect to make that item you want?"</p>
                     </div>
                 </div>
-                    <div className="container-fluid bg-3 text-center">
+                <div className="container-fluid bg-3 text-center">
                         <div className="row">
                             <div className="col-sm-1" />
                             <div className="col-sm-5 text-center">
@@ -25,7 +25,7 @@ class Loot extends React.Component {
                             <div className="col-sm-5 text-left">
                                 <h4 className="list-title">Overview:</h4>
                                 <ul>
-
+                                    <p></p>
                                 </ul><br />
                                 <h4 className="list-title">Technology:</h4>
                                 <ul>

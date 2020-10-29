@@ -16,11 +16,11 @@ class Others extends React.Component {
                         <div className="col-sm-3"></div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/others/qwerty">
-                                <h3 className="normal-link">QWERTY</h3>
+                                <h3>QWERTY</h3>
                                 <img src={qwertyLogo} className="img-responsive img-center" alt="qwerty" />
                             </Link>
                             <br />
-                            <p><strong>QWERTY</strong> is an in-progress side 
+                            <p className="caption"><strong>QWERTY</strong> is an in-progress side 
                             project with the eventual goal being an autonomous 
                             interactive ai pet fox.</p>
                         </div>

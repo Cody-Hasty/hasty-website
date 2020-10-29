@@ -11,33 +11,55 @@ body,
   min-width: 300px;
 }
 
+body {
+  background-image: url("darkbg.svg");
+  color: white;
+}
+
 footer {
   background-color: #222222;
   color: #9D9D9D;
   padding: 25px;
   margin-top: 50px;
+  border-top: 6px solid #9D9D9D;
+}
+
+.jumbotron {
+  background-color: #222222c4;
+  border-bottom: 6px solid #9D9D9D;
+  border-top: 6px solid #9D9D9D;
+}
+
+.navlink {
+  text-decoration: none;
+}
+
+.caret {
+  margin-left: 5px;
 }
 
 .link-left {
-  color: blue;
+  color: rgb(255, 123, 0);
   float: left;
-  text-decoration: underline solid black;
+  text-decoration: underline solid rgb(255, 123, 0);
 }
 
 .link-left:hover {
-  color: blue;
+  color: rgb(255, 123, 0);
   font-weight: bold;
+  text-decoration: underline solid rgb(255, 123, 0);
 }
 
 .link-right {
-  color: blue;
+  color: rgb(255, 123, 0);
   float: right;
-  text-decoration: underline solid blue;
+  text-decoration: underline solid rgb(255, 123, 0);
 }
 
 .link-right:hover {
-  color: blue;
+  color: rgb(255, 123, 0);
   font-weight: bold;
+  text-decoration: underline solid rgb(255, 123, 0);
 }
 
 .img-center {
@@ -45,27 +67,40 @@ footer {
   margin-right: auto;
 }
 
-.normal-link {
-  text-decoration: underline solid blue;
-  color: blue;
-}
-
-.normal-link:hover {
-  color: blue;
-  font-weight: bold;
-}
-
 .list-title {
   font-weight: bold;
-  text-decoration: underline solid black;
+  text-decoration: underline solid white;
+}
+
+.over {
+  background-color: #00000067;
+  border: 1px solid white;
+}
+
+.caption {
+  padding: 5px;
+  background-color: #000000;
+  border: 1px dotted white;
+}
+
+.alert-info {
+  background-color: rgb(255, 123, 0);
+  color: white;
 }
 
 a {
-  color: black;
+  color: white;
+  text-decoration: underline solid white;
 }
 
 a:hover {
-  color: black;
+  color: white;
+  text-decoration: underline solid white;
+  font-weight: bold;
+}
+
+.h3-link:hover {
+  font-weight: bold;
 }
 
 .expand-element {
@@ -103,13 +138,19 @@ a:hover {
   background-color: black;
 }
 
+.orange {
+  color: rgb(255, 123, 0);
+}
 
 .footer-link {
-  color: #9D9D9D;
+  color: rgb(255, 123, 0);
+  text-decoration: underline solid rgb(255, 123, 0);
 }
 
 .footer-link:hover {
-  color: white;
+  color: rgb(255, 123, 0);
+  text-decoration: underline solid rgb(255, 123, 0);
+  font-weight: bold;
 }
 
 footer img {

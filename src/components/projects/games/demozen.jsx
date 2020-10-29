@@ -13,7 +13,7 @@ class Demozen extends React.Component {
                         <h2><strong>Demozen</strong></h2><br/>
                         <p>"Demozen is a three-dimensional abstract world 
                             exploration game using three.js and WebGL. 
-                            It was styled as a fusion between <a href="https://en.wikipedia.org/wiki/Synthwave" className="normal-link">Synthwave</a> and <a href="https://en.wikipedia.org/wiki/Demoscene" className="normal-link">Demoscene</a> culture, 
+                            It was styled as a fusion between <a href="https://en.wikipedia.org/wiki/Synthwave">Synthwave</a> and <a href="https://en.wikipedia.org/wiki/Demoscene">Demoscene</a> culture, 
                             where 'Demozen' refers to an in-game character, a.k.a. the denizen of the Demoscene."</p>
                     </div>
                 </div>

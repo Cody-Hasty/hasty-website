@@ -16,22 +16,22 @@ class Apps extends React.Component {
                     <div className="row">
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/apps/arpom">
-                                <h3 className="normal-link">ARPOM</h3>
+                                <h3 className="h3-link">ARPOM</h3>
                                 <img src={arpomLogo} className="img-responsive" alt="arpom logo" />
                             </Link>
                             <br/>
-                            <p><strong>ARPOM</strong> is an augmented reality 
+                            <p className="caption"><strong>ARPOM</strong> is an augmented reality 
                                 app designed to help heavy equipment operators 
                                 stay safe and easily access pre-operation 
                                 checklists.</p>
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/apps/arage">
-                                <h3 className="normal-link">ARAGE</h3>
+                                <h3 className="h3-link">ARAGE</h3>
                                 <img src={arageLogo} className="img-responsive" alt="arage logo" />
                             </Link>
                             <br/>
-                            <p><strong>ARAGE</strong> is an instructional 
+                            <p className="caption"><strong>ARAGE</strong> is an instructional 
                             augmented reality app designed to aid repairmen 
                             (and repairwomen) in performing common repair 
                             procedures.</p>
