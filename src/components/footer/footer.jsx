@@ -8,7 +8,7 @@ class Footer extends React.Component {
     render() {
         return (
             <footer className="container-fluid text-center">
-                <h4>About</h4>
+                <h4 className="orange">About</h4>
                 <p><em>My name is Brittany Hasty, and I am a software engineer in San Francisco. To learn more about what I've worked on, please visit my "About" or "Projects" page. </em></p>
                 <div>
                     <a href="https://github.com/Brittany-Hasty"><img src={githubIcon} alt="GitHub" title="Github" /></a>

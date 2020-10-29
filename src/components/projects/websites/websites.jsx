@@ -16,8 +16,9 @@ class Websites extends React.Component {
                     <div className="row">
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/websites/loot">
-                                <h3 className="h3-link">LOOT</h3>
-                                <img src={lootLogo} className="img-responsive" alt="loot logo" />
+                                <h3 className="h3-link">LOOT
+                                    <img src={lootLogo} className="img-responsive" alt="loot logo" />
+                                </h3>
                             </Link>
                             <br />
                             <p className="caption"><strong>LOOT</strong> is a website based on 
@@ -26,8 +27,9 @@ class Websites extends React.Component {
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/websites/query">
-                                <h3 className="h3-link">Query</h3>
-                                <img src={queryLogo} className="img-responsive" alt="query logo" />
+                                <h3 className="h3-link">Query
+                                    <img src={queryLogo} className="img-responsive" alt="query logo" />
+                                </h3>
                             </Link>
                             <br />
                             <p className="caption"><strong>Query</strong> is a Q&A style website 

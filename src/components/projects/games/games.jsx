@@ -19,8 +19,9 @@ class Games extends React.Component {
                     <div className="row">
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/demozen">
-                                <h3 className="h3-link">Demozen</h3>
-                                <img src={demozenLogo} className="img-responsive" alt="demozen" />
+                                <h3 className="h3-link">Demozen
+                                    <img src={demozenLogo} className="img-responsive" alt="demozen" />
+                                </h3>
                             </Link>
                             <br />
                             <p className="caption"><strong>Demozen</strong> is a three-dimensional 
@@ -29,8 +30,9 @@ class Games extends React.Component {
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/ultraheated">
-                                <h3 className="h3-link">Ultra Heated</h3>
-                                <img src={ultraheatedLogo} className="img-responsive" alt="ultra heated" />
+                                <h3 className="h3-link">Ultra Heated
+                                    <img src={ultraheatedLogo} className="img-responsive" alt="ultra heated" />
+                                </h3>
                             </Link>
                             <br />
                             <p className="caption"><strong>Ultra Heated</strong> is a 2-dimensional 
@@ -41,8 +43,9 @@ class Games extends React.Component {
                     <div className="row">
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/repeatthat">
-                                <h3 className="h3-link">Repeat That</h3>
-                                <img src={repeatthatLogo} className="img-responsive" alt="repeat that" />
+                                <h3 className="h3-link">Repeat That
+                                    <img src={repeatthatLogo} className="img-responsive" alt="repeat that" />
+                                </h3>
                             </Link>
                             <br />
                             <p className="caption"><strong>Repeat That</strong> is a 
@@ -51,8 +54,9 @@ class Games extends React.Component {
                         </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/diceroll">
-                                <h3 className="h3-link">Dice Roll</h3>
-                                <img src={dicerollLogo} className="img-responsive" alt="dice roll" />
+                                <h3 className="h3-link">Dice Roll
+                                    <img src={dicerollLogo} className="img-responsive" alt="dice roll" />
+                                </h3>
                             </Link>
                             <br />
                             <p className="caption"><strong>Dice Roll</strong> is an Alexa game where 
@@ -63,8 +67,9 @@ class Games extends React.Component {
                         <div className="col-sm-3"></div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/games/songmatch">
-                                <h3 className="h3-link">Song Match</h3>
-                                <img src={songmatchLogo} className="img-responsive" alt="song match" />
+                                <h3 className="h3-link">Song Match
+                                    <img src={songmatchLogo} className="img-responsive" alt="song match" />
+                                </h3>
                             </Link>
                             <br />
                             <p className="caption"><strong>Song Match</strong> is an Alexa skill 

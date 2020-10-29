@@ -20,12 +20,12 @@ class Homepage extends React.Component {
                 </div>
                 <div className="jumbotron">
                     <div className="container text-center">
-                        <h1><strong>My </strong><strong className="orange">Portfolio</strong></h1>
+                        <h1>Brittany <strong className="orange">Hasty</strong></h1>
                         <p>I am a software engineer in San Francisco with experience in Javascript, Node.js, C++, C#, Unity, Ruby, Rails, Redux, React, MongoDB, PostgreSQL, Express, and more. I am most passionate about gaming and upcoming technology, and I'm ready to take them both to the next level. With me on your side, I'll make us the tech dream team that the world has been waiting for. </p>
                     </div>
                 </div>
                 <div className="container-fluid bg-3 text-center">    
-                    <h3 className="caption">Some of my Work:</h3><br />
+                    <h3 className="caption">Some of my work:</h3><br />
                     <div className="row">
                         <div className="col-sm-3">
                             <Link to="/projects/games/demozen">

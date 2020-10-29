@@ -30,6 +30,10 @@ footer {
   border-top: 6px solid #9D9D9D;
 }
 
+.jumbotron h2 {
+  color: rgb(255, 123, 0);
+}
+
 .navlink {
   text-decoration: none;
 }
@@ -44,7 +48,11 @@ footer {
   text-decoration: underline solid rgb(255, 123, 0);
 }
 
-.link-left:hover {
+a:hover,
+.link-left:hover,
+.link-right:hover,
+.footer-link:hover,
+.h3-link:hover {
   color: rgb(255, 123, 0);
   font-weight: bold;
   text-decoration: underline solid rgb(255, 123, 0);
@@ -56,20 +64,9 @@ footer {
   text-decoration: underline solid rgb(255, 123, 0);
 }
 
-.link-right:hover {
-  color: rgb(255, 123, 0);
-  font-weight: bold;
-  text-decoration: underline solid rgb(255, 123, 0);
-}
-
 .img-center {
   margin-left: auto;
   margin-right: auto;
-}
-
-.list-title {
-  font-weight: bold;
-  text-decoration: underline solid white;
 }
 
 .over {
@@ -93,14 +90,10 @@ a {
   text-decoration: underline solid white;
 }
 
-a:hover {
-  color: white;
-  text-decoration: underline solid white;
-  font-weight: bold;
-}
-
-.h3-link:hover {
-  font-weight: bold;
+.h3-link img {
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .expand-element {
@@ -142,15 +135,14 @@ a:hover {
   color: rgb(255, 123, 0);
 }
 
+.list-title {
+  color: rgb(255, 123, 0);
+  font-weight: bold;
+}
+
 .footer-link {
   color: rgb(255, 123, 0);
   text-decoration: underline solid rgb(255, 123, 0);
-}
-
-.footer-link:hover {
-  color: rgb(255, 123, 0);
-  text-decoration: underline solid rgb(255, 123, 0);
-  font-weight: bold;
 }
 
 footer img {

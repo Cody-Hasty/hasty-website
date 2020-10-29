@@ -16,8 +16,9 @@ class Others extends React.Component {
                         <div className="col-sm-3"></div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/others/qwerty">
-                                <h3>QWERTY</h3>
-                                <img src={qwertyLogo} className="img-responsive img-center" alt="qwerty" />
+                                <h3 className="h3-link">QWERTY
+                                    <img src={qwertyLogo} className="img-responsive img-center" alt="qwerty" />
+                                </h3>
                             </Link>
                             <br />
                             <p className="caption"><strong>QWERTY</strong> is an in-progress side 
