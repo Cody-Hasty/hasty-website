@@ -1,7 +1,9 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Homepage from './components/homepage/homepage';
+// import Blog from './components/blog/blog';
+// import Post from './components/blog/post';
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 
@@ -28,8 +30,12 @@ import Resume from './components/about/resume';
 function App() {
   return (
     <div id="routes">
+      <BrowserRouter>
         <Route path="/" component={Navbar} />
         <Switch>
+            {/* <Route path="/blog" component={Blog} /> */}
+            {/* <Route path="/blog/:id" component={Post} /> */}
+
             <Route path="/projects/others/qwerty" component={Qwerty} />
             <Route path="/projects/games/songmatch" component={SongMatch} />
             <Route path="/projects/games/ultraheated" component={UltraHeated} />
@@ -52,6 +58,7 @@ function App() {
             <Route exact path="/" component={Homepage} />
         </Switch>
         <Route path="/" component={Footer} />
+      </BrowserRouter>
     </div>
   );
 }

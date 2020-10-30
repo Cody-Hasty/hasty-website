@@ -1,5 +1,5 @@
 import React from 'react';
-import diceRollPic from '../../../images/projects/diceroll.png';
+import diceRollPic from '../../../images/projects/diceroll/diceroll.png';
 
 class DiceRoll extends React.Component {
     render() {

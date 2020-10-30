@@ -1,6 +1,6 @@
 import React from 'react';
-import queryPic1 from '../../../images/projects/query.png';
-import queryPic2 from '../../../images/projects/query2.png';
+import queryPic1 from '../../../images/projects/query/query.png';
+import queryPic2 from '../../../images/projects/query/query2.png';
 
 class Query extends React.Component {
     render() {

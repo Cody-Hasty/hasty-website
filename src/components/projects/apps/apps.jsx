@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import arpomLogo from '../../../images/projects/arpom.png'
-import arageLogo from '../../../images/projects/arage.png'
+import arpomLogo from '../../../images/projects/arpom/arpom.png'
+import arageLogo from '../../../images/projects/arage/arage.png'
 
 class Apps extends React.Component {
     render() {

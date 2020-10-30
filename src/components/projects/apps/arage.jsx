@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import aragePic1 from '../../../images/projects/arage.png';
+import aragePic1 from '../../../images/projects/arage/arage.png';
 
 class Arage extends React.Component {
     render() {

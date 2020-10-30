@@ -1,5 +1,5 @@
 import React from 'react';
-import lootPic1 from '../../../images/projects/loot.png';
+import lootPic1 from '../../../images/projects/loot/loot.png';
 
 class Loot extends React.Component {
     render() {

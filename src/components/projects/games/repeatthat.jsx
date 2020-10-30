@@ -1,5 +1,5 @@
 import React from 'react';
-import repeatthatLogo from '../../../images/projects/repeatthat.png';
+import repeatthatLogo from '../../../images/projects/repeatthat/repeatthat.png';
 
 class RepeatThat extends React.Component {
     render() {

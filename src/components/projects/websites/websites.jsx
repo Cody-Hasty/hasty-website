@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import lootLogo from '../../../images/projects/loot.png'
-import queryLogo from '../../../images/projects/query.png'
+import lootLogo from '../../../images/projects/loot/loot.png'
+import queryLogo from '../../../images/projects/query/query.png'
 
 class Websites extends React.Component {
     render() {

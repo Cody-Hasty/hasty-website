@@ -1,6 +1,12 @@
 import React from 'react';
-import demozenPic1 from '../../../images/projects/demozen.png';
-import demozenPic2 from '../../../images/projects/demozen2.png';
+import demozenPic1 from '../../../images/projects/demozen/demozen.png';
+import demozenPic2 from '../../../images/projects/demozen/demozen2.png';
+import axisPic from '../../../images/projects/demozen/axis.png';
+import levelLayoutPic from '../../../images/projects/demozen/level-layout.png';
+import levelSolarSysPic from '../../../images/projects/demozen/level-solar-system.png';
+import solarSysPic from '../../../images/projects/demozen/solar-system.png';
+import worldDiagramPic from '../../../images/projects/demozen/world-diagram.png';
+
 
 class Demozen extends React.Component {
     render() {

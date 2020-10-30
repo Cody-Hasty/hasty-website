@@ -1,5 +1,5 @@
 import React from 'react';
-import qwertyPic1 from '../../../images/projects/qwerty.png';
+import qwertyPic1 from '../../../images/projects/qwerty/qwerty.png';
 
 class Qwerty extends React.Component {
     render() {

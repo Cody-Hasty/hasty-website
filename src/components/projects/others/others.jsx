@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import qwertyLogo from '../../../images/projects/qwerty.png'
+import qwertyLogo from '../../../images/projects/qwerty/qwerty.png'
 
 class Others extends React.Component {
     render() {

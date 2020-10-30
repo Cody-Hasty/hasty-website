@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import demozenLogo from '../../../images/projects/demozen.png'
-import ultraheatedLogo from '../../../images/projects/ultraheated.png'
-import songmatchLogo from '../../../images/projects/songMatchIcon.png'
-import dicerollLogo from '../../../images/projects/diceroll.png'
-import repeatthatLogo from '../../../images/projects/repeatthat.png';
+import demozenLogo from '../../../images/projects/demozen/demozen.png'
+import ultraheatedLogo from '../../../images/projects/ultraheated/ultraheated.png'
+import songmatchLogo from '../../../images/projects/songmatch/songMatchIcon.png'
+import dicerollLogo from '../../../images/projects/diceroll/diceroll.png'
+import repeatthatLogo from '../../../images/projects/repeatthat/repeatthat.png';
 
 class Games extends React.Component {
     render() {

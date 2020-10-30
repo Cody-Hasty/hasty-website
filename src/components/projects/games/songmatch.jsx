@@ -1,7 +1,7 @@
 import React from 'react';
-import songMatchPic1 from '../../../images/projects/songMatchIcon.png';
-import songMatchPic2 from '../../../images/projects/Sample-Dialogue.png';
-import songMatchPic3 from '../../../images/projects/Song-Match.png';
+import songMatchPic1 from '../../../images/projects/songmatch/songMatchIcon.png';
+import songMatchPic2 from '../../../images/projects/songmatch/Sample-Dialogue.png';
+import songMatchPic3 from '../../../images/projects/songmatch/Song-Match.png';
 
 class SongMatch extends React.Component {
     render() {

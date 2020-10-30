@@ -1,6 +1,6 @@
 import React from 'react';
 import Unity, { UnityContent } from 'react-unity-webgl'
-import ultraHeatedPic1 from '../../../images/projects/ultraheated.png';
+import ultraHeatedPic1 from '../../../images/projects/ultraheated/ultraheated.png';
 
 class UltraHeated extends React.Component {
     render() {

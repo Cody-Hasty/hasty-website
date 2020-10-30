@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import demozenLogo from '../../images/projects/demozen.png'
-import lootLogo from '../../images/projects/loot.png'
-import queryLogo from '../../images/projects/query.png'
-import songmatchLogo from '../../images/projects/songMatchIcon.png'
-import ultraheatedLogo from '../../images/projects/ultraheated.png'
-import arpomLogo from '../../images/projects/arpom.png'
-import arageLogo from '../../images/projects/arage.png'
-import qwertyLogo from '../../images/projects/qwerty.png'
-import repeatthatLogo from '../../images/projects/repeatthat.png';
-import dicerollLogo from '../../images/projects/diceroll.png';
+import demozenLogo from '../../images/projects/demozen/demozen.png'
+import lootLogo from '../../images/projects/loot/loot.png'
+import queryLogo from '../../images/projects/query/query.png'
+import songmatchLogo from '../../images/projects/songmatch/songMatchIcon.png'
+import ultraheatedLogo from '../../images/projects/ultraheated/ultraheated.png'
+import arpomLogo from '../../images/projects/arpom/arpom.png'
+import arageLogo from '../../images/projects/arage/arage.png'
+import qwertyLogo from '../../images/projects/qwerty/qwerty.png'
+import repeatthatLogo from '../../images/projects/repeatthat/repeatthat.png';
+import dicerollLogo from '../../images/projects/diceroll/diceroll.png';
 
 class Homepage extends React.Component {
     render() {
@@ -22,7 +22,7 @@ class Homepage extends React.Component {
                     </div>
                 </div>
                 <div className="container-fluid bg-3 text-center">    
-                    <h3 className="caption">Some of my work:</h3><br />
+                    <h3 className="caption">Check out some of my work:</h3><br />
                     <div className="row">
                         <div className="col-sm-3">
                             <Link to="/projects/games/demozen">
