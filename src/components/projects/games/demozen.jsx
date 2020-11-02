@@ -50,6 +50,10 @@ class Demozen extends React.Component {
                                 <li>Webpack</li>
                                 <li>Git</li>
                             </ul>
+                            <div className="expand-element">
+                                {/* <img src={} alt="" /> */}
+                            </div>
+
                         </div>
                         <div className="col-sm-1" />
                     </div>

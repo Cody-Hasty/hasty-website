@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Homepage from './components/homepage/homepage';
 // import Blog from './components/blog/blog';
@@ -30,35 +30,33 @@ import Resume from './components/about/resume';
 function App() {
   return (
     <div id="routes">
-      <BrowserRouter>
-        <Route path="/" component={Navbar} />
-        <Switch>
-            {/* <Route path="/blog" component={Blog} /> */}
-            {/* <Route path="/blog/:id" component={Post} /> */}
+      <Route path="/" component={Navbar} />
+      <Switch>
+          {/* <Route path="/blog" component={Blog} /> */}
+          {/* <Route path="/blog/:id" component={Post} /> */}
 
-            <Route path="/projects/others/qwerty" component={Qwerty} />
-            <Route path="/projects/games/songmatch" component={SongMatch} />
-            <Route path="/projects/games/ultraheated" component={UltraHeated} />
-            <Route path="/projects/games/demozen" component={Demozen} />
-            <Route path="/projects/games/diceroll" component={DiceRoll} />
-            <Route path="/projects/games/repeatthat" component={RepeatThat} />
-            <Route path="/projects/apps/arage" component={Arage} />
-            <Route path="/projects/apps/arpom" component={Arpom} />
-            <Route path="/projects/websites/loot" component={Loot} />
-            <Route path="/projects/websites/query" component={Query} />
+          <Route path="/projects/others/qwerty" component={Qwerty} />
+          <Route path="/projects/games/songmatch" component={SongMatch} />
+          <Route path="/projects/games/ultraheated" component={UltraHeated} />
+          <Route path="/projects/games/demozen" component={Demozen} />
+          <Route path="/projects/games/diceroll" component={DiceRoll} />
+          <Route path="/projects/games/repeatthat" component={RepeatThat} />
+          <Route path="/projects/apps/arage" component={Arage} />
+          <Route path="/projects/apps/arpom" component={Arpom} />
+          <Route path="/projects/websites/loot" component={Loot} />
+          <Route path="/projects/websites/query" component={Query} />
 
-            <Route path="/about/contact" component={Contact} />
-            <Route path="/about/repository" component={Repository} />
-            <Route path="/about/resume" component={Resume} />
+          <Route path="/about/contact" component={Contact} />
+          <Route path="/about/repository" component={Repository} />
+          <Route path="/about/resume" component={Resume} />
 
-            <Route path="/projects/apps" component={Apps} />
-            <Route path="/projects/games" component={Games} />
-            <Route path="/projects/websites" component={Websites} /> 
-            <Route path="/projects/others" component={Others} />
-            <Route exact path="/" component={Homepage} />
-        </Switch>
-        <Route path="/" component={Footer} />
-      </BrowserRouter>
+          <Route path="/projects/apps" component={Apps} />
+          <Route path="/projects/games" component={Games} />
+          <Route path="/projects/websites" component={Websites} /> 
+          <Route path="/projects/others" component={Others} />
+          <Route exact path="/" component={Homepage} />
+      </Switch>
+      <Route path="/" component={Footer} />
     </div>
   );
 }
