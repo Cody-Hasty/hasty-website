@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageGroup, Image } from 'react-fullscreen-image';
 import lootPic1 from '../../../images/projects/loot/loot.png';
 
 class Loot extends React.Component {
@@ -18,8 +19,14 @@ class Loot extends React.Component {
                             <div className="col-sm-1" />
                             <div className="col-sm-5 text-center">
                                 <h4 className="list-title">Home Page:</h4>
-                                <div className="expand-element">
-                                    <img src={lootPic1} alt="loot homepage" />
+                                <div className="fullscreen-container expand-element">
+                                    <ImageGroup>
+                                        <ul className="images">
+                                            <li>
+                                                <Image src={lootPic1} alt="loot homepage" />
+                                            </li>
+                                        </ul>
+                                    </ImageGroup>
                                 </div>
                             </div>
                             <div className="col-sm-5 text-left">

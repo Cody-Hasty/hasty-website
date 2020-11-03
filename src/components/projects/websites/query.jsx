@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageGroup, Image } from 'react-fullscreen-image';
 import queryPic1 from '../../../images/projects/query/query.png';
 import queryPic2 from '../../../images/projects/query/query2.png';
 
@@ -19,12 +20,24 @@ class Query extends React.Component {
                         <div className="col-sm-1" />
                         <div className="col-sm-5 text-center">
                             <h4 className="list-title">Home Page:</h4>
-                            <div className="expand-element">
-                                <img src={queryPic1} alt="query homepage" />
+                            <div className="fullscreen-container expand-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={queryPic1} alt="query homepage" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
                             </div>
                             <br /><h4 className="list-title">Front Page:</h4>
-                            <div className="expand-element">
-                                <img src={queryPic2} alt="query frontpage" />
+                            <div className="fullscreen-container expand-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={queryPic2} alt="query frontpage" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
                             </div>
                         </div>
                         <div className="col-sm-5 text-left">

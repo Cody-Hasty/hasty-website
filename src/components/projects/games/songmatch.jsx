@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageGroup, Image } from 'react-fullscreen-image';
 import songMatchPic1 from '../../../images/projects/songmatch/songMatchIcon.png';
 import songMatchPic2 from '../../../images/projects/songmatch/Sample-Dialogue.png';
 import songMatchPic3 from '../../../images/projects/songmatch/Song-Match.png';
@@ -22,12 +23,24 @@ class SongMatch extends React.Component {
                         <div className="col-sm-1" />
                         <div className="col-sm-5 text-center">
                             <h4 className="list-title">Logo:</h4>
-                            <div className="expand-element">
-                                <img src={songMatchPic1} alt="song match logo" />
+                            <div className="fullscreen-container expand-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={songMatchPic1} alt="song match logo" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
                             </div>
                             <br /><h4 className="list-title">Dialogue Sample:</h4>
-                            <div className="expand-tall-element">
-                                <img src={songMatchPic2} alt="song match dialogue example" />
+                            <div className="fullscreen-container tall-fullscreen">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={songMatchPic2} alt="song match dialogue example" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
                             </div>
                             <br /><h4 className="list-title">Full Demo:</h4>
                             <div className="expand-element">
@@ -54,9 +67,15 @@ class SongMatch extends React.Component {
                         <div className="col-sm-1" />
                         <div className="col-sm-10">
                             <h4 className="list-title">Full Dialogue Model:</h4>
-                            <div className="expand-mega-element">
-                                <img src={songMatchPic3} alt="song match dialogue graph" />
-                            </div>                            
+                            <div className="fullscreen-container expand-mega-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={songMatchPic3} alt="song match dialogue graph" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
+                            </div>                          
                         </div>
                         <div className="col-sm-1" />
                     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageGroup, Image } from 'react-fullscreen-image';
 import Unity, { UnityContent } from 'react-unity-webgl'
 import ultraHeatedPic1 from '../../../images/projects/ultraheated/ultraheated.png';
 
@@ -26,8 +27,14 @@ class UltraHeated extends React.Component {
                         <div className="col-sm-1" />
                         <div className="col-sm-5 text-center">
                             <h4 className="list-title">Sample Level Start:</h4>
-                            <div className="expand-element">
-                                <img src={ultraHeatedPic1} alt="ultra heated level 5" />
+                            <div className="fullscreen-container expand-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={ultraHeatedPic1} alt="ultra heated level 5" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
                             </div>
                         </div>
                         <div className="col-sm-5 text-left">

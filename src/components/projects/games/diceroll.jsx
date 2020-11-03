@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageGroup, Image } from 'react-fullscreen-image';
 import diceRollPic from '../../../images/projects/diceroll/diceroll.png';
 
 class DiceRoll extends React.Component {
@@ -21,8 +22,14 @@ class DiceRoll extends React.Component {
                         <div className="col-sm-1" />
                         <div className="col-sm-5 text-center">
                             <h4 className="list-title">Logo:</h4>
-                            <div className="expand-element">
-                                <img src={diceRollPic} alt="song match logo" />
+                            <div className="fullscreen-container expand-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={diceRollPic} alt="dice roll logo" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
                             </div>
                             {/* <br /><h4 className="list-title">Full Demo:</h4> */}
                             {/* <div className="expand-element">

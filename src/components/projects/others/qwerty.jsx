@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageGroup, Image } from 'react-fullscreen-image';
 import qwertyPic1 from '../../../images/projects/qwerty/qwerty.png';
 
 class Qwerty extends React.Component {
@@ -16,8 +17,14 @@ class Qwerty extends React.Component {
                         <div className="col-sm-1" />
                         <div className="col-sm-5 text-center">
                             <h4 className="list-title">3D Model Overview:</h4>
-                            <div className="expand-element">
-                                <img src={qwertyPic1} alt="qwerty" />
+                            <div className="fullscreen-container expand-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={qwertyPic1} alt="qwerty" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
                             </div>
                         </div>
                         <div className="col-sm-5 text-left">

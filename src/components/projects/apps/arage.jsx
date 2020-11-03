@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ImageGroup, Image } from 'react-fullscreen-image';
 import aragePic1 from '../../../images/projects/arage/arage.png';
 
 class Arage extends React.Component {
@@ -19,8 +20,14 @@ class Arage extends React.Component {
                         <div className="col-sm-1" />
                         <div className="col-sm-5 text-center">
                             <h4 className="list-title">Logo:</h4>
-                            <div className="expand-element">
-                                <img src={aragePic1} alt="arage logo"/>
+                            <div className="fullscreen-container expand-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={aragePic1} alt="arage logo" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
                             </div>
                             <br />
                             <h4 className="list-title">Product Pitch:</h4>

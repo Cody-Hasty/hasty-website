@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ImageGroup, Image } from 'react-fullscreen-image';
 import arpomPic1 from '../../../images/projects/arpom/arpom.png';
 
 class Arpom extends React.Component {
@@ -20,8 +21,14 @@ class Arpom extends React.Component {
                         <div className="col-sm-1" />
                         <div className="col-sm-5 text-center">
                             <h4 className="list-title">Logo:</h4>
-                            <div className="expand-element">
-                                <img src={arpomPic1} alt="arpom logo" />
+                            <div className="fullscreen-container expand-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={arpomPic1} alt="arpom logo" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
                             </div>
                             <br /><h4 className="list-title">Product Pitch:</h4>
                             <div className="expand-element">
