@@ -204,3 +204,12 @@ a {
 footer img {
   padding: 5px;
 }
+
+
+#document canvas {
+  background-color: black;
+}
+
+.solid-viewer {
+  background-color: black;
+}

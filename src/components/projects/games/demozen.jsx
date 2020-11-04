@@ -59,9 +59,8 @@ class Demozen extends React.Component {
                         <h4><a href="https://github.com/Brittany-Hasty/demozen" className="link-right">Github</a></h4>
                         <h2><strong>Demozen</strong></h2><br/>
                         <p>"Demozen is a three-dimensional abstract world 
-                            exploration game using three.js and WebGL. 
-                            It was styled as a fusion between <a href="https://en.wikipedia.org/wiki/Synthwave">Synthwave</a> and <a href="https://en.wikipedia.org/wiki/Demoscene">Demoscene</a> culture, 
-                            where 'Demozen' refers to an in-game character, a.k.a. the denizen of the Demoscene."</p>
+                            exploration game implemented with three.js and 
+                            WebGL."</p>
                     </div>
                 </div>
                 <div className="container-fluid bg-3 text-center">
@@ -92,7 +91,14 @@ class Demozen extends React.Component {
                         <div className="col-sm-5 text-left">
                             <h4 className="list-title">Overview:</h4>
                             <ul>
-                                Please check back later for description.
+                                <p>Demozen is a three-dimensional abstract world
+                                exploration game implemented with three.js and 
+                                WebGL. It was styled as a fusion 
+                                between <a href="https://en.wikipedia.org/wiki/Synthwave">Synthwave</a> and <a href="https://en.wikipedia.org/wiki/Demoscene">Demoscene</a> culture
+                                , where 'Demozen' refers to an in-game 
+                                character, a.k.a. the denizen of the Demoscene.
+                                </p>
+                                <p>Please check back later for full description.</p>
                             </ul><br/>
                             <h4 className="list-title">Technology:</h4>
                             <ul>

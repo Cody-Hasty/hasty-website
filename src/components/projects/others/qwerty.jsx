@@ -40,7 +40,11 @@ class Qwerty extends React.Component {
                             </ul><br/>
                             <h4 className="list-title">Current 3D model:</h4>
                             <div className="expand-element">
-                                <iframe src='https://render.githubusercontent.com/view/3d?url=https://raw.githubusercontent.com/brittany-hasty/hasty-website/master/src/components/projects/others/QWERTY.stl' title='QWERTY.stl' frameBorder="0" />
+                                <iframe 
+                                    src='https://render.githubusercontent.com/view/3d?url=https://raw.githubusercontent.com/brittany-hasty/hasty-website/master/src/components/projects/others/QWERTY.stl' 
+                                    title='QWERTY.stl' 
+                                    frameBorder="0" 
+                                />
                             </div>
                         </div>
                         <div className="col-sm-1" />
