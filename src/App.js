@@ -54,7 +54,7 @@ function App() {
           <Route path="/projects/games" component={Games} />
           <Route path="/projects/websites" component={Websites} /> 
           <Route path="/projects/others" component={Others} />
-          <Route exact path="/" component={Homepage} />
+          <Route path="/" component={Homepage} />
       </Switch>
       <Route path="/" component={Footer} />
     </div>
