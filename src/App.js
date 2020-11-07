@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Homepage from './components/homepage/homepage';
 // import Blog from './components/blog/blog';
@@ -54,7 +54,8 @@ function App() {
           <Route path="/projects/games" component={Games} />
           <Route path="/projects/websites" component={Websites} /> 
           <Route path="/projects/others" component={Others} />
-          <Route path="/" component={Homepage} />
+          <Route exact path="/" component={Homepage} />
+          <Route render={() => <Redirect to={{pathname: "/"}} />} />
       </Switch>
       <Route path="/" component={Footer} />
     </div>
