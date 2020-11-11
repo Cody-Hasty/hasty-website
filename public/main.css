@@ -109,6 +109,13 @@ a:hover,
   text-decoration: underline solid rgb(255, 123, 0);
 }
 
+.link-left:focus,
+.link-right:focus,
+.footer-link:focus {
+  color: white;
+  text-decoration: underline solid white;
+}
+
 .link-right {
   color: rgb(255, 123, 0);
   float: right;
@@ -139,7 +146,10 @@ a {
   padding-top: 56.25%;
 }
 
-.expand-element, .expand-tall-element, .expand-mega-element, .expand-document {
+.expand-element, 
+.expand-tall-element, 
+.expand-mega-element, 
+.expand-document {
   overflow: hidden;
   position: relative;
   margin: 10px;
@@ -157,7 +167,11 @@ a {
   padding-top: 95%;
 }
 
-.expand-element iframe, .expand-element img, .expand-tall-element img, .expand-mega-element img, .expand-document iframe {
+.expand-element iframe, 
+.expand-element img, 
+.expand-tall-element img, 
+.expand-mega-element img, 
+.expand-document iframe {
   border: 0;
   height: 100%;
   left: 0;

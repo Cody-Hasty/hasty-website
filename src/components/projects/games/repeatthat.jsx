@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImageGroup, Image } from 'react-fullscreen-image';
+import thumbnail from '../../../images/projects/repeatthat/thumbnail.png';
 import repeatthatLogo from '../../../images/projects/repeatthat/repeatthat.png';
 
 class RepeatThat extends React.Component {
@@ -20,7 +21,17 @@ class RepeatThat extends React.Component {
                     <div className="row">
                         <div className="col-sm-1" />
                         <div className="col-sm-5 text-center">
-                            <h4 className="list-title">Logo:</h4>
+                            <h4 className="list-title">Thumbnail:</h4>
+                            <div className="fullscreen-container expand-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={thumbnail} alt="repeat that thumbnail" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
+                            </div>
+                            <br /><h4 className="list-title">Landing Page:</h4>
                             <div className="fullscreen-container expand-element">
                                 <ImageGroup>
                                     <ul className="images">

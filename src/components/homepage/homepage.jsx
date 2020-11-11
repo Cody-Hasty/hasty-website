@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import demozenLogo from '../../images/projects/demozen/demozen.png'
-import lootLogo from '../../images/projects/loot/loot.png'
-import queryLogo from '../../images/projects/query/query.png'
+import demozenLogo from '../../images/projects/demozen/thumbnail.png'
+import lootLogo from '../../images/projects/loot/thumbnail.png'
+import queryLogo from '../../images/projects/query/thumbnail.png'
 import songmatchLogo from '../../images/projects/songmatch/songMatchIcon.png'
-import ultraheatedLogo from '../../images/projects/ultraheated/ultraheated.png'
+import ultraheatedLogo from '../../images/projects/ultraheated/thumbnail.png'
 import arpomLogo from '../../images/projects/arpom/arpom.png'
 import arageLogo from '../../images/projects/arage/arage.png'
 import qwertyLogo from '../../images/projects/qwerty/qwerty.png'
-import repeatthatLogo from '../../images/projects/repeatthat/repeatthat.png';
+import repeatthatLogo from '../../images/projects/repeatthat/thumbnail.png';
 import dicerollLogo from '../../images/projects/diceroll/diceroll.png';
 
 class Homepage extends React.Component {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImageGroup, Image } from 'react-fullscreen-image';
+import thumbnail from '../../../images/projects/demozen/thumbnail.png';
 import demozenPic1 from '../../../images/projects/demozen/demozen.png';
 import demozenPic2 from '../../../images/projects/demozen/demozen2.png';
 import axisPic from '../../../images/projects/demozen/axis.png';
@@ -67,7 +68,17 @@ class Demozen extends React.Component {
                     <div className="row">
                         <div className="col-sm-1" />
                         <div className="col-sm-5 text-center">
-                            <h4 className="list-title">Loading / Start Screen:</h4>
+                            <h4 className="list-title">Thumbnail:</h4>
+                            <div className="fullscreen-container expand-element">
+                                <ImageGroup>
+                                    <ul className="images">
+                                        <li>
+                                            <Image src={thumbnail} alt="demozen thumbnail" />
+                                        </li>
+                                    </ul>
+                                </ImageGroup>
+                            </div>
+                            <br /><h4 className="list-title">Loading / Start Screen:</h4>
                             <div className="fullscreen-container expand-element">
                                 <ImageGroup>
                                     <ul className="images">
