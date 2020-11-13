@@ -33,6 +33,14 @@ class Arpom extends React.Component {
                             <br /><h4 className="list-title">Product Pitch:</h4>
                             <div className="expand-element">
                                 <iframe src="https://www.youtube.com/embed/whykdv8uMl4" title="ARPOM Demo" frameBorder="0" />
+                            </div>                            
+                            <br />
+                            <h4 className="list-title">Full Demo:</h4>
+                            <div className="expand-element">
+                                <iframe
+                                    src="https://www.youtube.com/embed/29mmbOcuTRk"
+                                    title="ARPOM Demo"
+                                    frameBorder="0" />
                             </div>
                         </div>
                         <div className="col-sm-5 text-left">

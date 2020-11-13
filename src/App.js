@@ -26,6 +26,7 @@ import Query from './components/projects/websites/query';
 import Contact from './components/about/contact';
 import Repository from './components/about/repository';
 import Resume from './components/about/resume';
+import Education from './components/about/education';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path="/about/contact" component={Contact} />
           <Route path="/about/repository" component={Repository} />
           <Route path="/about/resume" component={Resume} />
+          {/* <Route path="/about/education" component={Education} /> */}
 
           <Route path="/projects/apps" component={Apps} />
           <Route path="/projects/games" component={Games} />
