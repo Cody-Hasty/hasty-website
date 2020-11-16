@@ -24,7 +24,7 @@ class Navbar extends React.Component {
                                 <ul className="dropdown-menu">
                                     <li><Link to="/about/resume" className="navlink">Resume</Link></li>
                                     <li><Link to="/about/repository" className="navlink">Repository</Link></li>
-                                    {/* <li><Link to="/about/education" className="navlink">Education</Link></li> */}
+                                    <li><Link to="/about/education" className="navlink">Education</Link></li>
                                 </ul>
                             </li>
                             <li className="dropdown">

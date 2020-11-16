@@ -50,7 +50,7 @@ function App() {
           <Route path="/about/contact" component={Contact} />
           <Route path="/about/repository" component={Repository} />
           <Route path="/about/resume" component={Resume} />
-          {/* <Route path="/about/education" component={Education} /> */}
+          <Route path="/about/education" component={Education} />
 
           <Route path="/projects/apps" component={Apps} />
           <Route path="/projects/games" component={Games} />

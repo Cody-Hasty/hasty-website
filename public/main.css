@@ -92,6 +92,10 @@ footer {
   margin-left: 5px;
 }
 
+.banner {
+  padding-bottom: 15px;
+}
+
 .link-left {
   color: rgb(255, 123, 0);
   float: left;
