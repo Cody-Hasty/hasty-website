@@ -13,6 +13,7 @@ import Others from './components/projects/others/others';
 import Websites from './components/projects/websites/websites';
 
 import Qwerty from './components/projects/others/qwerty';
+import Ion from './components/projects/others/ion';
 import SongMatch from './components/projects/games/songmatch';
 import UltraHeated from './components/projects/games/ultraheated';
 import Demozen from './components/projects/games/demozen';
@@ -37,6 +38,7 @@ function App() {
           {/* <Route path="/blog/:id" component={Post} /> */}
 
           <Route path="/projects/others/qwerty" component={Qwerty} />
+          <Route path="/projects/others/ion" component={Ion} />
           <Route path="/projects/games/songmatch" component={SongMatch} />
           <Route path="/projects/games/ultraheated" component={UltraHeated} />
           <Route path="/projects/games/demozen" component={Demozen} />

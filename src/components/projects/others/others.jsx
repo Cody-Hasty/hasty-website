@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import qwertyLogo from '../../../images/projects/qwerty/qwerty.png'
+import ionLogo from '../../../images/projects/ion/thumbnail.png';
+import qwertyLogo from '../../../images/projects/qwerty/qwerty.png';
 
 class Others extends React.Component {
     render() {
@@ -13,7 +14,17 @@ class Others extends React.Component {
                 </div>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-sm-3"></div>
+                        <div className="col-sm-6 text-center">
+                            <Link to="/projects/others/ion">
+                                <h3 className="h3-link">Ion
+                                    <img src={ionLogo} className="img-responsive" alt="ion ion"/>
+                                </h3>
+                            </Link>
+                            <br />
+                            <p className="caption"><strong>Ion</strong> is a 
+                            math-intensive simulation of the electrons within a 
+                            Lithium atom through MATLAB's Simulink.</p>
+                        </div>
                         <div className="col-sm-6 text-center">
                             <Link to="/projects/others/qwerty">
                                 <h3 className="h3-link">QWERTY
@@ -26,7 +37,6 @@ class Others extends React.Component {
                             interactive ai pet fox.</p>
                         </div>
                     </div>
-                    <div className="col-sm-3"></div>
                 </div>
             </div>
         )

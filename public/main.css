@@ -4,15 +4,12 @@
 
 .fullscreen-container {
   display: contents;
-  max-height: 20vh;
 }
-
 
 .fullscreen-exit-btn g {
   fill: white;
   stroke: white;
 }
-
 
 ul.images {
   display: grid;
@@ -151,16 +148,11 @@ a {
 }
 
 .expand-element, 
-.expand-tall-element, 
 .expand-mega-element, 
 .expand-document {
   overflow: hidden;
   position: relative;
   margin: 10px;
-}
-
-.expand-tall-element {
-  padding-top: 80%;
 }
 
 .expand-mega-element {
@@ -173,7 +165,6 @@ a {
 
 .expand-element iframe, 
 .expand-element img, 
-.expand-tall-element img, 
 .expand-mega-element img, 
 .expand-document iframe {
   border: 0;
@@ -225,6 +216,10 @@ footer img {
 
 #document canvas {
   background-color: black;
+}
+
+.formula {
+  width: 100%;
 }
 
 .solid-viewer {

@@ -10,6 +10,7 @@ import arageLogo from '../../images/projects/arage/arage.png'
 import qwertyLogo from '../../images/projects/qwerty/qwerty.png'
 import repeatthatLogo from '../../images/projects/repeatthat/thumbnail.png';
 import dicerollLogo from '../../images/projects/diceroll/diceroll.png';
+import ionLogo from '../../images/projects/ion/thumbnail.png';
 
 class Homepage extends React.Component {
     render() {
@@ -28,7 +29,7 @@ class Homepage extends React.Component {
                             <Link to="/projects/games/demozen">
                                 <p>Demozen</p>
                                 <div className="expand-element">
-                                    <img src={demozenLogo} className="img-responsive" style={{width: '100%'}} alt="demozen" />
+                                    <img src={demozenLogo} className="img-responsive" alt="demozen" />
                                 </div>
                             </Link>
                         </div>
@@ -36,7 +37,7 @@ class Homepage extends React.Component {
                             <Link to="/projects/websites/loot">
                                 <p>LOOT</p>
                                 <div className="expand-element">
-                                    <img src={lootLogo} className="img-responsive" style={{width: '100%'}} alt="loot" />
+                                    <img src={lootLogo} className="img-responsive" alt="loot" />
                                 </div>
                             </Link>
                         </div>
@@ -44,7 +45,7 @@ class Homepage extends React.Component {
                             <Link to="/projects/websites/query">
                                 <p>Query</p>
                                 <div className="expand-element">
-                                    <img src={queryLogo} className="img-responsive" style={{width: '100%'}} alt="query" />
+                                    <img src={queryLogo} className="img-responsive" alt="query" />
                                 </div>
                             </Link>
                         </div>
@@ -65,7 +66,15 @@ class Homepage extends React.Component {
                             <Link to="/projects/games/ultraheated">
                                 <p>Ultra Heated</p>
                                 <div className="expand-element">
-                                    <img src={ultraheatedLogo} className="img-responsive" style={{width: '100%'}} alt="ultra heated" />
+                                    <img src={ultraheatedLogo} className="img-responsive" alt="ultra heated" />
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-sm-3"> 
+                            <Link to="/projects/others/ion">
+                                <p>Ion</p>
+                                <div className="expand-element">
+                                    <img src={ionLogo} className="img-responsive" alt="Ion, the Lithium atom simulation"/>
                                 </div>
                             </Link>
                         </div>
@@ -73,23 +82,15 @@ class Homepage extends React.Component {
                             <Link to="/projects/apps/arpom">
                                 <p>ARPOM</p>
                                 <div className="expand-element">
-                                    <img src={arpomLogo} className="img-responsive" style={{width: '100%'}} alt="arpom" />
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="col-sm-3"> 
-                            <Link to="/projects/apps/arage">
-                                <p>ARAGE</p>
-                                <div className="expand-element">
-                                    <img src={arageLogo} className="img-responsive" style={{width: '100%'}} alt="arage" />
+                                    <img src={arpomLogo} className="img-responsive" alt="arpom" />
                                 </div>
                             </Link>
                         </div>
                         <div className="col-sm-3">
-                            <Link to="/projects/others/qwerty">
-                                <p>QWERTY</p>
+                            <Link to="/projects/apps/arage">
+                                <p>ARAGE</p>
                                 <div className="expand-element">
-                                    <img src={qwertyLogo} className="img-responsive" style={{width: '100%'}} alt="qwerty" />
+                                    <img src={arageLogo} className="img-responsive" alt="arage" />
                                 </div>
                             </Link>
                         </div>
@@ -98,7 +99,6 @@ class Homepage extends React.Component {
 
                 <div className="container-fluid bg-3 text-center">
                     <div className="row">
-                        <div className="col-sm-3"></div>
                         <div className="col-sm-3">
                             <Link to="/projects/games/songmatch">
                                 <p>Song Match</p>
@@ -112,6 +112,14 @@ class Homepage extends React.Component {
                                 <p>Dice Roll</p>
                                 <div className="expand-element">
                                     <img src={dicerollLogo} className="img-responsive" style={{ width: '100%' }} alt="dice roll" />
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-sm-3">
+                            <Link to="/projects/others/qwerty">
+                                <p>QWERTY</p>
+                                <div className="expand-element">
+                                    <img src={qwertyLogo} className="img-responsive" alt="qwerty" />
                                 </div>
                             </Link>
                         </div>
