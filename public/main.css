@@ -225,3 +225,7 @@ footer img {
 .solid-viewer {
   background-color: black;
 }
+
+.indented {
+  padding-left: 25px;
+}

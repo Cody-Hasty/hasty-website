@@ -35,13 +35,20 @@ class Demozen extends React.Component {
         ]
 
         return this.state.showSpoilers ? (
-            <ImageGroup>
-                {images.map(i => (
-                    <li key={i}>
-                        <Image src={i} alt="" />
-                    </li>
-                ))}
-            </ImageGroup>
+            <div className="indented">
+                <h4 className="list-title">World Design (Click for fullscreen):</h4>
+                <div className="fullscreen-container expand-element">
+                    <ImageGroup>
+                        <ul className="images">
+                            {images.map(i => (
+                                <li key={i}>
+                                    <Image src={i} alt="" />
+                                </li>
+                            ))}
+                        </ul>
+                    </ImageGroup>
+                </div>
+            </div>
         ) : (
             <div></div>
         )
@@ -120,33 +127,18 @@ class Demozen extends React.Component {
                                 <li>Webpack</li>
                                 <li>Git</li>
                             </ul>
-                        </div>
-                        <div className="col-sm-1" />
-                    </div>
-                    {/* <div className="row">
-                        <div className="col-sm-1" />
-                        <div className="col-sm-10 text-center">
                             <div className="list-spoiler-box">
                                 <h4 className="list-title">Details (Contains Spoilers!): </h4>
                                 <button className="list-title-button" onClick={() => this.spoilerToggle()}>
                                     {this.buttonDisplay()}
                                 </button>
                             </div>
-                        </div> 
-                        <div className="col-sm-1" />
-                    </div>
-                    <div className="row">
-                        <div className="col-sm-1" />
-                        <div className="col-sm-5 text-center">
                             <div className="spoiler-photobox">
                                 {this.spoilerDisplay()}
                             </div>
                         </div>
-                        <div className="col-sm-5 text-left">
-
-                        </div> 
                         <div className="col-sm-1" />
-                    </div> */}
+                    </div>
                 </div>
             </div>
         )
