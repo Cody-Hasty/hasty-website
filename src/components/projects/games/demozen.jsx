@@ -36,7 +36,7 @@ class Demozen extends React.Component {
 
         return this.state.showSpoilers ? (
             <div className="indented">
-                <h4 className="list-title">World Design (Click for fullscreen):</h4>
+                <h4 className="list-title white">World Design (Click for fullscreen):</h4>
                 <div className="fullscreen-container expand-element">
                     <ImageGroup>
                         <ul className="images">
