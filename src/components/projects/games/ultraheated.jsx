@@ -7,7 +7,7 @@ import ultraHeatedPic1 from '../../../images/projects/ultraheated/ultraheated.pn
 class UltraHeated extends React.Component {
     render() {
         const unityContent = new UnityContent(
-            "./Build/assets.json",
+            "./Build/Compressed.json",
             "./Build/UnityLoader.js"
         );
         
@@ -68,7 +68,7 @@ class UltraHeated extends React.Component {
                         <div className="col-sm-10">
                             <br/><br/>
                             <h4 className="list-title">Full Game:</h4>
-                            <br/><p>Press escape or F5 to exit fullscreen, game includes sound effects so please be prepared for audio!</p><br/>
+                            <br/><p>Game includes sound effects so please be prepared for audio!</p><br/>
                             <Unity unityContent={unityContent} />
                         </div>
                         <div className="col-sm-1" />
