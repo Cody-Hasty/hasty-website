@@ -4,6 +4,10 @@ import arpomLogo from '../../../images/projects/arpom/arpom.png'
 import arageLogo from '../../../images/projects/arage/arage.png'
 
 class Apps extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

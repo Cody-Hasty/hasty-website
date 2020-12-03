@@ -28,6 +28,10 @@ import threeDLithTrial from '../../../images/projects/ion/3dlithtrial.png';
 import combinedGif from '../../../images/projects/ion/combinedgif.gif';
 
 class Ion extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

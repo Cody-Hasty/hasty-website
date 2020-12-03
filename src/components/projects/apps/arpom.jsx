@@ -4,6 +4,10 @@ import { ImageGroup, Image } from 'react-fullscreen-image';
 import arpomPic1 from '../../../images/projects/arpom/arpom.png';
 
 class Arpom extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

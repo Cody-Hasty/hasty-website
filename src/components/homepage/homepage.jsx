@@ -13,6 +13,10 @@ import dicerollLogo from '../../images/projects/diceroll/diceroll.png';
 import ionLogo from '../../images/projects/ion/thumbnail.png';
 
 class Homepage extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

@@ -7,6 +7,10 @@ import dicerollLogo from '../../../images/projects/diceroll/diceroll.png'
 import repeatthatLogo from '../../../images/projects/repeatthat/thumbnail.png';
 
 class Games extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

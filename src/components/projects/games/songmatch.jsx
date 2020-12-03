@@ -5,6 +5,10 @@ import songMatchPic2 from '../../../images/projects/songmatch/Sample-Dialogue.pn
 import songMatchPic3 from '../../../images/projects/songmatch/Song-Match.png';
 
 class SongMatch extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

@@ -21,6 +21,10 @@ class Demozen extends React.Component {
         this.spoilerToggle = this.spoilerToggle.bind(this);
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     buttonDisplay() {
         return this.state.showSpoilers ? "Hide" : "Show"
     }
@@ -109,14 +113,17 @@ class Demozen extends React.Component {
                         <div className="col-sm-5 text-left">
                             <h4 className="list-title">Overview:</h4>
                             <ul>
-                                <p>Demozen is a three-dimensional abstract world
-                                exploration game implemented with three.js and 
-                                WebGL. It was styled as a fusion 
-                                between <a href="https://en.wikipedia.org/wiki/Synthwave">Synthwave</a> and <a href="https://en.wikipedia.org/wiki/Demoscene">Demoscene</a> culture
-                                , where 'Demozen' refers to an in-game 
-                                character, a.k.a. the denizen of the Demoscene.
+                                <p>
+                                    Demozen is a three-dimensional abstract world
+                                    exploration game implemented with three.js and 
+                                    WebGL. It was styled as a fusion 
+                                    between <a href="https://en.wikipedia.org/wiki/Synthwave">Synthwave</a> and <a href="https://en.wikipedia.org/wiki/Demoscene">Demoscene</a> culture
+                                    , where 'Demozen' refers to an in-game 
+                                    character, a.k.a. the denizen of the Demoscene.
                                 </p>
-                                <p>Please check back later for full description.</p>
+                                <p>
+                                    Please check back later for full description.
+                                </p>
                             </ul><br/>
                             <h4 className="list-title">Technology:</h4>
                             <ul>

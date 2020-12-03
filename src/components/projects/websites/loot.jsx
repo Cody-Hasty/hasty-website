@@ -4,6 +4,10 @@ import thumbnail from '../../../images/projects/loot/thumbnail.png';
 import lootPic1 from '../../../images/projects/loot/loot.png';
 
 class Loot extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

@@ -5,6 +5,10 @@ import thumbnail from '../../../images/projects/ultraheated/thumbnail.png';
 import ultraHeatedPic1 from '../../../images/projects/ultraheated/ultraheated.png';
 
 class UltraHeated extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         const unityContent = new UnityContent(
             "./Build/Compressed.json",

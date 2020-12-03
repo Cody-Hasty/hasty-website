@@ -4,6 +4,10 @@ import lootLogo from '../../../images/projects/loot/thumbnail.png'
 import queryLogo from '../../../images/projects/query/thumbnail.png'
 
 class Websites extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

@@ -4,6 +4,10 @@ import thumbnail from '../../../images/projects/repeatthat/thumbnail.png';
 import repeatthatLogo from '../../../images/projects/repeatthat/repeatthat.png';
 
 class RepeatThat extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

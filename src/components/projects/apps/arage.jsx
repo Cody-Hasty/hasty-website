@@ -4,6 +4,10 @@ import { ImageGroup, Image } from 'react-fullscreen-image';
 import aragePic1 from '../../../images/projects/arage/arage.png';
 
 class Arage extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

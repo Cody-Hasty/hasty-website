@@ -3,6 +3,10 @@ import { ImageGroup, Image } from 'react-fullscreen-image';
 import qwertyPic1 from '../../../images/projects/qwerty/qwerty.png';
 
 class Qwerty extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">

@@ -5,6 +5,10 @@ import queryPic1 from '../../../images/projects/query/query.png';
 import queryPic2 from '../../../images/projects/query/query2.png';
 
 class Query extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="page">
