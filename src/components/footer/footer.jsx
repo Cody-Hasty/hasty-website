@@ -15,7 +15,7 @@ class Footer extends React.Component {
                     <a href="https://www.linkedin.com/in/brittany-hasty-548317163/"><img src={linkedinIcon} alt="LinkedIn" title="Linkedin" /></a>
                     <a href="https://www.youtube.com/channel/UCkQHfRS7yBZY6xArGbsF_RA"><img src={youtubeIcon} alt="Youtube" title="Youtube" /></a>
                 </div>
-                Copyright © 2020 <Link to="/" className="footer-link">Hasty Creations</Link>
+                Copyright © 2021 <Link to="/" className="footer-link">Hasty Creations</Link>
             </footer>
         )
     }
