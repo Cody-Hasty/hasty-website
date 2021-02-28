@@ -1,0 +1,20 @@
+{
+    "resume": {
+        "icon": "pdf",
+        "name": "Resume",
+        "type": "pdf",
+        "document": "Brittany_Hasty_Resume.pdf"
+    },
+    "websitev1": {
+        "icon": "img",
+        "name": "Website V1",
+        "type": "image",
+        "document": "websitev1.png"
+    },
+    "websitev2": {
+        "icon": "img",
+        "name": "Website V2",
+        "type": "image",
+        "document": "websitev2.png"
+    }
+}

@@ -1,47 +1,53 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import powerPic from '../../icons/system-shutdown-panel.svg'
 
 class Navbar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { time: new Date() };
+        this.tick = this.tick.bind(this);
+        this.abbr = {
+            0: "Jan",
+            1: "Feb",
+            2: "Mar",
+            3: "Apr",
+            4: "May",
+            5: "Jun",
+            6: "Jul",
+            7: "Aug",
+            8: "Sep",
+            9: "Oct",
+            10: "Nov",
+            11: "Dec"
+        }
+    }
+
+    tick() {
+        this.setState({ time : new Date() });
+    }
+
+    componentDidMount() {
+        this.interval = setInterval(this.tick, 1000);
+    }
+
+    parseDate() {
+        const t = this.state.time;
+        const h = t.getHours();
+        const m = t.getMinutes();
+        let parsed = this.abbr[t.getMonth()] + " " + t.getDate() + " " 
+            + (h > 12 ? h - 12 : h) + ":" + (m < 10 ? "0" + m : m)
+            + (h > 11 ? " PM" : " AM");
+        return parsed;
+    }
+
     render() {
         return (
-            <nav className="navbar navbar-inverse">
-                <div className="container-fluid">
-                    <div className="navbar-header">
-                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                        </button>
-                        <Link to="/" className="navbar-brand navlink" id="title">Brittany Hasty's Portfolio</Link>
-                    </div>
-                    <div className="collapse navbar-collapse" id="myNavbar">
-                        <ul className="nav navbar-nav navbar-right">
-                            <li><Link to="/" className="navlink">Home</Link></li>
-                            {/* <li><Link to="/blog" className="navlink">Blog</Link></li> */}
-                            <li className="dropdown">
-                                <a className="dropdown-toggle navlink" data-toggle="dropdown" href="#">About
-                                <span className="caret"></span></a>
-                                <ul className="dropdown-menu">
-                                    <li><Link to="/about/resume" className="navlink">Resume</Link></li>
-                                    <li><Link to="/about/repository" className="navlink">Repository</Link></li>
-                                    <li><Link to="/about/education" className="navlink">Education</Link></li>
-                                </ul>
-                            </li>
-                            <li className="dropdown">
-                                <a className="dropdown-toggle navlink" data-toggle="dropdown" href="#">Projects
-                                <span className="caret"></span></a>
-                                <ul className="dropdown-menu">
-                                    <li><Link to="/projects/apps" className="navlink">Apps</Link></li>
-                                    <li><Link to="/projects/websites" className="navlink">Websites</Link></li>
-                                    <li><Link to="/projects/games" className="navlink">Games</Link></li>
-                                    <li><Link to="/projects/others" className="navlink">Others</Link></li>
-                                </ul>
-                            </li>
-                            <li><Link to="/about/contact" className="navlink">Contact</Link></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <div id="navbar">
+                <div className="left">Places</div>
+                <div className="middle">{this.parseDate()}</div>
+                <Link to="/locked" className="right"><img src={powerPic} alt="Power"/></Link>
+            </div>
         )
     }
 }

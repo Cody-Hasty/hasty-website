@@ -1,0 +1,47 @@
+.tabs {
+  width: calc(100vw - 75px);
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.tabs::-webkit-scrollbar {
+  width: 0 !important
+}
+
+.tabs div {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 6px;
+}
+
+.tabs div:hover, .exit-icon:hover {
+  cursor: pointer;
+}
+
+.code iframe, 
+.github iframe {
+  overflow: hidden;
+  border: 0;
+  height: calc(100vh - 60px);
+  width: calc(100vw - 55px);
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.exit-button {
+  width: 20px;
+}
+
+.exit-icon {
+  width: 20px;
+  height: 25px;
+  margin-top: 2px;
+}

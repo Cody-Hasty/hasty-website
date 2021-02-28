@@ -1,67 +1,34 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-import Homepage from './components/homepage/homepage';
-// import Blog from './components/blog/blog';
-// import Post from './components/blog/post';
+import Desktop from './components/desktop/desktop';
 import Navbar from './components/navbar/navbar';
-import Footer from './components/footer/footer';
+import Sidebar from './components/sidebar/sidebar';
+import Lock from './components/lock/lock';
 
-import Apps from './components/projects/apps/apps';
-import Games from './components/projects/games/games';
-import Others from './components/projects/others/others';
-import Websites from './components/projects/websites/websites';
-
-import Qwerty from './components/projects/others/qwerty';
-import Ion from './components/projects/others/ion';
-import SongMatch from './components/projects/games/songmatch';
-import UltraHeated from './components/projects/games/ultraheated';
-import Demozen from './components/projects/games/demozen';
-import DiceRoll from './components/projects/games/diceroll';
-import RepeatThat from './components/projects/games/repeatthat';
-import Arage from './components/projects/apps/arage';
-import Arpom from './components/projects/apps/arpom';
-import Loot from './components/projects/websites/loot';
-import Query from './components/projects/websites/query';
-
-import Contact from './components/about/contact';
-import Repository from './components/about/repository';
-import Resume from './components/about/resume';
-import Education from './components/about/education';
+import Code from './components/apps/code';
+import Files from './components/apps/files';
+import Github from './components/apps/github';
+import Internet from './components/apps/internet';
+import Email from './components/apps/email';
+import Terminal from './components/apps/terminal';
 
 function App() {
   return (
     <div id="routes">
       <Route path="/" component={Navbar} />
+      <Route path="/" component={Sidebar} />
       <Switch>
-          {/* <Route path="/blog" component={Blog} /> */}
-          {/* <Route path="/blog/:id" component={Post} /> */}
-
-          <Route path="/projects/others/qwerty" component={Qwerty} />
-          <Route path="/projects/others/ion" component={Ion} />
-          <Route path="/projects/games/songmatch" component={SongMatch} />
-          <Route path="/projects/games/ultraheated" component={UltraHeated} />
-          <Route path="/projects/games/demozen" component={Demozen} />
-          <Route path="/projects/games/diceroll" component={DiceRoll} />
-          <Route path="/projects/games/repeatthat" component={RepeatThat} />
-          <Route path="/projects/apps/arage" component={Arage} />
-          <Route path="/projects/apps/arpom" component={Arpom} />
-          <Route path="/projects/websites/loot" component={Loot} />
-          <Route path="/projects/websites/query" component={Query} />
-
-          <Route path="/about/contact" component={Contact} />
-          <Route path="/about/repository" component={Repository} />
-          <Route path="/about/resume" component={Resume} />
-          <Route path="/about/education" component={Education} />
-
-          <Route path="/projects/apps" component={Apps} />
-          <Route path="/projects/games" component={Games} />
-          <Route path="/projects/websites" component={Websites} /> 
-          <Route path="/projects/others" component={Others} />
-          <Route exact path="/" component={Homepage} />
-          <Route render={() => <Redirect to={{pathname: "/"}} />} />
+        <Route path="/code" component={Code} />
+        <Route path="/files" component={Files} />
+        <Route path="/github" component={Github} />
+        <Route path="/internet" component={Internet} />
+        <Route path="/email" component={Email} />
+        <Route path="/terminal" component={Terminal} />
+        <Route path="/locked" component={Lock} />
+        <Route exact path="/" component={Desktop} />
+        <Route render={() => <Redirect to={{pathname: "/"}} />} />
       </Switch>
-      <Route path="/" component={Footer} />
     </div>
   );
 }
