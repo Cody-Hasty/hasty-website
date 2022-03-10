@@ -4,7 +4,7 @@ const favicon = require('express-favicon');
 const path = require('path');
 const port = process.env.PORT || 3000;
 const app = express();
-const db = require('./config/keys').mongoURI;
+const db = require('./config/keys.ts').mongoURI;
 const bodyParser = require('body-parser');
 
 mongoose
