@@ -6,6 +6,7 @@ import terminalPic from '../../icons/terminal.svg'
 import filesPic from '../../icons/system-file-manager.svg'
 import codePic from '../../icons/code.svg'
 import emailPic from '../../icons/evolution.svg'
+import notesPic from '../../icons/accessories-text-editor.svg'
 
 class Sidebar extends React.Component {
     render() {
@@ -18,6 +19,7 @@ class Sidebar extends React.Component {
                 <Link to="/github"><img src={githubPic} alt="Github"/></Link>
                 <Link to="/terminal"><img src={terminalPic} alt="Terminal"/></Link>
                 <Link to="/files"><img src={filesPic} alt="Files"/></Link>
+                {/* <Link to="/notes"><img src={notesPic} alt="Notes" /></Link> */}
                 <Link to="/email"><img src={emailPic} alt="Email"/></Link>
                 <Link to="/code"><img src={codePic} alt="Code"/></Link>
             </div>

@@ -9,6 +9,7 @@
 .page,
 .tabs,
 .files,
+.notes,
 .github,
 .email,
 .email .unread {
@@ -167,6 +168,14 @@
 .email {
   background-color: #262f55;    
 }    
+
+.notes {
+  background-color: #000D1A
+}
+
+.notes .notes-document {
+  background-color: #001B33;
+}
 
 .github {
   background-color: #040011;
