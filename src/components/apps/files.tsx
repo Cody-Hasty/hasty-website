@@ -1,26 +1,36 @@
-import React from 'react';
+import * as React from "react";
 import FileList from './config/filelist.json';
 import { Link } from 'react-router-dom';
 import { AiFillCloseCircle } from "react-icons/ai"
 import { VscFilePdf } from "react-icons/vsc"
 import { BsImage } from "react-icons/bs"
 
-class Files extends React.Component {
-    constructor(props) {
+interface FilesStateType {
+    currentFile: string
+}
+
+type FileListType = Record<string, Record<"icon" | "name" | "type" | "document", string>>
+
+type FilesPropTypes = History;
+
+class Files extends React.Component<FilesPropTypes, FilesStateType> {
+    parsedFiles: FileListType = FileList;
+    iconMap: Record<string, JSX.Element> = {
+        "pdf": <VscFilePdf className="file-icon" />,
+        "img": <BsImage className="file-icon" />
+    }
+
+    constructor(props: FilesPropTypes) {
         super(props);
         this.state = {
             "currentFile": "resume"
-        }
-        this.iconMap = {
-            "pdf": <VscFilePdf className="file-icon" />,
-            "img": <BsImage className="file-icon" />
         }
     }
 
     displayIndex() {
         return (
             <div className="file-entries">
-                {Object.entries(FileList).map((val) => (
+                {Object.entries(this.parsedFiles).map((val) => (
                     <ul 
                         key={val[0]}
                         onClick={() => this.setState({"currentFile": val[0]})}
@@ -35,17 +45,17 @@ class Files extends React.Component {
 
     displayShow() {
         const currFile = this.state.currentFile;
-        const flIdx = FileList[currFile];
+        const flIdx = this.parsedFiles[currFile];
 
         return (
             <div className="file-view">
                 {flIdx.type === "pdf" ? (
                     <iframe 
-                        src={require(`../../files/${flIdx.document}`)} 
+                        src={`https://www.hastycreations.com/src/files/${flIdx.document}`}
                         title={flIdx.name}  />
                 ) : (
                     <img 
-                        src={require(`../../images/${flIdx.document}`)}  
+                        src={`https://www.hastycreations.com/src/images/${flIdx.document}`}
                         alt={flIdx.name} />
                 )}
             </div>

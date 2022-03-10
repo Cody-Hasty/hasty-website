@@ -1,9 +1,19 @@
-import React from 'react';
+import * as React from "react";
 import { Link } from 'react-router-dom';
 import powerPic from '../../icons/system-shutdown-panel.svg'
 
-class Navbar extends React.Component {
-    constructor(props) {
+
+interface NavbarStateTypes {
+    time: Date
+}
+
+type NavbarPropTypes = History;
+
+class Navbar extends React.Component<NavbarPropTypes, NavbarStateTypes> {
+    abbr: Record<number, string>;
+    interval: NodeJS.Timeout;
+    
+    constructor(props: NavbarPropTypes) {
         super(props);
         this.state = { time: new Date() };
         this.tick = this.tick.bind(this);
@@ -21,14 +31,11 @@ class Navbar extends React.Component {
             10: "Nov",
             11: "Dec"
         }
+        this.interval = setInterval(this.tick, 1000);
     }
 
     tick() {
         this.setState({ time : new Date() });
-    }
-
-    componentDidMount() {
-        this.interval = setInterval(this.tick, 1000);
     }
 
     parseDate() {

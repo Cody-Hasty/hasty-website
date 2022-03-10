@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from "react";
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Desktop from './components/desktop/desktop';

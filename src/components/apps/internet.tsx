@@ -1,11 +1,22 @@
-import React from 'react';
+import * as React from "react";
 import Webpages from './config/webpages.json'
 import { Link } from 'react-router-dom';
 import { AiFillCloseCircle } from "react-icons/ai"
 import { BsLockFill } from "react-icons/bs"
 
-class Internet extends React.Component {
-    constructor(props) {
+interface InternetStateTypes {
+    currentFile: string
+}
+
+type WebpagesType = Record<string, { type: string, src: string[], url: string, icon: string, title: string, banner?: string }>
+
+type InternetPropTypes = History;
+
+class Internet extends React.Component<InternetPropTypes, InternetStateTypes> {
+    webpages: WebpagesType = Webpages;
+
+
+    constructor(props: InternetPropTypes) {
         super(props);
         this.state = {
             "currentFile": "linkedin",
@@ -17,12 +28,12 @@ class Internet extends React.Component {
 
         return (
             <div className="tabs">
-                {Object.entries(Webpages).map((val) => (
+                {Object.entries(this.webpages).map((val) => (
                     <div
                         key={val[0]}
-                        onClick={() => this.setState({"currentFile": val[0]})}
+                        onClick={() => this.setState({ "currentFile": val[0] })}
                         className={currFile === val[0] ? "active-tab" : "inactive-tab"}>
-                        <img src={require(`../../images/${val[1].icon}`)} alt={val[1].icon}/>
+                        <img src={`https://www.hastycreations.com/src/images/${val[1].icon}`} alt={val[1].icon} />
                         <p>{val[1].title}</p>
                     </div>
                 ))}
@@ -32,26 +43,26 @@ class Internet extends React.Component {
 
     displayPage() {
         const currFile = this.state.currentFile;
-        const wpIdx = Webpages[currFile]
+        const wpIdx = this.webpages[currFile];
         const type = wpIdx.type;
         const src = wpIdx.src;
 
-        if(type === "img"){
+        if (type === "img") {
             return (
-                <img src={require(`../../images/${src}`)} alt={currFile} className="webpage-img"/>
+                <img src={`https://www.hastycreations.com/src/images/${src}`} alt={currFile} className="webpage-img" />
             )
         } else if (type === "embed") {
             return (
                 <div>
                     {wpIdx?.banner ? (
-                        <img src={require(`../../images/${wpIdx.banner}`)} 
+                        <img src={`https://www.hastycreations.com/src/images/${wpIdx.banner}`}
                             alt={wpIdx.banner} className="banner" />
                     ) : (
                         <div />
                     )}
                     <div className="webpage-embed">
                         {src.map((x) => (
-                            <embed src={x} title={this.state.currentFile} />
+                            <embed src={x} title={this.state.currentFile} key={x}/>
                         ))}
                     </div>
                 </div>
@@ -74,7 +85,7 @@ class Internet extends React.Component {
                     </div>
                     <div className="internet-url">
                         <BsLockFill className="secure-url" />
-                        <p>{Webpages[this.state.currentFile].url}</p>
+                        <p>{this.webpages[this.state.currentFile].url}</p>
                     </div>
                 </div>
                 {this.displayPage()}

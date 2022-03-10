@@ -1,10 +1,9 @@
-import React from 'react';
+import * as React from "react";
 import ubuntuPic from '../../icons/ubuntu-distro.png';
 import { Link } from 'react-router-dom';
 import { BiUser } from "react-icons/bi";
 
 class Lock extends React.Component {
-    
     render() {
         return (
             <div id="lock-page">

@@ -1,10 +1,21 @@
-import React from 'react';
+import * as React from "react";
 import { Link } from 'react-router-dom';
 import { AiFillCloseCircle } from "react-icons/ai"
 import Projects from "./config/projects.json";
 
-class Code extends React.Component {
-    constructor(props) {
+type ProjectType = Record<string, Record<"src" | "title", string>>
+
+type ProjectPropTypes = History;
+
+interface CodeStateType {
+    src: string,
+    title: string,
+}
+
+class Code extends React.Component<ProjectPropTypes, CodeStateType> {
+    projects: ProjectType = Projects;
+
+    constructor(props: ProjectPropTypes) {
         super(props);
         this.state = {
             "src": "https://github1s.com/Brittany-Hasty/hasty-website",
@@ -12,10 +23,10 @@ class Code extends React.Component {
         }
     }
 
-    switchSource(key) {
+    switchSource(key: string) {
         this.setState({
-            "src": Projects[key].src,
-            "title": Projects[key].title
+            "src": this.projects[key].src,
+            "title": this.projects[key].title
         })
     }
 
@@ -25,7 +36,7 @@ class Code extends React.Component {
                 <div className="top-bar">
                     <div className="tabs">
                         {Object.entries(Projects).map((val) => (
-                            <div onClick={() => this.switchSource(val[0])} className={val[1].src===this.state.src ? "active-tab" : "inactive-tab"}>
+                            <div key={val[0]} onClick={() => this.switchSource(val[0])} className={val[1].src===this.state.src ? "active-tab" : "inactive-tab"}>
                                 {val[1].title}
                             </div>
                         ))}

@@ -1,34 +1,68 @@
-import React from 'react';
+import * as React from "react";
 import { Link } from 'react-router-dom';
 import { AiFillCloseCircle } from "react-icons/ai"
 import emailList from "./config/emails.json"
 import EmailTree from "./emailTree"
 
-class Email extends React.Component {
-    constructor(props) {
+interface EmailType {
+    to: string;
+    from: string;
+    subject: string;
+    date: string;
+    folder: string;
+    schedule: number;
+    read: boolean | string;
+    description: string;
+}
+
+interface EmailStateTypes {
+    emails: EmailType[];
+    scheduled: NodeJS.Timeout[];
+    unread: number;
+    currFolder: string;
+    selectedEmail: EmailType;
+    readEmails: EmailType[];
+}
+
+const blankEmail: EmailType = {
+    to: "",
+    from: "",
+    subject: "",
+    date: "",
+    folder: "inbox",
+    schedule: 0,
+    read: 'y',
+    description: ""
+}
+
+type EmailPropTypes = History;
+
+class Email extends React.Component<EmailPropTypes, EmailStateTypes> {
+    constructor(props: EmailPropTypes) {
         super(props);
         this.state = {
             "emails": [],
             "scheduled": [],
             "unread": 0,
             "currFolder": "inbox",
-            "selectedEmail": {},
+            "selectedEmail": blankEmail,
             "readEmails": []
         }
         this.changeFolder = this.changeFolder.bind(this);
     }
     
     componentDidMount() {
-        emailList.forEach((email, idx) => {
+        emailList.forEach((email: EmailType, idx) => {
             if(idx === 0){this.setState({"selectedEmail": email})}
             if(email.schedule === 0){
-                email.date = email.date === "" ? 
-                new Date() : new Date(email.date)
+                if (email.date === ""){
+                    email.date = new Date().toString();
+                }
                 let emails = this.state.emails;
                 if(email.read === "y"){this.state.readEmails.push(email)}
                 this.setState({"emails": emails ? emails.concat(email) : [email]}) 
             } else {
-                const task = setTimeout(() => this.sendEmail(email, task), email.schedule)
+                const task: NodeJS.Timeout = setTimeout(() => this.sendEmail(email, task), email.schedule)
                 this.state.scheduled.push(task);
             }
         })
@@ -40,7 +74,7 @@ class Email extends React.Component {
         })
     }
 
-    dateDisplay(date) {
+    dateDisplay(date: Date) {
         const h = date.getHours();
         const m = date.getMinutes();
         const parsed = date.getMonth() + 1 + "/" + date.getDate() + "/" 
@@ -49,17 +83,17 @@ class Email extends React.Component {
         return parsed;
     }
 
-    sendEmail(email, task) {
+    sendEmail(email: EmailType, task: NodeJS.Timeout) {
         const unread = this.state.unread;
         const idx = this.state.scheduled.indexOf(task)
         const emails = this.state.emails;
-        email.date = new Date();
+        email.date = new Date().toString();
         this.setState({"emails": emails ? emails.concat(email) : [email]}) 
         this.setState({"unread": unread + 1})
         this.state.scheduled.splice(idx, 1)
     }
 
-    indexClick(email) {
+    indexClick(email: EmailType) {
         const rEmails = this.state.readEmails
         if(!rEmails.includes(email)){
             this.setState({
@@ -84,21 +118,63 @@ class Email extends React.Component {
                 <div className="email-list">
                     {this.state.emails.filter(
                         email => email.folder === this.state.currFolder
-                        ).sort((e1, e2) => e1.date > e2.date).map((email, idx) => (
+                        ).sort((e1, e2) => this.compareDates(e1.date, e2.date)).map((email, idx) => (
                         <div className={"single-email " + (rEmails.includes(email) ? "read" : "unread")} key={idx} 
-                            onClick={() => this.indexClick(email, idx)}>
+                            onClick={() => this.indexClick(email)}>
                             <p className="subject">{email.subject}</p>
                             <p className="author">{email.from}</p>
-                            <p className="date">{this.dateDisplay(email.date)}</p>
+                            <p className="date">{this.dateDisplay(new Date(email.date))}</p>
                         </div>
                     ))}
                 </div>
             </div>
         )
     }
+
+    compareDates(d1: string | Date, d2: string | Date){
+        if (d1 > d2){
+            return 1;
+        } else if (d1 === d2) {
+            return 0;
+        } else {
+            return -1;
+        }
+    }
+
+    displayEmailTextBody(body: string) {
+        return body.split('\n').map((line, idx) => {
+            const htmlSplitIdx = line.indexOf("[del]")
+            const htmlSplitIdxEnd = line.lastIndexOf("[del]")
+            
+            if (htmlSplitIdx !== -1 && htmlSplitIdx !== htmlSplitIdxEnd) {
+
+                const stringStart = line.slice(0, htmlSplitIdx)
+                const stringMiddle = line.slice(htmlSplitIdx + 5, htmlSplitIdxEnd)
+                const stringEnd = line.slice(htmlSplitIdxEnd + 5, line.length)
+
+                return (
+                    <p key={idx}>
+                        {stringStart}
+                        <del>{stringMiddle}</del>
+                        {stringEnd}
+                        <br />
+                    </p>
+                )
+            } else {           
+                return (
+                    <p key={idx}>
+                        {line}
+                        <br />
+                    </p>
+                )
+            }
+        })
+
+    
+    }
     
     displayShow() {
-        const email = this.state.selectedEmail;
+        const email: EmailType = this.state.selectedEmail;
         return (
             <div className="email-show">
                 <div className="email-show-info">
@@ -116,27 +192,21 @@ class Email extends React.Component {
                     </div>
                     <div>
                         <strong>Date: </strong>
-                        <p>{this.dateDisplay(email.date)}</p>
+                        <p>{this.dateDisplay(new Date(email.date))}</p>
                     </div>
                 </div>
                 <div className="email-body-text">
-                    {email.description.split('\n').map((line, idx) => (
-                        <p key={idx}>
-                            {line} 
-                            <br />
-                        </p>
-                    ))}
+                    {this.displayEmailTextBody(email.description)}
                 </div>
             </div>
         )
     }
 
-    changeFolder(folder) {
+    changeFolder(folder: string) {
         this.setState({"currFolder": folder})
     }
     
     render() {
-        const unread = this.state.unread > 0 ? this.state.unread.toString() : "";
         return (
             <div className="email">
                 <div className="top-bar">
@@ -150,7 +220,7 @@ class Email extends React.Component {
                     </div>
                 </div>
                 <div className="email-sidebar">
-                    <EmailTree unread={unread} changeFolder={this.changeFolder}/>
+                    <EmailTree unread={this.state.unread} changeFolder={this.changeFolder}/>
                 </div>
                 {this.displayIndex()}
                 {this.state.emails.length > 0 ? 

@@ -1,6 +1,7 @@
-import React from 'react';
+import * as React from "react";
 import TreeItem from '@material-ui/lab/TreeItem';
 import { makeStyles } from '@material-ui/core/styles';
+import { StyledTreeItemProps } from './treeStyles';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 
@@ -38,9 +39,17 @@ const useTreeItemStyles = makeStyles((theme) => ({
     fontWeight: 'inherit',
     flexGrow: 1,
   },
+  root: {},
 }));
 
-export default function StyledTreeItem(props) {
+declare module "react" {
+  interface CSSProperties {
+    "--tree-view-color"?: string | undefined,
+    "--tree-view-bg-color"?: string | undefined,
+  }
+}
+
+export function StyledTreeItem(props: StyledTreeItemProps) {
   const classes = useTreeItemStyles();
   const { labelText, labelIcon: LabelIcon, labelInfo, color, bgColor, ...other } = props;
 

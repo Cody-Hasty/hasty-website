@@ -1,7 +1,6 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import * as React from "react";
 import TreeView from '@material-ui/lab/TreeView';
-import StyledTreeItem from './config/treeFunctions.js';
+import { StyledTreeItem } from './config/treeFunctions';
 import MailIcon from '@material-ui/icons/Mail';
 import DeleteIcon from '@material-ui/icons/Delete';
 import LabelIcon from '@material-ui/icons/Label';
@@ -12,16 +11,19 @@ import FolderIcon from '@material-ui/icons/Folder';
 import StarIcon from '@material-ui/icons/Star';
 import DescriptionIcon from '@material-ui/icons/Description';
 import SendIcon from '@material-ui/icons/Send';
+import withStyleHook from './config/treeStyles';
+import { ClassNameMap } from "@material-ui/core/styles/withStyles";
 
-class EmailTree extends React.Component {
+interface EmailTreePropType {
+    changeFolder: (folder: string) => void;
+    unread: number;
+    classes: ClassNameMap<string>;
+}
+
+class EmailTree extends React.Component<EmailTreePropType, {}> {
     render() {
-        const classes = makeStyles({
-            root: {
-                height: 240,
-                flexGrow: 1,
-                maxWidth: 250,
-            },
-        })
+        const classes = this.props.classes;
+        const unread = this.props.unread;
         return (
             <div className="email-tree">
                 <TreeView
@@ -34,7 +36,9 @@ class EmailTree extends React.Component {
                     >
                         
                         <StyledTreeItem nodeId="1" labelText="Inbox" 
-                          labelIcon={MailIcon} labelInfo={this.props.unread} 
+                          labelIcon={MailIcon} labelInfo={
+                              unread === 0 ? "" : unread.toString()
+                            } 
                           onClick={() => this.props.changeFolder("inbox")}/>
                         <StyledTreeItem nodeId="2" labelText="Trash" 
                           labelIcon={DeleteIcon}  
@@ -73,5 +77,5 @@ class EmailTree extends React.Component {
         )
     }
 }
-
-export default EmailTree;
+type NonWrappedProps = Omit<EmailTreePropType, "classes">;
+export default withStyleHook<NonWrappedProps>(EmailTree);

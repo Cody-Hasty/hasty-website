@@ -1,39 +1,25 @@
-import React from 'react';
+import * as React from "react";
 import { Link } from 'react-router-dom';
 import { AiFillCloseCircle } from "react-icons/ai"
 import githubPic from "../../images/github.png"
+import { fetchRepoFromGit, Repo } from "./config/git-repo-api";
+import { fetchUserFromGit, User } from "./config/git-user-api";
 
-class Github extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            "user": {},
-            "repos": {}
-        };
-    }
+interface GithubStateTypes {
+    user: User;
+    repos: Repo[];
+}
 
+class Github extends React.Component<History, GithubStateTypes> {    
     componentDidMount() {
-        const params = [
-            ["https://api.github.com/users/Brittany-Hasty", "user"],
-            ["https://api.github.com/users/Brittany-Hasty/repos", "repos"]
-        ]
-        this.fetchURLS(params)
-    }
-
-    fetchURLS(params) {
-        params.forEach((callParams) => {     
-            fetch(callParams[0])
-                .then(res => res.json())
-                .then((data) => {
-                    this.setState({[callParams[1]]: data})
-                })
-        })
+        fetchUserFromGit().then(data => this.setState({user: data}));
+        fetchRepoFromGit().then(data => this.setState({repos: data}));
     }
 
     displayGithub() {
-        const user = this.state.user;
+        const user = this.state?.user;
         return (
-            user === {} ? (
+            !this.state?.user ? (
                 <div className="github-frame">
                     <div className="github-profile" />
                     <div className="repo-index" />
@@ -55,29 +41,33 @@ class Github extends React.Component {
     }
 
     displayRepos() {
-        const repos = Object.values(this.state.repos);
+        const reposExist = !!this.state?.repos;
         return (
-            repos.map(repo => (
-                <ul className="single-repo" key={repo.name}>
-                    <h3>{repo.name}</h3>
-                    <p>
-                        <strong>Created: </strong>
-                        {new Date(repo.created_at).toDateString()}
-                    </p>
-                    <p>
-                        <strong>Last Updated: </strong>
-                        {new Date(repo.updated_at).toDateString()}
-                    </p>
-                    <p>
-                        <strong>Language: </strong>
-                        {(repo.language === null ? "Unknown" : repo.language)}
-                    </p>
-                    <p>
-                        <strong>Description: </strong>
-                        {(repo.description === null ? "None" : repo.description)}
-                    </p>
-                </ul>
-            ))
+            reposExist ? (
+                this.state.repos.map(repo => (
+                    <ul className="single-repo" key={repo.name}>
+                        <h3>{repo.name}</h3>
+                        <p>
+                            <strong>Created: </strong>
+                            {new Date(repo.created_at).toDateString()}
+                        </p>
+                        <p>
+                            <strong>Last Updated: </strong>
+                            {new Date(repo.updated_at).toDateString()}
+                        </p>
+                        <p>
+                            <strong>Language: </strong>
+                            {(repo.language === null ? "Unknown" : repo.language)}
+                        </p>
+                        <p>
+                            <strong>Description: </strong>
+                            {(repo.description === null ? "None" : repo.description)}
+                        </p>
+                    </ul>
+                ))
+            ) : (
+                <div></div>
+            )
         )
     }
 

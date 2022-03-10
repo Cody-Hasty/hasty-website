@@ -1,7 +1,7 @@
 {
     "linkedin": {
         "type": "img",
-        "src": "linkedin-webpage.png",
+        "src": ["linkedin-webpage.png"],
         "url": "https://www.linkedin.com/in/brittany-hasty/",
         "icon": "linkedin.png",
         "title": "Brittany Hasty | LinkedIn"

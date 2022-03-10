@@ -17,7 +17,7 @@
         "folder": "inbox",
         "schedule": 5000,
         "read": "n",
-        "description": "- Clean inbox\n- Put local JSON on MongoDB\n- Convert website to Typescript\n- Code Brit Bot to use GPT3?"
+        "description": "- [del]Convert website to Typescript[del] Done!\n- Clean inbox\n- Put local JSON on MongoDB\n- Hide ARG in website console?"
     },
     {
         "to": "Brittany.R.Hasty@gmail.com",
