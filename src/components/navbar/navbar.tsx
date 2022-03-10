@@ -40,7 +40,8 @@ class Navbar extends React.Component<NavbarPropTypes, NavbarStateTypes> {
 
     parseDate() {
         const t = this.state.time;
-        const h = t.getHours();
+        let h = t.getHours();
+        if (h === 0) {h = 12}
         const m = t.getMinutes();
         let parsed = this.abbr[t.getMonth()] + " " + t.getDate() + " " 
             + (h > 12 ? h - 12 : h) + ":" + (m < 10 ? "0" + m : m)
