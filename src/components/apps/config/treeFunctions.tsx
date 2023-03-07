@@ -5,7 +5,7 @@ import { StyledTreeItemProps } from './treeStyles';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 
-const useTreeItemStyles = makeStyles((theme) => ({
+const useTreeItemStyles = makeStyles((theme?: any) => ({
   content: {
     borderTopRightRadius: theme.spacing(2),
     borderBottomRightRadius: theme.spacing(2),
