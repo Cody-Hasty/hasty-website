@@ -1,0 +1,30 @@
+{
+  "website": {
+    "src": "https://github1s.com/Brittany-Hasty/hasty-website",
+    "title": "My Website"
+  },
+  "smart-dress": {
+    "src": "https://github1s.com/Brittany-Hasty/smart-dress",
+    "title": "Smart Dress"        
+  },
+  "repeat-that": {
+    "src": "https://github1s.com/Brittany-Hasty/repeat-that",
+    "title": "Repeat That"
+  },
+  "demozen": {
+    "src": "https://github1s.com/Brittany-Hasty/demozen",
+    "title": "Demozen"
+  },
+  "query": {
+    "src": "https://github1s.com/Brittany-Hasty/query",
+    "title": "Query"
+  },
+  "loot": {
+    "src": "https://github1s.com/Brittany-Hasty/loot",
+    "title": "LOOT"
+  },
+  "cbl": {
+    "src": "https://github1s.com/Brittany-Hasty/CBL",
+    "title": "CBL"
+  }
+}

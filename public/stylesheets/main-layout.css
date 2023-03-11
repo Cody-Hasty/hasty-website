@@ -2,14 +2,16 @@ body {
   background-image: url("../wallpaper.png");
   width: 100vw;
   height: 100vh;
-  min-width: 900px;
+  min-height: 500px;
+  min-width: 400px;
   margin: 0;
   display: grid;
   grid-template-columns: 55px auto;
   grid-template-rows: 30px auto;
   font-family: ubuntuUI;
   font-size: 13px;
-  overflow: hidden;
+  overflow-y: hidden;
+  /* overflow: hidden; */
 }
 
 #root, #routes, #sidebar a {
@@ -30,6 +32,10 @@ body {
 
 .middle {
   z-index: 2;
+}
+
+.right {
+
 }
 
 #sidebar {

@@ -1,0 +1,72 @@
+[
+  {
+    "to": "Brittany.R.Hasty@gmail.com",
+    "from": "Brittany.R.Hasty@gmail.com",
+    "subject": "Welcome to my inbox",
+    "date": "2011-04-11T10:20:30Z",
+    "folder": "inbox",
+    "schedule": 0,
+    "read": "y",
+    "description": "Hello, and welcome to the inbox!\nFeel free to browse around and stay a while.\n-Brittany Hasty"
+  },
+  {
+    "to": "Brittany.R.Hasty@gmail.com",
+    "from": "Brittany.R.Hasty@gmail.com",
+    "subject": "Reminder to self - to do list",
+    "date": "",
+    "folder": "inbox",
+    "schedule": 5000,
+    "read": "n",
+    "description": "- [del]Convert website to Typescript[del] Done!\n- Clean inbox\n- Put local JSON on MongoDB\n- Hide ARG in website console?"
+  },
+  {
+    "to": "Brittany.R.Hasty@gmail.com",
+    "from": "Brittany.R.Hasty@gmail.com",
+    "subject": "testing!",
+    "date": "",
+    "folder": "inbox",
+    "schedule": 10000,
+    "read": "n",
+    "description": "testing!"
+  },
+  {
+    "to": "Brittany.R.Hasty@gmail.com",
+    "from": "Brittany.R.Hasty@gmail.com",
+    "subject": "testing!",
+    "date": "",
+    "folder": "inbox",
+    "schedule": 15000,
+    "read": "n",
+    "description": "testing!"
+  },
+  {
+    "to": "Brittany.R.Hasty@gmail.com",
+    "from": "Brittany.R.Hasty@gmail.com",
+    "subject": "testing!",
+    "date": "",
+    "folder": "inbox",
+    "schedule": 20000,
+    "read": "n",
+    "description": "testing!"
+  },
+  {
+    "to": "Brittany.R.Hasty@gmail.com",
+    "from": "Brittany.R.Hasty@gmail.com",
+    "subject": "testing!",
+    "date": "",
+    "folder": "inbox",
+    "schedule": 25000,
+    "read": "n",
+    "description": "testing!"
+  },
+  {
+    "to": "Brittany.R.Hasty@gmail.com",
+    "from": "Brittany.R.Hasty@gmail.com",
+    "subject": "testing!",
+    "date": "",
+    "folder": "inbox",
+    "schedule": 30000,
+    "read": "n",
+    "description": "testing!"
+  }
+]

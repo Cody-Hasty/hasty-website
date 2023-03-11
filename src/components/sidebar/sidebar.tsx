@@ -1,30 +1,21 @@
-import * as React from "react";
-import { Link } from 'react-router-dom';
-import internetPic from '../../icons/google-chrome.svg'
-import githubPic from '../../icons/github-desktop.svg'
-import terminalPic from '../../icons/terminal.svg'
-import filesPic from '../../icons/system-file-manager.svg'
-import codePic from '../../icons/code.svg'
-import emailPic from '../../icons/evolution.svg'
-import notesPic from '../../icons/accessories-text-editor.svg'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import internetIcon from '../../assets/icons/google-chrome.svg'
+import githubIcon from '../../assets/icons/github-desktop.svg'
+import terminalIcon from '../../assets/icons/terminal.svg'
+import filesIcon from '../../assets/icons/system-file-manager.svg'
+import codeIcon from '../../assets/icons/code.svg'
+import emailIcon from '../../assets/icons/evolution.svg'
 
-class Sidebar extends React.Component {
-    render() {
-        return (
-            <div id="sidebar">
-                <Link to="/internet"><img src={internetPic} alt="Chrome"/></Link>
-                {/* <a target="_blank" rel="noopener noreferrer" href="https://github.com/Brittany-Hasty">
-                    <img src={githubPic} alt="Github"/>
-                </a> */}
-                <Link to="/github"><img src={githubPic} alt="Github"/></Link>
-                <Link to="/terminal"><img src={terminalPic} alt="Terminal"/></Link>
-                <Link to="/files"><img src={filesPic} alt="Files"/></Link>
-                {/* <Link to="/notes"><img src={notesPic} alt="Notes" /></Link> */}
-                <Link to="/email"><img src={emailPic} alt="Email"/></Link>
-                <Link to="/code"><img src={codePic} alt="Code"/></Link>
-            </div>
-        )
-    }
+export default function Sidebar() {
+  return (
+    <div id="sidebar">
+      <Link to="/internet"><img src={internetIcon} alt="Chrome"/></Link>
+      <Link to="/github"><img src={githubIcon} alt="Github"/></Link>
+      <Link to="/terminal"><img src={terminalIcon} alt="Terminal"/></Link>
+      <Link to="/files"><img src={filesIcon} alt="Files"/></Link>
+      <Link to="/email"><img src={emailIcon} alt="Email"/></Link>
+      <Link to="/code"><img src={codeIcon} alt="Code"/></Link>
+    </div>
+  )
 }
-
-export default Sidebar;

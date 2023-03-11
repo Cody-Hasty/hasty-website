@@ -60,6 +60,10 @@
   padding-bottom: 13px;
 }
 
+.github .top-bar {
+  background-color: #25003f;
+}
+
 .github .note {
   color: white;
 }
