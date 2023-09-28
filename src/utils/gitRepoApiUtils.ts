@@ -9,7 +9,7 @@ export function repoToJson(value: Repo[]): string {
 }
 
 export function fetchRepoFromGit(abortSignal: AbortSignal) {
-  return fetch(("https://api.github.com/users/Brittany-Hasty/repos"), {
+  return fetch(("https://api.github.com/users/Cody-Hasty/repos"), {
     signal: abortSignal
   })
     .then(res => res.text())

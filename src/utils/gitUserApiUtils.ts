@@ -9,7 +9,7 @@ export function userToJson(value: User): string {
 }
 
 export function fetchUserFromGit(abortSignal: AbortSignal) {
-  return fetch(("https://api.github.com/users/Brittany-Hasty"), {
+  return fetch(("https://api.github.com/users/Cody-Hasty"), {
     signal: abortSignal
   })
     .then(res => res.text())
