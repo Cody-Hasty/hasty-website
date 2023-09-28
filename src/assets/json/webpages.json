@@ -4,20 +4,20 @@
     "src": ["linkedin-webpage.png"],
     "url": "https://www.linkedin.com/in/brittany-hasty/",
     "icon": "linkedin.png",
-    "title": "Brittany Hasty | LinkedIn"
+    "title": "Cody Hasty | LinkedIn"
   },
   "youtube": {
     "type": "embed",
     "src": [
-      "https://www.youtube.com/embed/ZhkyZi1b0qo", 
-      "https://www.youtube.com/embed/_IMuyluTG10", 
+      "https://www.youtube.com/embed/ZhkyZi1b0qo",
+      "https://www.youtube.com/embed/_IMuyluTG10",
       "https://www.youtube.com/embed/29mmbOcuTRk",
-      "https://www.youtube.com/embed/c86a7WR4E2Y", 
-      "https://www.youtube.com/embed/Oegt41RhrHo" 
+      "https://www.youtube.com/embed/c86a7WR4E2Y",
+      "https://www.youtube.com/embed/Oegt41RhrHo"
     ],
     "url": "https://www.youtube.com/channel/UCkQHfRS7yBZY6xArGbsF_RA/videos",
     "icon": "youtube.png",
-    "title": "Brittany Hasty | YouTube",
+    "title": "Cody Hasty | YouTube",
     "banner": "ytbanner.png"
   }
 }

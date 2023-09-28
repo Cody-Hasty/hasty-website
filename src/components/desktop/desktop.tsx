@@ -10,12 +10,12 @@ export default function Desktop() {
           <h3>Welcome to my desktop!</h3>
         </div>
         <div>
-          <p>Try clicking icons on my sidebar to check out what 
+          <p>Try clicking icons on my sidebar to check out what
             I've been working on.</p>
-          <p>Alternatively, click the shortcuts on my desktop to skip 
+          <p>Alternatively, click the shortcuts on my desktop to skip
             to the important stuff.</p>
           <p>Enjoy!</p>
-          <p>- Brittany Hasty</p>
+          <p>- Cody Hasty</p>
         </div>
       </div>
       <div id="shortcuts">
