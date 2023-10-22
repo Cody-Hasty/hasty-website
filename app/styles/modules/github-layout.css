@@ -1,0 +1,53 @@
+.github-frame {
+  display: grid;
+  grid-template-columns: 300px auto;
+  height: calc(100vh - 94px);
+}
+
+.github .note {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.github .top-bar {
+  height: 64px;
+}
+
+.github-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.github-nav img {
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.github-profile {
+  grid-column: 1 / 2;
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+}
+
+.github-profile img {
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+.repo-index {
+  grid-column: 2 / 3;
+}
+
+.github .single-repo {
+  padding-left: 40px;
+}
+
+.github .repo-index {
+  overflow-y: scroll;
+}
+

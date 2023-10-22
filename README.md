@@ -1,2 +1,3 @@
 # hasty-website
-My new main website (Now updated to Typescript!)
+README to be updated!
+Portfolio now in Typescript and Next.js

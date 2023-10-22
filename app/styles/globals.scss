@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import '@/styles/utils/colors';
+
+@import '@/styles/modules/color-themes';
+@import '@/styles/modules/desktop-layout';
+@import '@/styles/modules/email-layout';
+@import '@/styles/modules/file-entries';
+@import '@/styles/modules/github-layout';
+@import '@/styles/modules/internet-page';
+@import '@/styles/modules/lock-page';
+@import '@/styles/modules/notes-layout';
+@import '@/styles/modules/page-layout';
+@import '@/styles/modules/terminal-layout';
+
+@font-face {
+  font-family: hasklig;
+  src: url("/fonts/Hasklig_Regular.otf");
+}
+
+@font-face {
+  font-family: ubuntuUI;
+  src: url("/fonts/Ubuntu-R.ttf");
+}
+
+body {
+  background-image: url("/wallpaper.png");
+  line-height: normal;
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
+  min-width: 400px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 55px auto;
+  grid-template-rows: 30px auto;
+  font-family: ubuntuUI;
+  font-size: 13px;
+  overflow-y: hidden;
+  /* overflow: hidden; */
+}
+
+p {
+  margin: 13px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+#root, #routes, #sidebar a {
+  display: contents;
+}
+
+#navbar {
+  grid-area: 1 / 1 / 1 / 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 6px;
+}
+
+.left {
+  margin-left: 12px;
+}
+
+.middle {
+  z-index: 2;
+}
+
+.link {
+  &:active, &:visited, &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+:-moz-focusring {
+  outline: none;
+}
+
+// .right {}
+
+#sidebar {
+  grid-area: 2 / 1 / 2 / 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar a:hover,
+#sidebar Link:hover {
+  cursor: pointer;
+}
+
+#sidebar img {
+  margin: 8px;
+  margin-top: 10px;
+}
+
+.page {
+  grid-area: 2 / 2 / 2 / 2;
+}
+
+* {
+  scrollbar-width: 20px;
+}
+
+*::-webkit-scrollbar {
+  width: 20px;
+}
