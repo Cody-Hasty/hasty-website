@@ -11,7 +11,7 @@ import DescriptionIcon from '@mui/icons-material/Description'
 import SendIcon from '@mui/icons-material/Send'
 import { TreeView } from '@mui/x-tree-view/TreeView'
 import { EmailTreeItem } from './emailTreeItem'
-import { EmailTreePropType } from '../../../types/treeTypes'
+import { EmailTreePropType } from '@/types/treeTypes'
 
 declare module 'react' {
   interface CSSProperties {

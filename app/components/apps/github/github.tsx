@@ -3,11 +3,11 @@
 import React, { useState, useEffect } from 'react'
 import Link from '@/utils/Link'
 import { AiFillCloseCircle } from "react-icons/ai"
-import githubPic from "../../../assets/images/github.png"
-import { fetchRepoFromGit } from "../../../utils/gitRepoApiUtils"
-import { fetchUserFromGit } from "../../../utils/gitUserApiUtils"
-import { Repo } from "../../../types/gitRepoTypes"
-import { User } from "../../../types/gitUserTypes"
+import githubPic from "@images/github.png"
+import { fetchRepoFromGit } from "@/utils/gitRepoApiUtils"
+import { fetchUserFromGit } from "@/utils/gitUserApiUtils"
+import { Repo } from "@/types/gitRepoTypes"
+import { User } from "@/types/gitUserTypes"
 import Image from 'next/image'
 
 export default function Github() {

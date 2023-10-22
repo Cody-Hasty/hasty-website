@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import FileList from '../../../assets/json/filelist.json'
+import FileList from '@/assets/json/filelist.json'
 import Link from '@/utils/Link'
 import { AiFillCloseCircle } from "react-icons/ai"
 import { VscFilePdf } from "react-icons/vsc"
@@ -37,16 +37,15 @@ export default function Files() {
 
   const displayShow = () => {
     const flIdx = parsedFiles[currentFile]
-    const url = "https://www.hastycreations.com/src/assets"
     return (
       <div className="file-view">
         {flIdx.type === "pdf" ? (
           <iframe
-            src={`${url}/pdfs/${flIdx.document}`}
+            src={`/pdfs/${flIdx.document}`}
             title={flIdx.name}  />
         ) : (
           <Image
-            src={`${url}//images/${flIdx.document}`}
+            src={`/images/${flIdx.document}`}
             alt={flIdx.name} width={1920} height={1080} style={{ objectFit: "contain" }} />
         )}
       </div>

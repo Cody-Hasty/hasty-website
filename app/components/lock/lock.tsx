@@ -1,5 +1,5 @@
 import React from 'react'
-import ubuntuImg from '@/assets/images/ubuntu-distro.png'
+import ubuntuImg from '@images/ubuntu-distro.png'
 import Link from '@/utils/Link'
 import { BiUser } from "react-icons/bi"
 import Image from 'next/image'

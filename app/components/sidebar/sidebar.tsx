@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from '@/utils/Link'
-import internetIcon from '@/assets/icons/google-chrome.svg'
-import githubIcon from '@/assets/icons/github-desktop.svg'
-import terminalIcon from '@/assets/icons/terminal.svg'
-import filesIcon from '@/assets/icons/system-file-manager.svg'
-import codeIcon from '@/assets/icons/code.svg'
-import emailIcon from '@/assets/icons/evolution.svg'
+import internetIcon from '@icons/google-chrome.svg'
+import githubIcon from '@icons/github-desktop.svg'
+import terminalIcon from '@icons/terminal.svg'
+import filesIcon from '@icons/system-file-manager.svg'
+import codeIcon from '@icons/code.svg'
+import emailIcon from '@icons/evolution.svg'
 import Image from 'next/image'
 
 export default function Sidebar() {

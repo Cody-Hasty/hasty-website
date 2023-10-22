@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from '@/utils/Link'
-import powerIcon from '@/assets/icons/system-shutdown-panel.svg'
-import { parseDate } from '../../utils/dateUtils'
+import powerIcon from '@icons/system-shutdown-panel.svg'
+import { parseDate } from '@/utils/dateUtils'
 import Image from 'next/image'
 
 export default function Navbar() {

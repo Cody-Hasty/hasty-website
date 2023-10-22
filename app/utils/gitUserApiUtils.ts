@@ -1,4 +1,4 @@
-import { User } from "../types/gitUserTypes"
+import { User } from "@/types/gitUserTypes"
 
 export function toUser(json: string): User {
   return JSON.parse(json)

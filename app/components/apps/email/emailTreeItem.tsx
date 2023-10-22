@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { TreeItem, treeItemClasses } from '@mui/x-tree-view/TreeItem'
 import { styled } from '@mui/material/styles'
-import { EmailTreeItemProps } from '../../../types/treeTypes'
+import { EmailTreeItemProps } from '@/types/treeTypes'
 
 export const EmailTreeItem = React.forwardRef(
   function EmailTreeItem(
@@ -40,10 +40,10 @@ export const EmailTreeItem = React.forwardRef(
         [`& .${treeItemClasses.label}`]: {
           fontWeight: 'inherit',
           '& .MuiSvgIcon-root': {
-            color: 'white', // Change the icon color to white
+            color: 'white',
           },
           '& .MuiTypography-root': {
-            color: 'white', // Change the text color to white
+            color: 'white',
           },
         },
       },

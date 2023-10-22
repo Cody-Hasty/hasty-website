@@ -1,13 +1,12 @@
 import React from 'react'
 import Link from '@/utils/Link'
 import { AiFillCloseCircle } from "react-icons/ai"
-import NoteType from '../../../types/noteType'
-import noteList from "../../../assets/json/notes.json"
+import NoteType from '@/types/noteType'
+import noteList from "@/assets/json/notes.json"
 import Image from 'next/image'
 
 export default function Notes() {
   const notes: NoteType[] = noteList
-  const url = "https://www.hastycreations.com/src/assets/images/notes"
   return (
     <div className="notes">
       <div className="top-bar">
@@ -27,7 +26,7 @@ export default function Notes() {
               <p className='notes-paragraph' key={"paragraph-" + paragraphIdx}>{paragraph}</p>
             ))}
             {note.pictures && note.pictures.map((pic, picIdx) => (
-              <Image className='notes-pic' src={`${url}/${pic.src}`} key={"picture-" + picIdx}
+              <Image className='notes-pic' src={`/images/notes/${pic.src}`} key={"picture-" + picIdx}
                 alt={pic.alt} width={pic.width} height={pic.height} />
             ))}
           </div>

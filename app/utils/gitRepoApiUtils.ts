@@ -1,4 +1,4 @@
-import { Repo } from "../types/gitRepoTypes"
+import { Repo } from "@/types/gitRepoTypes"
 
 export function toRepo(json: string): Repo[] {
   return JSON.parse(json)

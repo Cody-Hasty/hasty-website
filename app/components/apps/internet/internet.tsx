@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import Webpages from '../../../assets/json/webpages.json'
+import Webpages from '@/assets/json/webpages.json'
 import Link from '@/utils/Link'
 import { AiFillCloseCircle } from "react-icons/ai"
 import { BsLockFill } from "react-icons/bs"
@@ -20,7 +20,6 @@ export default function Internet() {
     }
   >
   const webpages: WebpagesType = Webpages
-  const url = "https://www.hastycreations.com/src/assets/images"
 
   const displayTabs = () => {
     return (
@@ -31,7 +30,7 @@ export default function Internet() {
             onClick={() => setCurrentFile(val[0])}
             className={currentFile === val[0] ? "active-tab" : "inactive-tab"}>
             <Image
-              src={`${url}/${val[1].icon}`}
+              src={`/images/${val[1].icon}`}
               alt={val[1].icon} width={24} height={20} style={{ objectFit: "contain" }} />
             <p>{val[1].title}</p>
           </div>
@@ -47,7 +46,7 @@ export default function Internet() {
 
     if (type === "img") {
       return (
-        <Image src={`${url}/${src}`}
+        <Image src={`/images/${src}`}
           alt={currentFile} className="webpage-img" width={782} height={10000} style={{ height: "fit-content" }} />
       )
     } else if (type === "embed") {
@@ -55,7 +54,7 @@ export default function Internet() {
         <div>
           {wpIdx?.banner ? (
             <Image
-              src={`${url}/${wpIdx.banner}`}
+              src={`/images/${wpIdx.banner}`}
               alt={wpIdx.banner} className="banner" width={361} height={125} />
           ) : (
             <div />
