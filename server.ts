@@ -1,17 +1,17 @@
 import express from 'express'
-import mongoose from 'mongoose'
+// import mongoose from 'mongoose'
 import favicon from 'express-favicon'
 import path from 'path'
 import bodyParser from 'body-parser'
 
 const port = process.env.PORT || 3000
 const app = express()
-const db = require('./config/keys.ts').mongoURI
+// const db = require('./config/keys.ts').mongoURI
 
-mongoose
-.connect(db)
-.then(() => console.log("Connected to MongoDB successfully"))
-.catch(err => console.log(err))
+// mongoose
+// .connect(db)
+// .then(() => console.log("Connected to MongoDB successfully"))
+// .catch(err => console.log(err))
 
 app.use(bodyParser.urlencoded({
   extended: false
