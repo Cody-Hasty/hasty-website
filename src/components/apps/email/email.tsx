@@ -15,7 +15,7 @@ export default function Email() {
     folder: "inbox",
     schedule: 0,
     read: 'y',
-    description: ""   
+    description: ""
   }
 
   const [emails, setEmails] = useState<EmailType[]>([])
@@ -52,12 +52,12 @@ export default function Email() {
           setReadEmails(prevState => [...prevState, email])
         }
 
-        setEmails(prevState => [...prevState, email])        
+        setEmails(prevState => [...prevState, email])
       } else {
         const task: NodeJS.Timeout = setTimeout(() => {
           sendEmail(email, task)
         }, email.schedule)
-        scheduledEmails.push(task)   
+        scheduledEmails.push(task)
       }
     })
 
@@ -75,7 +75,7 @@ export default function Email() {
     }
     selectEmail(email)
   }
-  
+
   const displayIndex = () => {
     return (
       <div className="email-index">
@@ -88,8 +88,8 @@ export default function Email() {
           {emails.filter(email => email.folder === currFolder)
             .sort((e1, e2) => compareDates(e1.date, e2.date))
             .map((email, idx) => (
-              <div className={"single-email " + 
-                (readEmails.includes(email) ? "read" : "unread")} key={idx} 
+              <div className={"single-email " +
+                (readEmails.includes(email) ? "read" : "unread")} key={idx}
                 onClick={() => indexClick(email)}>
               <p className="subject">{email.subject}</p>
               <p className="author">{email.from}</p>
@@ -105,7 +105,7 @@ export default function Email() {
     return body.split('\n').map((line, idx) => {
       const htmlSplitIdx = line.indexOf("[del]")
       const htmlSplitIdxEnd = line.lastIndexOf("[del]")
-      
+
       if (htmlSplitIdx !== -1 && htmlSplitIdx !== htmlSplitIdxEnd) {
         const stringStart = line.slice(0, htmlSplitIdx)
         const stringMiddle = line.slice(htmlSplitIdx + 5, htmlSplitIdxEnd)
@@ -119,7 +119,7 @@ export default function Email() {
             <br />
           </p>
         )
-      } else {           
+      } else {
         return (
           <p key={idx}>
             {line}
@@ -129,7 +129,7 @@ export default function Email() {
       }
     })
   }
-  
+
   const displayShow = () => {
     return (
       <div className="email-show">
@@ -157,12 +157,12 @@ export default function Email() {
       </div>
     )
   }
-  
+
   return (
     <div className="email">
       <div className="top-bar">
         <div className="tabs">
-          <p>Inbox - Brittany.R.Hasty@gmail.com</p>
+          <p>Inbox - CodyRHasty@gmail.com</p>
         </div>
         <div className="exit-button" >
           <Link to="/">
@@ -174,7 +174,7 @@ export default function Email() {
         <EmailTree unread={unread} changeFolder={selectFolder}/>
       </div>
       {displayIndex()}
-      {emails.length > 0 ? 
+      {emails.length > 0 ?
         displayShow() : <div className="email-show" />}
     </div>
   )
