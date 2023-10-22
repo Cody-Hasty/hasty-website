@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Link from '@/utils/Link'
 import { AiFillCloseCircle } from "react-icons/ai"
-import Projects from "@/assets/json/projects.json"
+import Projects from "@/config/projects.json"
 
 export default function Code() {
   const url = "https://github1s.com/Cody-Hasty/hasty-website"

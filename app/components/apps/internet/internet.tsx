@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import Webpages from '@/assets/json/webpages.json'
+import Webpages from '@/config/webpages.json'
 import Link from '@/utils/Link'
 import { AiFillCloseCircle } from "react-icons/ai"
 import { BsLockFill } from "react-icons/bs"

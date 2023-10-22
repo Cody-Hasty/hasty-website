@@ -3,7 +3,7 @@
 import React, {useEffect, useState} from 'react'
 import Link from '@/utils/Link'
 import { AiFillCloseCircle } from "react-icons/ai"
-import emailList from "@/assets/json/emails.json"
+import emailList from "@/config/emails.json"
 import EmailTree from "./emailTree"
 import EmailType from "@/types/emailType"
 import { dateDisplay, compareDates} from '@/utils/dateUtils'

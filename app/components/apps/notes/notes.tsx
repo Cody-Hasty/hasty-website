@@ -2,7 +2,7 @@ import React from 'react'
 import Link from '@/utils/Link'
 import { AiFillCloseCircle } from "react-icons/ai"
 import NoteType from '@/types/noteType'
-import noteList from "@/assets/json/notes.json"
+import noteList from "@/config/notes.json"
 import Image from 'next/image'
 
 export default function Notes() {

@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import FileList from '@/assets/json/filelist.json'
+import FileList from '@/config/filelist.json'
 import Link from '@/utils/Link'
 import { AiFillCloseCircle } from "react-icons/ai"
 import { VscFilePdf } from "react-icons/vsc"
