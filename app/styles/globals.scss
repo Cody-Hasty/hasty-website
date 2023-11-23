@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '@/styles/utils/colors.scss';
+
+body {
+  background: linear-gradient(0deg, #FFEDB0 30.4%, #FFA541 57.13%, #30309C 76.79%, #000 94.15%);
+}
+
+#content {
+  background-color: $white;
+  color: $black;
+}
+
+.navbar-brand {
+  color: $main-blue !important;
+}
