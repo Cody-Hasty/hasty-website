@@ -1,7 +1,7 @@
-import DesignComponent from "@/components/pages/design/design";
-
 export default function DesignPage() {
   return (
-    <DesignComponent />
+    <div id="design">
+      <h1>Design</h1>
+    </div>
   )
 }

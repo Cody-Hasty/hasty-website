@@ -1,7 +1,7 @@
-import AboutComponent from '@/components/pages/about/about'
-
 export default function AboutPage() {
   return (
-    <AboutComponent />
+    <div id="about">
+      <h1>About</h1>
+    </div>
   )
 }

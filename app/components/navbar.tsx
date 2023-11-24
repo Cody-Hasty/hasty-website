@@ -13,7 +13,7 @@ const font = Delius_Swash_Caps({ subsets: ["latin"], weight: "400" })
 export default function NavbarComponent() {
   const currentPath = usePathname()
   const pages = ['about', 'experience', 'projects', 'design', 'blog', 'contact']
-  const activePathClass = (page: string) => currentPath === pathToPage(page) ? "active" : ""
+  const activePathClass = (page: string) => currentPath.split('/')[1] === page ? "active" : ""
   const pathToPage = (page: string) => `/${page}`
 
   return (

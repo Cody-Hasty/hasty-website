@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import '@/styles/globals.scss'
 import 'bootstrap/dist/css/bootstrap.css'
-import Navbar from '@/components/navbar/navbar'
-import Footer from '@/components/footer/footer';
+import Navbar from '@/components/navbar'
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: "Hasty Creations",
