@@ -1,26 +1,19 @@
 import MoreStories from '@/components/blog/more-stories'
 import HeroPost from '@/components/blog/hero-post'
-import { getAllPosts } from '@/utils/api'
-import Head from 'next/head'
+import { getAllPostsFromDirectory } from '@/state/state'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "Blog | Hasty Creations"
+}
 
 export default function BlogPage() {
-  const posts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
+  const posts = getAllPostsFromDirectory()
   const heroPost = posts[0]
   const morePosts = posts.slice(1)
   return (
     <div id="blog">
-      <Head>
-        <title>{`Next.js Blog Example`}</title>
-      </Head>
-      <h1 className='mb-5'>Blog</h1>
-      <div className='container mx-auto px-5'>
+      <div className='container mx-auto px-5 pt-5'>
         {heroPost && (
           <HeroPost
             title={heroPost.title}

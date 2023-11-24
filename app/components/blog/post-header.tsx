@@ -17,7 +17,7 @@ export default function PostHeader({ title, coverImage, date }: PostHeaderProps)
         <CoverImage title={title} src={coverImage} />
       </div>
       <div className="max-w-2xl mx-auto">
-        <div className="mb-6 text-lg">
+        <div className="mb-6 text-lg font-bold">
           <time dateTime={date}>
             {parseDate(date)}
           </time>

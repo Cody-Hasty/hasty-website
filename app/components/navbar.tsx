@@ -17,7 +17,7 @@ export default function NavbarComponent() {
   const pathToPage = (page: string) => `/${page}`
 
   return (
-    <Navbar collapseOnSelect expand="md" bg="light" className='my-2.5 font-bold mx-auto pe-2 rounded-5 w-full max-w-screen-lg grow-0 inline-flex items-center'>
+    <Navbar id='top' collapseOnSelect expand="md" bg="light" className='my-2.5 font-bold mx-auto pe-2 rounded-5 w-full max-w-screen-lg grow-0 inline-flex items-center'>
       <Container fluid>
         <Navbar.Brand href="/" className='inline-flex items-center'>
           <Image src={brandImg} alt="small logo" loading='eager' width={40} height={40} />
