@@ -13,7 +13,7 @@ export default function BlogPage() {
   const morePosts = posts.slice(1)
   return (
     <div id="blog">
-      <div className='container mx-auto px-5 pt-5'>
+      <div className='px-5 pt-5'>
         {blogIndex && (
           <BlogIndex
             title={blogIndex.title}

@@ -30,7 +30,7 @@ export default function PostPage({ params }: Params) {
     return (
       (post ?
         <Tooltip>
-          <div className='m-2'>
+          <div className='p-2'>
             <PostPreview
               title={post.title}
               blogImage={post.blogImage}
@@ -70,9 +70,6 @@ export default function PostPage({ params }: Params) {
       <div className='pb-6 min-w-full flex flex-row space-between gap-4'>
         <div className='w-full my-auto text-left'>
           {postPreviewLinkInDirection("previous")}
-        </div>
-        <div className='w-content my-auto text-center'>
-          <a className='btn btn-primary rounded-5 no-underline whitespace-nowrap' href='#top'>↑ Top</a>
         </div>
         <div className='w-full my-auto text-right'>
           {postPreviewLinkInDirection("next")}
