@@ -1,18 +1,18 @@
-import CoverImage from './cover-image'
+import BlogImage from './partials/blog-image'
 import Link from 'next/link'
 import parseDate from '@/utils/parseDate'
 
 type HeroPostProps = {
   title: string
-  coverImage: string
+  blogImage: string
   date: string
   excerpt: string
   slug: string
 }
 
-export default function HeroPost({
+export default function BlogIndex({
   title,
-  coverImage,
+  blogImage,
   date,
   excerpt,
   slug,
@@ -20,7 +20,7 @@ export default function HeroPost({
   return (
     <div>
       <div className="mb-8 md:mb-16">
-        <CoverImage title={title} src={coverImage} slug={slug} />
+        <BlogImage title={title} src={blogImage} slug={slug} />
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
@@ -28,7 +28,7 @@ export default function HeroPost({
             <Link
               as={`/blog/${slug}`}
               href="/blog/[slug]"
-              className="hover:underline"
+              className="no-underline"
             >
               {title}
             </Link>

@@ -8,11 +8,11 @@ type Props = {
   slug?: string
 }
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const BlogImage = ({ title, src, slug }: Props) => {
   const image = (
     <Image
       src={src}
-      alt={`Cover Image for ${title}`}
+      alt={`Image for ${title}`}
       className={cn('shadow-sm w-full', {
         'hover:shadow-lg transition-shadow duration-200': slug,
       })}
@@ -33,4 +33,4 @@ const CoverImage = ({ title, src, slug }: Props) => {
   )
 }
 
-export default CoverImage
+export default BlogImage

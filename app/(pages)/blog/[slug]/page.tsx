@@ -1,7 +1,10 @@
-import PostBody from '@/components/blog/post-body'
-import PostHeader from '@/components/blog/post-header'
-import Head from 'next/head'
-import { getAllPostsFromDirectory, getDirectoryPostBySlug } from '@/state/state'
+import { getAllPostsFromDirectory, getDirectoryPostBySlug, getAdjacentPostSlugs, isValidSlug } from '@/state/state'
+import Link from 'next/link'
+import Post from '@/components/blog/post'
+import Error from '@/components/error'
+import PostPreview from '@/components/blog/partials/post-preview'
+import { OverlayTrigger, Tooltip } from 'react-bootstrap'
+import { PostType } from '@/types/post'
 
 export async function generateStaticParams() {
   const posts = getAllPostsFromDirectory()
@@ -17,26 +20,63 @@ type Params = {
   }
 }
 
-export default function Post({ params }: Params) {
-  const post = getDirectoryPostBySlug(params.slug)
+export default function PostPage({ params }: Params) {
+  const validSlug = isValidSlug(params.slug)
+  const post = validSlug ? getDirectoryPostBySlug(params.slug) : null
+  const morePosts = post ? getAdjacentPostSlugs(post.date) : null
+  const nextPost = morePosts?.next ? getDirectoryPostBySlug(morePosts?.next) : null
+  const previousPost = morePosts?.previous ? getDirectoryPostBySlug(morePosts?.previous) : null
+  const tooltip = (post: PostType) => {
+    return (
+      (post ?
+        <Tooltip>
+          <div className='m-2'>
+            <PostPreview
+              title={post.title}
+              blogImage={post.blogImage}
+              date={post.date}
+              excerpt={post.excerpt}
+              slug={post.slug}
+            />
+          </div>
+        </Tooltip> :
+        <div />
+      )
+    )
+  }
+
+  function postPreviewLinkInDirection(direction: string) {
+    const post = direction === "previous" ? previousPost : nextPost
+    return post ?
+      <OverlayTrigger
+        placement='top'
+        delay={{ show: 250, hide: 400 }}
+        overlay={tooltip(post)}
+      >
+        <Link
+          as={`/blog/${post.slug}`}
+          href="/blog/[slug]"
+          className="no-underline italic"
+        >
+          {direction === "previous" ? `← "${post.title}"` : `"${post.title}" →`}
+        </Link>
+      </OverlayTrigger> : <div />
+  }
+
   return (
-    <div className='container mx-auto px-5 pt-5'>
-      <article className="mb-32">
-        <Head>
-          <title>{`${post.title || "Blog"} | Hasty Creations`}</title>
-          {post.ogImage && <meta property="og:image" content={post.ogImage.url} />}
-        </Head>
-        <PostHeader
-          title={post.title}
-          coverImage={post.coverImage}
-          date={post.date}
-        />
-        {post.content && <PostBody content={post.content} />}
-      </article>
-      <div className='pb-6 flex flex-row justify-between'>
-        <a className='btn btn-primary' href='/blog'>← Blog</a>
-        <a className='btn btn-primary' href='#top'>↑ Top</a>
-        <a className='btn btn-primary' href='/'>Home →</a>
+    <div className='container mx-auto px-5 pt-5 text-md'>
+      {!validSlug && <Error statusCode={404} />}
+      {post && <Post post={post} />}
+      <div className='pb-6 min-w-full flex flex-row space-between gap-4'>
+        <div className='w-full my-auto text-left'>
+          {postPreviewLinkInDirection("previous")}
+        </div>
+        <div className='w-content my-auto text-center'>
+          <a className='btn btn-primary rounded-5 no-underline whitespace-nowrap' href='#top'>↑ Top</a>
+        </div>
+        <div className='w-full my-auto text-right'>
+          {postPreviewLinkInDirection("next")}
+        </div>
       </div>
     </div>
   )

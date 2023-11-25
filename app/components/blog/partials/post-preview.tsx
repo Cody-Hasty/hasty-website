@@ -1,10 +1,10 @@
-import CoverImage from './cover-image'
+import BlogImage from './blog-image'
 import Link from 'next/link'
 import parseDate from '@/utils/parseDate'
 
 type PostPreviewProps = {
   title: string
-  coverImage: string
+  blogImage: string
   date: string
   excerpt: string
   slug: string
@@ -12,31 +12,31 @@ type PostPreviewProps = {
 
 export default function PostPreview({
   title,
-  coverImage,
+  blogImage,
   date,
   excerpt,
   slug,
 }: PostPreviewProps) {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+    <div className='block'>
+      <div className="mb-4">
+        <BlogImage slug={slug} title={title} src={blogImage} />
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
+      <h3 className="text-xl sm:text-lg mb-3">
         <Link
           as={`/blog/${slug}`}
           href="/blog/[slug]"
-          className="hover:underline"
+          className="no-underline"
         >
           {title}
         </Link>
       </h3>
-      <div className="text-lg mb-4">
+      <div className="text-lg sm:text-xs mb-3">
         <time dateTime={date}>
           {parseDate(date)}
         </time>
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <p className="text-lg sm:text-sm p-0 mt-0">{excerpt}</p>
     </div>
   )
 }
