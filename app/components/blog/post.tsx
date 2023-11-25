@@ -15,10 +15,10 @@ export default function Post({ post }: PostProps) {
         <title>{`${post.title || "Blog"} | Hasty Creations`}</title>
         {post.ogImage && <meta property="og:image" content={post.ogImage.url} />}
       </Head>
-      <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none mb-6 text-center md:text-left">
+      <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none mb-6">
         {post.title}
       </h1>
-      <div className="mb-6 text-md text-left">
+      <div className="mb-8 text-md">
         <time dateTime={post.date}>
           {parseDate(post.date)}
         </time>
