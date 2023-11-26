@@ -17,3 +17,16 @@ body {
 .navbar-brand {
   color: $main-blue !important;
 }
+
+.tooltip-arrow, .tooltip-inner {
+  background-color: white !important;
+  color: black !important;
+}
+
+.tooltip.show {
+  opacity: 1 !important;
+}
+
+.tooltip-inner {
+  border: 2px solid black;
+}
