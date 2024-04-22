@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Blog | Hasty Creations"
 }
 
-// Todo: Change this based on screen size and/or user preference
+// TODO: Change this based on screen size and/or user preference
 const BLOG_POSTS_PER_PAGE = 3
 
 const generateBlogPage = async (pageNum: number) => {
