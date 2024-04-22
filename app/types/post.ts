@@ -6,6 +6,11 @@ export type ItemType = {
 
 export type PostType = z.infer<typeof DefaultPostSchema>
 
+export type AdjacentPostsType = {
+  previous: PostType | null,
+  next: PostType | null
+}
+
 export const DefaultPostSchema = z.object({
   slug: z.string(),
   title: z.string(),

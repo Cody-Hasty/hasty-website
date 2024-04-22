@@ -1,6 +1,6 @@
 ---
-title: 'A - Learn How to Pre-render Pages Using Static Generation with Next.js'
-excerpt: 'Sample 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+title: 'B - Learn How to Pre-render Pages Using Static Generation with Next.js'
+excerpt: 'Sample 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 blogImage: '/images/blog/hello-world/cover.jpg'
 date: '2020-03-16T06:35:07.322Z'
 ogImage:
