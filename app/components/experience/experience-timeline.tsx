@@ -1,13 +1,19 @@
 "use client"
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import { AiFillFire } from 'react-icons/ai'
+import { CgWebsite } from 'react-icons/cg'
+import { SiPandora } from 'react-icons/si'
+import { FaTerminal } from 'react-icons/fa'
+import { FaMagnifyingGlass } from 'react-icons/fa6'
+import { GiParrotHead } from 'react-icons/gi'
+import { FaGraduationCap } from 'react-icons/fa'
+import { FaDna } from 'react-icons/fa'
 import { useInView } from "react-intersection-observer"
 import 'react-vertical-timeline-component/style.min.css'
 
 export function useSectionInView() {
   const { ref, inView } = useInView({
-    threshold: 1,
+    threshold: 0.75,
   })
 
   return {
@@ -25,16 +31,18 @@ export default function ExperienceTimeline() {
   const oduInView = useSectionInView()
   const oduEduInView = useSectionInView()
 
+  const WORK_COLOR = "dodgerblue"
+  const EDUCATION_COLOR = "orange"
+
   return (
-    <VerticalTimeline>
+    <VerticalTimeline className='flex flex-col gap-y-4' lineColor='lightgray'>
       <div ref={instrumentlInView.ref} >
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          contentStyle={{ background: "white", color: `${WORK_COLOR}`, border: `2px solid ${WORK_COLOR}`, boxShadow: "none" }}
+          contentArrowStyle={{ borderRight: `7px solid ${WORK_COLOR}` }}
           date="April 2024 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<AiFillFire />}
+          iconStyle={{ background: `${WORK_COLOR}`, color: '#fff' }}
+          icon={<CgWebsite />}
           visible={instrumentlInView.inView}
         >
           <h3 className="vertical-timeline-element-title">Software Engineer</h3>
@@ -46,10 +54,11 @@ export default function ExperienceTimeline() {
       </div>
       <div ref={pandoraInView.ref}>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          contentStyle={{ background: "white", color: `${WORK_COLOR}`, border: `2px solid ${WORK_COLOR}`, boxShadow: "none" }}
+          contentArrowStyle={{ borderRight: `7px solid ${WORK_COLOR}` }}
           date="November 2021 - March 2023"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<AiFillFire />}
+          iconStyle={{ background: `${WORK_COLOR}`, color: '#fff' }}
+          icon={<SiPandora />}
           visible={pandoraInView.inView}
         >
           <h3 className="vertical-timeline-element-title">Software Engineer</h3>
@@ -61,10 +70,12 @@ export default function ExperienceTimeline() {
       </div>
       <div ref={appAcademyEduInView.ref}>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          contentStyle={{ background: "white", color: `${EDUCATION_COLOR}`, border: `2px solid ${EDUCATION_COLOR}`, boxShadow: "none" }}
+          contentArrowStyle={{ borderRight: `7px solid ${EDUCATION_COLOR}` }}
           date="November 2021 - March 2023"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<AiFillFire />}
+          iconStyle={{ background: `${EDUCATION_COLOR}`, color: '#fff' }}
+          icon={<FaTerminal />}
+          position='right'
           visible={appAcademyEduInView.inView}
         >
           <h3 className="vertical-timeline-element-title">Student</h3>
@@ -76,10 +87,11 @@ export default function ExperienceTimeline() {
       </div>
       <div ref={volleyInView.ref}>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          contentStyle={{ background: "white", color: `${WORK_COLOR}`, border: `2px solid ${WORK_COLOR}`, boxShadow: "none" }}
+          contentArrowStyle={{ borderRight: `7px solid ${WORK_COLOR}` }}
           date="October 2019 - December 2019"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<AiFillFire />}
+          iconStyle={{ background: `${WORK_COLOR}`, color: '#fff' }}
+          icon={<FaMagnifyingGlass />}
           visible={volleyInView.inView}
         >
           <h3 className="vertical-timeline-element-title">Quality Assurance Engineer</h3>
@@ -91,10 +103,11 @@ export default function ExperienceTimeline() {
       </div>
       <div ref={mymicInView.ref}>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          contentStyle={{ background: "white", color: `${WORK_COLOR}`, border: `2px solid ${WORK_COLOR}`, boxShadow: "none" }}
+          contentArrowStyle={{ borderRight: `7px solid ${WORK_COLOR}` }}
           date="June 2018 - September 2019"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<AiFillFire />}
+          iconStyle={{ background: `${WORK_COLOR}`, color: '#fff' }}
+          icon={<GiParrotHead />}
           visible={mymicInView.inView}
         >
           <h3 className="vertical-timeline-element-title">Software Engineer</h3>
@@ -106,10 +119,11 @@ export default function ExperienceTimeline() {
       </div>
       <div ref={oduInView.ref}>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          contentStyle={{ background: "white", color: `${WORK_COLOR}`, border: `2px solid ${WORK_COLOR}`, boxShadow: "none" }}
+          contentArrowStyle={{ borderRight: `7px solid ${WORK_COLOR}` }}
           date="June 2017 - July 2018"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<AiFillFire />}
+          iconStyle={{ background: `${WORK_COLOR}`, color: '#fff' }}
+          icon={<FaDna />}
           visible={oduInView.inView}
         >
           <h3 className="vertical-timeline-element-title">Undergraduate Bioinformatics Student Researcher</h3>
@@ -121,10 +135,12 @@ export default function ExperienceTimeline() {
       </div>
       <div ref={oduEduInView.ref}>
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          contentStyle={{ background: "white", color: `${EDUCATION_COLOR}`, border: `2px solid ${EDUCATION_COLOR}`, boxShadow: "none" }}
+          contentArrowStyle={{ borderRight: `7px solid ${EDUCATION_COLOR}` }}
           date="August 2015 - May 2019"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<AiFillFire />}
+          iconStyle={{ background: `${EDUCATION_COLOR}`, color: '#fff' }}
+          icon={<FaGraduationCap />}
+          position='right'
           visible={oduEduInView.inView}
         >
           <h3 className="vertical-timeline-element-title">Undergraduate Computer Engineer</h3>
