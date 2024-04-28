@@ -8,7 +8,7 @@ import PageHeaderComponent from "./components/page-header"
 
 export default function HomePage() {
   return (
-    <div id="homepage" className="">
+    <div id="homepage" className="flex flex-col gap-y-4">
       <PageHeaderComponent mainText="Homepage" />
       {/* About me section, top 3 things to know */}
       <AboutBlurbComponent />

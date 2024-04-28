@@ -3,7 +3,7 @@ import PageHeaderComponent from "@/components/page-header";
 
 export default function ContactPage() {
   return (
-    <div id="contact">
+    <div id="contact" className="flex flex-col gap-y-4">
       <PageHeaderComponent mainText="Contact" />
       <ContactFormComponent />
     </div>

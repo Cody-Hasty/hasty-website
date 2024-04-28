@@ -4,7 +4,7 @@ import PageHeaderComponent from "@/components/page-header"
 
 export default function ExperiencePage() {
   return (
-    <div id="experience">
+    <div id="experience" className="flex flex-col gap-y-4">
       <PageHeaderComponent mainText="Experience" />
       <CompanyLogos />
       <ExperienceTimeline />

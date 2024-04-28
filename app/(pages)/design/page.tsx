@@ -3,7 +3,7 @@ import PageHeaderComponent from "@/components/page-header";
 
 export default function DesignPage() {
   return (
-    <div id="design">
+    <div id="design" className="flex flex-col gap-y-4">
       <PageHeaderComponent mainText="Design" />
       <DesignComponent />
     </div>
