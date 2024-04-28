@@ -1,7 +1,11 @@
+import PageHeaderComponent from "@/components/page-header";
+import ProjectsIndexComponent from "@/components/projects";
+
 export default function ProjectsPage() {
   return (
     <div id="projects">
-      <h1>Projects</h1>
+      <PageHeaderComponent mainText="Projects" />
+      <ProjectsIndexComponent />
     </div>
   )
 }

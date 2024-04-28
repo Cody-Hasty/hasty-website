@@ -1,7 +1,11 @@
+import ContactFormComponent from "@/components/contact-form";
+import PageHeaderComponent from "@/components/page-header";
+
 export default function ContactPage() {
   return (
     <div id="contact">
-      <h1>Contact</h1>
+      <PageHeaderComponent mainText="Contact" />
+      <ContactFormComponent />
     </div>
   )
 }

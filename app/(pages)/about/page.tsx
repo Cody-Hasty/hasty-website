@@ -1,7 +1,11 @@
+import AboutBlurbComponent from "@/components/about/about-blurb";
+import PageHeaderComponent from "@/components/page-header";
+
 export default function AboutPage() {
   return (
     <div id="about">
-      <h1>About</h1>
+      <PageHeaderComponent mainText="About" />
+      <AboutBlurbComponent />
     </div>
   )
 }
