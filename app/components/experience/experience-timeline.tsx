@@ -32,7 +32,7 @@ export default function ExperienceTimeline() {
   const oduEduInView = useSectionInView()
 
   const WORK_COLOR = "dodgerblue"
-  const EDUCATION_COLOR = "orange"
+  const EDUCATION_COLOR = "darkorange"
 
   return (
     <VerticalTimeline className='flex flex-col gap-y-4' lineColor='lightgray'>
