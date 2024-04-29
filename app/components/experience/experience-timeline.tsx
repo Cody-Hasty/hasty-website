@@ -44,7 +44,7 @@ export default function ExperienceTimeline() {
   const EDUCATION_COLOR = "darkorange"
 
   return (
-    <VerticalTimeline className='flex flex-col gap-y-4' lineColor='lightgray'>
+    <VerticalTimeline className='flex flex-col gap-y-4' lineColor={'' /* Actually set inside globals.scss, but this empty string is necessary to prevent errors */}>
       <div ref={instrumentlInView.ref} >
         <VerticalTimelineElement
           contentStyle={{ background: "white", color: "black", border: "2px solid lightgray", boxShadow: "none" }}
@@ -60,9 +60,9 @@ export default function ExperienceTimeline() {
             company='Instrumentl'
             image={tlLogo}
             highlights={[
-              "",
-              "",
-              ""
+              "Revamped outdated website pages to improve user experience and increase conversion rates",
+              "Conducted A/B tests to determine the most effective user interface for new and existing features",
+              "Expanded the company's grant information ingestion pipeline to include more data sources",
             ]}
           />
         </VerticalTimelineElement>
