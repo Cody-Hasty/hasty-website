@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import tlLogo from '@public/images/homepage/Instrumentl-Logo.png'
-import pandoraLogo from '@public/images/homepage/Pandora-Logo.png'
-import volleyLogo from '@public/images/homepage/Volley-Logo.png'
-import mymicLogo from '@public/images/homepage/MYMIC-Logo.png'
-import oduLogo from '@public/images/homepage/ODU-Logo.png'
+import tlLogo from '@public/images/experience/Instrumentl-Logo.png'
+import pandoraLogo from '@public/images/experience/Pandora-Logo.png'
+import volleyLogo from '@public/images/experience/Volley-Logo.png'
+import mymicLogo from '@public/images/experience/MYMIC-Logo.png'
+import oduLogo from '@public/images/experience/ODU-Logo.png'
 
 export default function CompanyLogos() {
   return (

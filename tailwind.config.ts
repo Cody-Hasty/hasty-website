@@ -30,6 +30,14 @@ const config: Config = {
         purple: '#90f',
         teal: '#0f9',
         pink: '#f09',
+      },
+      spacing: {
+        '32': '8rem',
+        '36': '9rem',
+      },
+      minWidth: {
+        '32': '8rem',
+        '36': '9rem',
       }
     },
   },
