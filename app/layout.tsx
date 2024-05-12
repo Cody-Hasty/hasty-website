@@ -2,7 +2,8 @@ import { Metadata, Viewport } from 'next'
 import '@/styles/globals.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 import Navbar from '@/components/navbar'
-import Footer from '@/components/footer';
+import Footer from '@/components/footer'
+import ShootingStarComponent from '@/components/shooting-star'
 
 export const metadata: Metadata = {
   title: "Hasty Creations",
@@ -29,7 +30,8 @@ export default function RootLayout({
     <html lang="en">
       <body className='w-full min-h-screen overflow-x-hidden bg-no-repeat flex flex-col font-sans'>
         <Navbar />
-        <div id="content" className='max-w-screen-lg w-full p-[25px] pt-[20px] my-0 mx-auto rounded-5 grow'>
+        <ShootingStarComponent numberOfStars={8} />
+        <div id="content" className='max-w-screen-lg w-full p-[25px] my-0 mx-auto rounded-5 grow relative z-10'>
           {children}
         </div>
         <Footer />

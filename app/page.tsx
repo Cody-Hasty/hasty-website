@@ -7,9 +7,13 @@ import ContactFormComponent from "./components/contact-form"
 import PageHeaderComponent from "./components/page-header"
 
 export default function HomePage() {
+  // Add shooting star animation on scroll in background?
   return (
     <div id="homepage" className="flex flex-col gap-y-4">
-      <PageHeaderComponent mainText="Homepage" />
+      <PageHeaderComponent
+        mainText="Homepage"
+        description="TODO: Change this header to look better"
+      />
       {/* About me section, top 3 things to know */}
       <AboutBlurbComponent />
       {/* 3 most important services */}

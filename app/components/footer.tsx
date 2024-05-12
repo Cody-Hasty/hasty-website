@@ -3,7 +3,7 @@ import background from '@public/images/background.svg'
 
 export default function FooterComponent() {
   return (
-    <div id="footer" className='bottom-0 mt-5 grow-0'>
+    <div id="footer" className='bottom-0 mt-5 grow-0 relative z-10'>
       <Image src={background} alt="SF Sunset Background" loading='eager' className='w-screen' />
     </div>
   )
