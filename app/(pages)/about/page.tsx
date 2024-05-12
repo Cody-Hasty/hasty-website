@@ -1,5 +1,5 @@
 import AboutBlurbComponent from "@/components/about/about-blurb";
-import PageHeaderComponent from "@/components/page-header";
+import PageHeaderComponent from "@/components/shared/page-header";
 
 export default function AboutPage() {
   return (

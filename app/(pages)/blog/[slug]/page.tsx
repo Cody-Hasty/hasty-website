@@ -1,5 +1,5 @@
 import Post from '@/components/blog/post'
-import Error from '@/components/error'
+import Error from '@/components/shared/error'
 import BlogNavigation from '@/components/blog/navigation'
 import { getAdjacentPosts, getPostBySlug, getPostSlugs } from '@/utils/postUtils'
 

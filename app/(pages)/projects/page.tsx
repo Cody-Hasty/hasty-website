@@ -1,4 +1,4 @@
-import PageHeaderComponent from "@/components/page-header";
+import PageHeaderComponent from "@/components/shared/page-header";
 import ProjectsIndexComponent from "@/components/projects";
 
 export default function ProjectsPage() {

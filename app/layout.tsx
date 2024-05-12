@@ -1,9 +1,9 @@
 import { Metadata, Viewport } from 'next'
 import '@/styles/globals.scss'
 import 'bootstrap/dist/css/bootstrap.css'
-import Navbar from '@/components/navbar'
-import Footer from '@/components/footer'
-import ShootingStarComponent from '@/components/shooting-star'
+import Navbar from '@/components/shared/navbar'
+import Footer from '@/components/shared/footer'
+import ShootingStarComponent from '@/components/shared/shooting-star'
 
 export const metadata: Metadata = {
   title: "Hasty Creations",

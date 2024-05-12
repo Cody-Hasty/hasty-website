@@ -1,6 +1,6 @@
 import CompanyLogos from "@/components/experience/company-logos"
 import ExperienceTimeline from "@/components/experience/experience-timeline"
-import PageHeaderComponent from "@/components/page-header"
+import PageHeaderComponent from "@/components/shared/page-header"
 
 export default function ExperiencePage() {
   return (

@@ -3,8 +3,8 @@ import AboutBlurbComponent from "./components/about/about-blurb"
 import ServicesComponent from "./components/about/services"
 import WhatIOfferComponent from "./components/about/what-I-offer"
 import TestimonialsComponent from "./components/about/testimonials"
-import ContactFormComponent from "./components/contact-form"
-import PageHeaderComponent from "./components/page-header"
+import ContactFormComponent from "./components/shared/contact-form"
+import PageHeaderComponent from "./components/shared/page-header"
 
 export default function HomePage() {
   // Add shooting star animation on scroll in background?

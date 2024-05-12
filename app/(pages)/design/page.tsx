@@ -1,5 +1,5 @@
 import DesignComponent from "@/components/design/design";
-import PageHeaderComponent from "@/components/page-header";
+import PageHeaderComponent from "@/components/shared/page-header";
 
 export default function DesignPage() {
   return (
