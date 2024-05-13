@@ -14,7 +14,7 @@ export default function ShootingStarComponent({ numberOfStars }: ShootingStarPro
           style={{
             top: '-10px',
             right: `${index * (100 / numberOfStars)}%`,
-            animationDelay: `${generateRandomNumber(1, 7)}s`,
+            animationDelay: `${generateRandomNumber(1, 8)}s`,
             animationDuration: `${generateRandomNumber(4, 7)}s`,
           }}
         />
