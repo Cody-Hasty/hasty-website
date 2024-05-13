@@ -3,8 +3,9 @@ import AboutBlurbComponent from "./components/about/about-blurb"
 import ServicesComponent from "./components/about/services"
 import WhatIOfferComponent from "./components/about/what-I-offer"
 import TestimonialsComponent from "./components/about/testimonials"
-import ContactFormComponent from "./components/shared/contact-form"
+import ContactFormComponent from "./components/contact/contact-form"
 import PageHeaderComponent from "./components/shared/page-header"
+import SocialMediaBannerComponent from "./components/shared/social-media-banner"
 
 export default function HomePage() {
   // Add shooting star animation on scroll in background?
@@ -22,10 +23,12 @@ export default function HomePage() {
       <WhatIOfferComponent />
       {/* Testimonials */}
       <TestimonialsComponent />
-      {/* Customer Logos */}
+      {/* Customer logos */}
       <CompanyLogos />
-      {/* CTA / Contact Me form */}
+      {/* CTA / contact me form */}
       <ContactFormComponent />
+      {/* Social media links */}
+      <SocialMediaBannerComponent />
     </div>
   )
 }

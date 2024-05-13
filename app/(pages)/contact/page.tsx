@@ -1,4 +1,4 @@
-import ContactFormComponent from "@/components/shared/contact-form";
+import ContactFormComponent from "@/components/contact/contact-form";
 import PageHeaderComponent from "@/components/shared/page-header";
 import SocialMediaBannerComponent from "@/components/shared/social-media-banner";
 

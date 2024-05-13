@@ -1,4 +1,4 @@
-import { ContactFormData } from '@/components/shared/contact-form';
+import { ContactFormData } from '@/components/contact/contact-form';
 
 export function sendEmail(data: ContactFormData): Promise<Response> {
   const apiEndpoint = '/api/email';

@@ -3,7 +3,7 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { sendEmail } from '@/utils/sendEmail';
-import StatusBannerComponent from '@/components/shared/status-banner';
+import StatusBannerComponent from '@/components/contact/status-banner';
 import { FaCheck, FaRedo } from 'react-icons/fa';
 
 export type ContactFormData = {
