@@ -20,7 +20,7 @@ export default function NavbarComponent() {
     <Navbar id='top' collapseOnSelect expand="md" bg="light" className='my-2.5 font-bold mx-auto pe-2 rounded-5 w-full max-w-screen-lg grow-0 inline-flex items-center z-10'>
       <Container fluid>
         <Navbar.Brand href="/" className='inline-flex items-center'>
-          <Image src={brandImg} alt="small logo" loading='eager' width={40} height={40} />
+          <Image src={brandImg} alt="small logo" loading='eager' width={40} height={40} priority={true} />
           <span className={`${font.className} ml-2.5 text-xl`}>Hasty Creations</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
