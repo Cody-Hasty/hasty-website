@@ -1,6 +1,6 @@
 import ContactFormComponent from "@/components/contact/contact-form";
 import PageHeaderComponent from "@/components/shared/page-header";
-import SocialMediaBannerComponent from "@/components/shared/social-media-banner";
+import SocialMediaBannerComponent from "@/components/contact/social-media-banner";
 
 export default function ContactPage() {
   return (

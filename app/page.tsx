@@ -5,7 +5,7 @@ import WhatIOfferComponent from "./components/about/what-I-offer"
 import TestimonialsComponent from "./components/about/testimonials"
 import ContactFormComponent from "./components/contact/contact-form"
 import PageHeaderComponent from "./components/shared/page-header"
-import SocialMediaBannerComponent from "./components/shared/social-media-banner"
+import SocialMediaBannerComponent from "./components/contact/social-media-banner"
 
 export default function HomePage() {
   // Add shooting star animation on scroll in background?
