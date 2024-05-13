@@ -5,7 +5,7 @@ export default function ProjectsPage() {
   return (
     <div id="projects" className="flex flex-col gap-y-4">
       <PageHeaderComponent mainText="Projects" />
-      <ProjectsIndexComponent />
+      {/* <ProjectsIndexComponent /> */}
     </div>
   )
 }
