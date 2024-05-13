@@ -4,30 +4,56 @@ import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { sendEmail } from '@/utils/sendEmail';
 import StatusBannerComponent from '@/components/shared/status-banner';
+import { FaCheck, FaRedo } from 'react-icons/fa';
 
 export type ContactFormData = {
   name: string;
   email: string;
   message: string;
+  cc: boolean;
 };
 
 export default function ContactFormComponent() {
   const { register, handleSubmit, formState: { errors } } = useForm<ContactFormData>()
   const [ apiResponse, setApiResponse ] = useState<Response>()
+  const [ responseStatusTimedOut, setResponseStatusTimedOut ] = useState<boolean>(true)
+  const [ submitPending, setSubmitPending ] = useState<boolean>(false)
 
   function onSubmit(data: ContactFormData) {
+    setSubmitPending(true)
     sendEmail(data).then((response) => {
+      setSubmitPending(false)
       setApiResponse(response)
+      setResponseStatusTimeout()
     })
+  }
+
+  function setResponseStatusTimeout() {
+    setResponseStatusTimedOut(false)
+    setTimeout(() => {
+      setResponseStatusTimedOut(true)
+    }, 5000)
+  }
+
+  function showButtonStatusIcon() {
+    return !responseStatusTimedOut && !submitPending && apiResponse
+  }
+
+  function showButtonLoadingSpinner() {
+    return Object.keys(errors).length == 0 && submitPending
+  }
+
+  function showBanner() {
+    return apiResponse && !responseStatusTimedOut
   }
 
   return (
     <div>
-      { apiResponse &&
+      { showBanner() &&
         <StatusBannerComponent
-          apiResponse={apiResponse}
-          customSuccessMsg='Email sent successfully. Thanks for reaching out!'
-          customErrorMsg='Failed to send email. Please try again in a moment.'
+          apiResponse={apiResponse as Response}
+          customSuccessMsg='Email sent successfully. Thank you for reaching out!'
+          customErrorMsg='Failed to send email. Please try again in a few seconds.'
         />
       }
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -79,8 +105,19 @@ export default function ContactFormComponent() {
           ></textarea>
           {errors.message && <p className="text-red mt-2" role="alert">{errors.message.message}</p>}
         </div>
-        <button className='text-white rounded-md bg-orange px-3 py-2 hover:bg-orange-200'>
+        <div className='mb-4 flex flex-row gap-2 items-center'>
+          <input
+            id='cc-checkbox'
+            type='checkbox'
+            {...register('cc', { required: false })}
+          />
+          <label htmlFor='cc-checkbox' className='text-base font-light'>Send a copy to your email</label>
+        </div>
+        <button className='text-white rounded-md bg-orange px-3 py-2 hover:bg-orange-200 flex flex-row gap-2 items-center'>
+          {showButtonLoadingSpinner() && <span className="spinner-border spinner-border-sm" />}
           Submit
+          {showButtonStatusIcon() && apiResponse?.ok && <FaCheck fill='white' />}
+          {showButtonStatusIcon() && !apiResponse?.ok && <FaRedo fill='white' />}
         </button>
       </form>
     </div>

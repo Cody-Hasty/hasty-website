@@ -1,7 +1,7 @@
 type StatusBannerComponentProps = {
   apiResponse: Response,
   customSuccessMsg?: string,
-  customErrorMsg?: string
+  customErrorMsg?: string,
 }
 
 export default function StatusBannerComponent({ apiResponse, customSuccessMsg, customErrorMsg }: StatusBannerComponentProps) {
