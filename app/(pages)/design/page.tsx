@@ -5,7 +5,7 @@ export default function DesignPage() {
   return (
     <div id="design" className="flex flex-col gap-y-4">
       <PageHeaderComponent mainText="Design" />
-      {/* <DesignComponent /> */}
+      <DesignComponent />
     </div>
   )
 }

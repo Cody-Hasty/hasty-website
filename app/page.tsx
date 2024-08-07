@@ -8,7 +8,6 @@ import PageHeaderComponent from "./components/shared/page-header"
 import SocialMediaBannerComponent from "./components/contact/social-media-banner"
 
 export default function HomePage() {
-  // Add shooting star animation on scroll in background?
   return (
     <div id="homepage" className="flex flex-col gap-y-4">
       <PageHeaderComponent
