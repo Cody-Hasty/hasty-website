@@ -6,7 +6,7 @@ type ShootingStarProps = {
 
 export default function ShootingStarComponent({ numberOfStars }: ShootingStarProps) {
   return (
-    <div className="absolute top-0 left-0 w-full h-full z-0 hidden min-[1050px]:block">
+    <div className="absolute top-0 left-0 w-full h-full z-[-1] hidden min-[1050px]:block">
       {Array.from(Array(numberOfStars)).map((_, index) => (
         <div
           key={index}
