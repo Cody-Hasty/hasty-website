@@ -8,7 +8,7 @@ type ProjectRowProps = {
 
 export default function ProjectRowComponent({ repo }: ProjectRowProps) {
   return (
-    <li className="list-group-item card w-80 max-w-80 lg:w-96 lg:max-w-96 border rounded" key={repo.id}>
+    <li className="list-group-item card w-80 max-w-80 lg:w-96 lg:max-w-96 rounded border-2" key={repo.id}>
       <h3 className="card-header border-0 bg-transparent">
         <a className="flex flex-row justify-between no-underline" href={repo.html_url} target="_blank" rel="noopener noreferrer">
           {repoNameTitle(repo.name)} ({repo.name})

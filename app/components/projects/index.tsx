@@ -23,7 +23,7 @@ export default function ProjectsIndexComponent() {
   function displayGithubUser() {
     return (
       user && (
-        <div className='flex flex-row w-full !bg-gray border-0 justify-center content-center'>
+        <div className='flex flex-col sm:flex-row items-center w-full border-0 justify-center mb-4'>
           <div className="card w-80 max-w-80 lg:w-96 lg:max-w-96 bg-transparent border-0 text-center">
             <Image src={user.avatar_url} className='card-img-top max-w-max mt-4 mx-auto' alt="github profile pic" width={200} height={200} />
             <div className='card-body mx-auto'>
@@ -56,7 +56,7 @@ export default function ProjectsIndexComponent() {
   }
 
   return (
-    <div className='bg-gray rounded-bottom'>
+    <div className='rounded-bottom'>
       {displayGithubProjects()}
     </div>
   )
