@@ -24,8 +24,6 @@ export default function HomePage() {
       <TestimonialsComponent />
       {/* Customer logos */}
       <CompanyLogos />
-      {/* CTA / contact me form */}
-      <ContactFormComponent />
       {/* Social media links */}
       <SocialMediaBannerComponent />
     </div>
