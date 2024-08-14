@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import background from '@public/images/background.svg'
+import background from '@images/background.svg'
 
 export default function FooterComponent() {
   return (

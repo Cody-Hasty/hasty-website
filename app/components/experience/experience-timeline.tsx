@@ -13,12 +13,12 @@ import { GiParrotHead } from 'react-icons/gi'
 import { FaGraduationCap } from 'react-icons/fa'
 import { FaDna } from 'react-icons/fa'
 
-import tlLogo from '@public/images/experience/Instrumentl-Logo.png'
-import pandoraLogo from '@public/images/experience/Pandora-Logo.png'
-import volleyLogo from '@public/images/experience/Volley-Logo.png'
-import mymicLogo from '@public/images/experience/MYMIC-Logo.png'
-import oduLogo from '@public/images/experience/ODU-Logo.png'
-import appAcademyLogo from '@public/images/experience/AppAcademy-Logo.png'
+import tlLogo from '@images/experience/Instrumentl-Logo.png'
+import pandoraLogo from '@images/experience/Pandora-Logo.png'
+import volleyLogo from '@images/experience/Volley-Logo.png'
+import mymicLogo from '@images/experience/MYMIC-Logo.png'
+import oduLogo from '@images/experience/ODU-Logo.png'
+import appAcademyLogo from '@images/experience/AppAcademy-Logo.png'
 
 export function useSectionInView() {
   const { ref, inView } = useInView({
