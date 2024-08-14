@@ -1,7 +1,7 @@
 export default function ResumeComponent() {
   return (
-    <div className="">
-      <div>TODO: Resume link / download</div>
+    <div className="text-center">
+      <a href="/docs/Cody_Hasty_Resume.pdf" download className="btn btn-primary btn-lg">Download Resume</a>
     </div>
   )
 }
