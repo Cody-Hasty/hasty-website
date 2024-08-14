@@ -1,4 +1,4 @@
-import { Metadata, Viewport } from 'next'
+import { Metadata } from 'next'
 import '@/styles/globals.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 import Navbar from '@/components/shared/navbar'
@@ -16,18 +16,13 @@ export const metadata: Metadata = {
   }
 }
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1
-}
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-bs-theme="light">
       <body className='w-full min-h-screen overflow-x-hidden bg-no-repeat flex flex-col font-sans'>
         <Navbar />
         <ShootingStarComponent numberOfStars={8} />

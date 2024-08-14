@@ -1,7 +1,7 @@
 "use client"
 import _ from 'lodash'
 import Image from 'next/image'
-import brandImg from '@public/images/brand.png'
+import brandImg from '@images/brand.png'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
@@ -39,7 +39,7 @@ export default function NavbarComponent() {
     return (
       <NavDropdown title={_.capitalize(sectionName)} key={sectionName} id={sectionName}>
         {sections.map(subpage => (
-          <NavDropdown.Item key={subpage} href={`/${subpage}`} className={activePathClass(subpage)}>
+          <NavDropdown.Item key={subpage} href={`/${subpage}`} className={`${activePathClass(subpage)} hover:!bg-light-gray focus:text-inherit`}>
             {_.capitalize(_.last(subpage.split('/')))}
           </NavDropdown.Item>
         ))}
