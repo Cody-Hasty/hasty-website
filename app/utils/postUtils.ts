@@ -55,7 +55,7 @@ export const getAdjacentPosts = async (slug: string): Promise<AdjacentPostsType>
   }
 }
 
-export const getPaginatedPosts = async (page: number = 1, limit: number = 10): Promise<PaginatedPostsType> => {
+export const getPaginatedPosts = async (page: number = 1, limit: number = 3): Promise<PaginatedPostsType> => {
   const startIndex = (page - 1) * limit
   const endIndex = page * limit
   const allPosts = await getAllValidChronologicalPosts()
@@ -71,6 +71,6 @@ export const getPaginatedPosts = async (page: number = 1, limit: number = 10): P
   }
 }
 
-export const getTotalPostPages = async (limit: number = 10) => {
+export const getTotalPostPages = async (limit: number = 3) => {
   return Math.ceil((await getAllValidChronologicalPosts()).length / limit)
 }
