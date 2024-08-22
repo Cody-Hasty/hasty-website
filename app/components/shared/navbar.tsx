@@ -19,14 +19,15 @@ export default function NavbarComponent() {
     'contact',
   ]
   const currentPath = usePathname()
-  const activePathClass = (page: string) => currentPath === `/${page}` ? "active" : ""
+  const isPathActive = (page: string) => currentPath === `/${page}`
+  const isDropdownActive = (pages: string[]) => pages.some(subpage => isPathActive(subpage))
 
   function navbarLink(page: string) {
     return (
       <Nav.Link
         key={page}
         href={`/${page}`}
-        className={activePathClass(page)}
+        active={isPathActive(page)}
       >
         {_.capitalize(page)}
       </Nav.Link>
@@ -37,9 +38,9 @@ export default function NavbarComponent() {
     if (sections.length === 0) return null
     const sectionName = sections.shift() as string
     return (
-      <NavDropdown title={_.capitalize(sectionName)} key={sectionName} id={sectionName}>
+      <NavDropdown title={_.capitalize(sectionName)} key={sectionName} id={sectionName} active={isDropdownActive(sections)}>
         {sections.map(subpage => (
-          <NavDropdown.Item key={subpage} href={`/${subpage}`} className={`${activePathClass(subpage)} hover:!bg-light-gray focus:text-inherit`}>
+          <NavDropdown.Item key={subpage} href={`/${subpage}`} active={isPathActive(subpage)}>
             {_.capitalize(_.last(subpage.split('/')))}
           </NavDropdown.Item>
         ))}
@@ -60,8 +61,8 @@ export default function NavbarComponent() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="/" className={activePathClass("")}>Home</Nav.Link>
+          <Nav className="ms-auto" variant='underline'>
+            <Nav.Link href="/" active={isPathActive("")}>Home</Nav.Link>
             {sections.map(section => displayNavbarSection(section))}
           </Nav>
         </Navbar.Collapse>
