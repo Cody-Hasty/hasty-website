@@ -19,7 +19,8 @@ export default function NavbarComponent() {
     'contact',
   ]
   const currentPath = usePathname()
-  const isPathActive = (page: string) => currentPath === `/${page}`
+  const onBlogSubPage = currentPath.includes("blog/")
+  const isPathActive = (page: string) => currentPath === `/${page}` || page === 'blog' && onBlogSubPage
   const isDropdownActive = (pages: string[]) => pages.some(subpage => isPathActive(subpage))
 
   function navbarLink(page: string) {
