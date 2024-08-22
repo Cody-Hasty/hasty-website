@@ -2,11 +2,11 @@ import { Repo } from "@/types/gitApi"
 import { repoNameTitle } from "@/utils/gitApiUtils";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-type ProjectRowProps = {
+type CodeRepositoryProps = {
   repo: Repo
 }
 
-export default function ProjectRowComponent({ repo }: ProjectRowProps) {
+export default function CodeRepositoryComponent({ repo }: CodeRepositoryProps) {
   return (
     <li className="list-group-item card w-80 max-w-80 lg:w-96 lg:max-w-96 rounded border-2" key={repo.id}>
       <h3 className="card-header border-0 bg-transparent">

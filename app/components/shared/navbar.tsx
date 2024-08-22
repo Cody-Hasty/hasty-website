@@ -14,7 +14,7 @@ const font = Delius_Swash_Caps({ subsets: ["latin"], weight: "400" })
 export default function NavbarComponent() {
   // Sections can be nested to create dropdowns, where the first element is the dropdown title
   const sections = [
-    ['about','about/experience','about/projects'],
+    ['about','about/experience','about/github'],
     'blog',
     'contact',
   ]

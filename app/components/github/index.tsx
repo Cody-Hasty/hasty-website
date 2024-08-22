@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import { Repo, User } from "@/types/gitApi"
 import Image from 'next/image'
-import ProjectRowComponent from './project-row'
+import CodeRepositoryComponent from './code-repository'
 import { FaGithub } from 'react-icons/fa'
 import { fetchGithubProjects, fetchGithubUser } from '@/utils/gitApiUtils'
 
@@ -48,7 +48,7 @@ export default function ProjectsIndexComponent() {
         <ul className="list-group list-group-horizontal flex-wrap justify-center py-4">
           {displayGithubUser()}
           {repos.map(repo => (
-            <ProjectRowComponent repo={repo} key={repo.id} />
+            <CodeRepositoryComponent repo={repo} key={repo.id} />
           ))}
         </ul>
       )
