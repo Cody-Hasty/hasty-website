@@ -22,6 +22,12 @@ body {
   color: $main-blue !important;
 }
 
+article code {
+  color: orange;
+  background-color: $main-blue;
+  padding: 4px;
+}
+
 .tooltip-arrow,
 .tooltip-inner {
   background-color: white !important;
