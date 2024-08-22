@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Markdown from 'react-markdown'
 import BlogImage from './partials/blog-image'
 import parseDate from '@/utils/parseDate'
+import remarkGfm from 'remark-gfm'
 
 type PostProps = {
   post: PostType
@@ -28,7 +29,7 @@ export default function Post({ post }: PostProps) {
       </div>
       {post.content && (
         <div className="min-h-content">
-          <Markdown>{post.content}</Markdown>
+          <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
         </div>
       )}
     </article>
