@@ -38,6 +38,10 @@ const config: Config = {
       minWidth: {
         '32': '8rem',
         '36': '9rem',
+      },
+      content: {
+        'lquote': '“',
+        'rquote': '”',
       }
     },
   },

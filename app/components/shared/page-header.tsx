@@ -7,9 +7,8 @@ type PageHeaderProps = {
 }
 
 export default function PageHeaderComponent({ mainText, description }: PageHeaderProps) {
-  // Add a carousel of images in the background?
   return (
-    <div className="flex flex-col items-center gap-2 p-4 bg-[darkblue]/70 rounded-t-2xl">
+    <div className="flex flex-col items-center gap-2 p-4 bg-[darkblue]/70  bg-gradient-to-r from-[darkblue]/60 to-main-blue/80 rounded-t-2xl">
       <h1 className={`${font.className} text-white`}>{mainText}</h1>
       { description && <p className="m-0 text-white">{description}</p> }
     </div>
