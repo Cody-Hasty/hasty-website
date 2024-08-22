@@ -22,10 +22,28 @@ body {
   color: $main-blue !important;
 }
 
-article code {
-  color: orange;
-  background-color: $main-blue;
-  padding: 4px;
+// Blog styling with ReactMarkdown
+article {
+  code {
+    color: orange;
+    background-color: $main-blue;
+    padding: 4px;
+  }
+
+  table {
+    th, td {
+      border-right: 1px solid lightgray;
+      padding: 8px 12px;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    td {
+      border-top: 1px solid lightgray;
+    }
+  }
 }
 
 .tooltip-arrow,

@@ -18,7 +18,7 @@ const generateBlogPage = async (pageNum: number) => {
   const morePosts = paginatedPosts ? paginatedPosts.posts.slice(1) : null
 
   return (
-    <div className='px-5 pt-5' key={`page-${pageNum}`}>
+    <div className='sm:px-5 sm:pt-5' key={`page-${pageNum}`}>
       {mainPost && <HeroPost post={mainPost} />}
       {morePosts && <MoreStories posts={morePosts} />}
       {paginatedPosts && <PaginationBar props={paginatedPosts} />}

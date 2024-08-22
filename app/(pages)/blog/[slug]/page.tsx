@@ -20,7 +20,7 @@ export default async function PostPage({ params }: Params) {
   const adjacentPosts = post && await getAdjacentPosts(post.slug)
 
   return (
-    <div className='container mx-auto px-5 pt-5 text-md'>
+    <div className='container mx-auto sm:px-5 sm:pt-5 text-md'>
       {!post && <Error statusCode={404} />}
       {post && <Post post={post} />}
       {adjacentPosts &&
