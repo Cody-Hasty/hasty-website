@@ -35,7 +35,7 @@ export default function ProjectsIndexComponent() {
           </div>
           <div className='w-80 max-w-80 lg:w-96 lg:max-w-96 flex flex-col justify-center content-center'>
             <h3>Github Projects</h3>
-            <p>Here are some of the side projects I&apos;ve been working on in my free time</p>
+            <blockquote className="text-black/70 pl-6 border-l-[5px] border-l-black/10 my-[1.2em]">A collection of the side projects I&apos;ve been working on in my free time</blockquote>
           </div>
         </div>
       )
