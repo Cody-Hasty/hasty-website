@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Post from '@/components/blog/post'
 import Error from '@/components/shared/error'
 import BlogNavigation from '@/components/blog/navigation'
@@ -12,6 +13,16 @@ export async function generateStaticParams() {
 type Params = {
   params: {
     slug: string
+  }
+}
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const post = await getPostBySlug(params.slug)
+  return {
+    title: `${post.title || "Blog"} | Hasty Creations`,
+    ...(post.ogImage?.url && {openGraph: {
+      images: [{ url: post.ogImage.url }]
+    }})
   }
 }
 

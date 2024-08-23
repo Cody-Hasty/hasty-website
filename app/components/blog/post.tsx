@@ -1,5 +1,4 @@
 import { PostType } from '@/types/post'
-import Head from 'next/head'
 import Markdown from 'react-markdown'
 import BlogImage from './partials/blog-image'
 import parseDate from '@/utils/parseDate'
@@ -12,10 +11,6 @@ type PostProps = {
 export default function Post({ post }: PostProps) {
   return (
     <article className="mb-16">
-      <Head>
-        <title>{`${post.title || "Blog"} | Hasty Creations`}</title>
-        {post.ogImage && <meta property="og:image" content={post.ogImage.url} />}
-      </Head>
       <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none mb-6">
         {post.title}
       </h1>
