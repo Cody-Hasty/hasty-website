@@ -3,6 +3,7 @@ import Markdown from 'react-markdown'
 import BlogImage from './partials/blog-image'
 import parseDate from '@/utils/parseDate'
 import remarkGfm from 'remark-gfm'
+import rehypeSlug from 'rehype-slug'
 
 type PostProps = {
   post: PostType
@@ -24,7 +25,7 @@ export default function Post({ post }: PostProps) {
       </div>
       {post.content && (
         <div className="min-h-content">
-          <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
+          <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]}>{post.content}</Markdown>
         </div>
       )}
     </article>
