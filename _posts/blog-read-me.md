@@ -18,7 +18,7 @@ ogImage:
 
 #  Installation
 - Install npm packages with `npm install`
-- Run the website with `npm run dev` or `npm start`
+- Run the website with `npm run dev` and visit [http://localhost:3000](http://localhost:3000)
 
 **Production Link:** https://www.hastycreations.com/
 

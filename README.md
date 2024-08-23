@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+---
+title: "Read Me: A Hasty Blog"
+excerpt: "Putting text on the page: api, design, and delivery. Here's a few considerations I took when developing this blog."
+blogImage: "/images/thumbnail.png"
+date: "2024-08-22T08:00:00.000Z"
+ogImage:
+  url: "/images/thumbnail.png"
+---
 
-## Getting Started
+#  Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [High-Level Description](#high-level-description)
+- [Backend Routes](#backend-routes)
+- [Frontend Routes](#frontend-routes)
+- [Blog](#blog)
 
-First, run the development server:
+#  Installation
+- Install npm packages with `npm install`
+- Run the website with `npm run dev` and visit [http://localhost:3000](http://localhost:3000)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Production Link:** https://www.hastycreations.com/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#  High-Level Description
+>  _Hasty Creations_ is a full-stack application built using Typescript Next.js. Each of the frontend routes are passed through a page building model that renders functional hook-based React components. The styling is done with a combination of TailwindCSS and Bootstrap components.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#  Backend Routes
+| Method | Route                  | Description                                                    |
+| ------ | ---------------------- | -------------------------------------------------------------- |
+| `POST` | `/api/email`           | Takes an email as a parameter and sends it to my email address |
+| `GET`  | `/api/github/projects` | Returns a list of the projects that I have on Github           |
+| `GET`  | `/api/github/user`     | Returns my Github user information                             |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#  Frontend Routes
+| Route               | Description                                                            |
+| ------------------- | ---------------------------------------------------------------------- |
+| `/`                 | Homepage                                                               |
+| `/about/experience` | Timeline view of my career with a resume available for download        |
+| `/about/github`     | List of my current Github projects with some information               |
+| `/blog`             | Landing page for the website blog with a list of all the current posts |
+| `/blog/[slug]`      | Specific blog page based on the `slug` parameter                        |
+| `/contact`          | Provides an email form to send a message                               |
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#  Blog
+> Each blog page is stored as a markdown document in the website repository. The site works by gathering a collection of the documents inside the _posts directory on the server's side during startup and paginating them for delivery on the blog index page. The `react-markdown`, `remark-gfm`, and `rehype-slug` npm packages work together to parse the markdown and format it into html on the page.
