@@ -27,7 +27,7 @@ export default function HeroPost({ post }: { post: PostType }) {
           </div>
         </div>
         <div>
-          <p className="text-lg leading-relaxed text-dark-gray mb-4 border-l-2 border-gray pl-4">{post.excerpt}</p>
+          <p className="text-lg leading-relaxed text-black/50 pl-6 border-l-[5px] border-l-black/10 my-[1.2em]">{post.excerpt}</p>
         </div>
       </div>
     </div>

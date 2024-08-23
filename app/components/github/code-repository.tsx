@@ -33,7 +33,7 @@ export default function CodeRepositoryComponent({ repo }: CodeRepositoryProps) {
         {!!repo.description && (
           <span className="flex flex-col">
             <strong>Description: </strong>
-            <blockquote className="ml-2 mt-2 pl-4 mb-0 border-l text-neutral-500">{repo.description}</blockquote>
+            <blockquote className="text-black/50 pl-6 border-l-[5px] border-l-black/10 my-[1.2em]">{repo.description}</blockquote>
           </span>
         )}
       </div>

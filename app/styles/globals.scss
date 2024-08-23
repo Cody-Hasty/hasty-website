@@ -24,10 +24,17 @@ body {
 
 // Blog styling with ReactMarkdown
 article {
+  h1:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+
   code {
-    color: orange;
-    background-color: $main-blue;
-    padding: 4px;
+    background-color: rgba(0,0,0,.05);
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-family: Roboto Mono,Lucida Sans Typewriter,Lucida Console,monaco,Courrier,monospace;
+    font-size: .85em;
+    color: rgba(0,0,0,.75);
   }
 
   table {
@@ -42,6 +49,23 @@ article {
 
     td {
       border-top: 1px solid lightgray;
+    }
+  }
+
+  ul {
+    li {
+      list-style-type: disc;
+    }
+  }
+
+  blockquote {
+    color: rgba(0,0,0,.5);
+    padding-left: 1.5em;
+    border-left: 5px solid rgba(0,0,0,.1);
+    margin: 1.2em 0;
+
+    p {
+      margin: 1.2em 0;
     }
   }
 }
