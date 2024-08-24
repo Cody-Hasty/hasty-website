@@ -32,7 +32,7 @@ export const PostSchema = <T extends keyof PostType>(includeFields: T[] | null =
     includeFields.forEach((field) => {
       customSchema[field] = z.string();
     });
-    return z.object(customSchema) as z.ZodType<Pick<PostType, T>, z.ZodTypeDef, Pick<PostType, T>>;
+    return z.object(customSchema) as unknown as z.ZodType<Pick<PostType, T>, z.ZodTypeDef, Pick<PostType, T>>;
   } else {
     return DefaultPostSchema;
   }
