@@ -1,16 +1,24 @@
 "use client"
 
 import { useSearchParams } from "next/navigation"
-import { Suspense } from "react"
+import { Suspense, useState } from "react"
 
 export default function BlogIndex({ blogPages }: { blogPages: JSX.Element[] }) {
-  const searchParams = useSearchParams()
-  const pageParam = searchParams.get('page')
-  const currentPage = pageParam ? parseInt(pageParam) : 1
+  const [currentPage, setCurrentPage] = useState(1)
+
+  const PaginatedBlogPage = () => {
+    const pageParam = useSearchParams().get('page')
+
+    if (pageParam && isFinite(+pageParam)) {
+      setCurrentPage(Number(pageParam))
+    }
+
+    return blogPages[currentPage - 1]
+  }
 
   return (
     <Suspense>
-      {blogPages[currentPage - 1]}
+      <PaginatedBlogPage />
     </Suspense>
   )
 }
