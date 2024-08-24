@@ -1,6 +1,7 @@
 "use client"
 
 import { useSearchParams } from "next/navigation"
+import { Suspense } from "react"
 
 export default function BlogIndex({ blogPages }: { blogPages: JSX.Element[] }) {
   const searchParams = useSearchParams()
@@ -8,6 +9,8 @@ export default function BlogIndex({ blogPages }: { blogPages: JSX.Element[] }) {
   const currentPage = pageParam ? parseInt(pageParam) : 1
 
   return (
-    <>{blogPages[currentPage - 1]}</>
+    <Suspense>
+      {blogPages[currentPage - 1]}
+    </Suspense>
   )
 }
