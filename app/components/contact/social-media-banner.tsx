@@ -12,10 +12,10 @@ export default function SocialMediaBannerComponent() {
         Check out my social media
         <FaArrowRight size={20} color="black" />
       </p>
-      <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
+      <a href={socialLinks.github} aria-label="Github link" target="_blank" rel="noopener noreferrer">
         <FaGithubSquare size={40} color="black" />
       </a>
-      <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+      <a href={socialLinks.linkedin} aria-label="LinkedIn link" target="_blank" rel="noopener noreferrer">
         <FaLinkedin size={40} color="black" />
       </a>
     </div>
