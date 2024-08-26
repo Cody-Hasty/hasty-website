@@ -15,7 +15,7 @@ tags: ["typescript", "design", "nextjs"]
 - [Backend Routes](#backend-routes)
 - [Frontend Routes](#frontend-routes)
 - [Static and Dynamic Routes](#static-and-dynamic-routes)
-- [Blog](#blog)
+- [Blog Data Storage](#blog-data-storage)
 - [Visual Design](#visual-design)
 
 #  Installation
@@ -49,7 +49,7 @@ tags: ["typescript", "design", "nextjs"]
 
 ![Static and Dynamic Routes](/images/blog/blog-read-me/static-dynamic-routing.png)
 
-#  Blog
+#  Blog Data Storage
 > Each blog page is stored as a markdown document in the website repository. The site works by gathering a collection of the documents inside the _posts directory on the server's side during startup and paginating them for delivery on the blog index page. The `react-markdown`, `remark-gfm`, and `rehype-slug` npm packages work together to parse the markdown and format it into html on the page.
 
 #  Visual Design
