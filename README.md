@@ -1,19 +1,11 @@
----
-title: "Read Me: A Hasty Blog"
-excerpt: "Putting text on the page: api, design, and delivery. Here's a few considerations I took when developing this blog."
-blogImage: "/images/thumbnail.png"
-date: "2024-08-22T08:00:00.000Z"
-ogImage:
-  url: "/images/thumbnail.png"
----
-
 #  Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [High-Level Description](#high-level-description)
 - [Backend Routes](#backend-routes)
 - [Frontend Routes](#frontend-routes)
-- [Blog](#blog)
+- [Static and Dynamic Routes](#static-and-dynamic-routes)
+- [Blog Data Storage](#blog-data-storage)
 
 #  Installation
 - Install npm packages with `npm install`
@@ -41,5 +33,10 @@ ogImage:
 | `/blog/[slug]`      | Specific blog page based on the `slug` parameter                        |
 | `/contact`          | Provides an email form to send a message                               |
 
-#  Blog
+# Static and Dynamic Routes
+> I broke down the routes while developing the website to lean into the static and dynamic route generation from the Next.js framework. The Blog required the use of static props in order to support the  generation of statically paginated blog posts.
+
+![Static and Dynamic Routes](/images/blog/blog-read-me/static-dynamic-routing.png)
+
+#  Blog Data Storage
 > Each blog page is stored as a markdown document in the website repository. The site works by gathering a collection of the documents inside the _posts directory on the server's side during startup and paginating them for delivery on the blog index page. The `react-markdown`, `remark-gfm`, and `rehype-slug` npm packages work together to parse the markdown and format it into html on the page.
