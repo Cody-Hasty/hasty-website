@@ -2,7 +2,7 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 export default function AboutBlurbComponent() {
   return (
-    <div className="mt-4 flex flex-col items-center justify-center">
+    <div className="mt-4 flex flex-col items-center justify-center text-base leading-normal">
       <blockquote className="blockquote m-0 flex flex-col">
         <RiDoubleQuotesL className="me-auto mb-2" />
         <div className="my-0 mx-4 flex flex-col gap-6">
