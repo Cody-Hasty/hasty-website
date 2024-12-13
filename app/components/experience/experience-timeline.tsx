@@ -49,7 +49,7 @@ export default function ExperienceTimeline() {
         <VerticalTimelineElement
           contentStyle={{ background: "white", color: "black", border: "2px solid lightgray", boxShadow: "none" }}
           contentArrowStyle={{ borderRight: "7px solid lightgray" }}
-          date="April 2024 - Present"
+          date="April 2023 - August 2024"
           iconStyle={{ background: `${WORK_COLOR}`, color: '#fff' }}
           icon={<CgWebsite />}
           visible={instrumentlInView.inView}
