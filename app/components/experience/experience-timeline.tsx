@@ -62,7 +62,7 @@ export default function ExperienceTimeline() {
             highlights={[
               "Revamped outdated website pages to improve user experience and increase conversion rates",
               "Conducted A/B tests to determine the most effective user interface for new and existing features",
-              "Expanded the company's grant information ingestion pipeline to include more data sources",
+              "Expanded the company's data ingestion pipeline by scraping websites with Nokogiri",
             ]}
           />
         </VerticalTimelineElement>
@@ -82,12 +82,9 @@ export default function ExperienceTimeline() {
             company='Pandora / SiriusXM'
             image={pandoraLogo}
             highlights={[
-              "Migrated company's CI/CD pipeline from Jenkins to Github Actions with ”living documentation” auto-deployed to Github Pages",
-              "Enacted an alternative CRUD interface for a command-line tool used by multiple teams",
-              "Supported the release process by running automated tests on mobile and web platforms followed by signing off with manual testers",
+              "Streamlined CI/CD by migrating from Jenkins to GitHub Actions with automatic documentation",
               "Integrated a Java to Typescript React app plugin to display a custom Android SDUI layout inspector",
-              "Evaluated multiple blockers preventing Espresso from returning accurate data within a Jenkins CI/CD pipeline",
-              "Ensured new steps to track analytics and outages impacting media playback"
+              "Enacted a new React UI for a data heavy internal tool, with a focus on charting existing data"
             ]}
           />
         </VerticalTimelineElement>
@@ -108,7 +105,7 @@ export default function ExperienceTimeline() {
             company='App Academy'
             image={appAcademyLogo}
             highlights={[
-              "Curriculum of Study in Web Development (Ruby on Rails and Javascript)",
+              "Curriculum of Study in Web Development",
               "Rigorous 1000+ hour software development course with a <3% acceptance rate which encompasses full-stack development: Ruby On Rails, SQL, Javascript, React, TDD, algorithms, design patterns, and programming best practices."
             ]}
           />
@@ -124,14 +121,14 @@ export default function ExperienceTimeline() {
           visible={volleyInView.inView}
         >
           <TimelineElementComponent
-            title='Quality Assurance Engineer'
+            title='Contract Quality Assurance Engineer'
             location='San Francisco, CA'
             company='Volley Inc'
             image={volleyLogo}
             highlights={[
-              "Analyzed data collected through AWS Lambda, Amplitude, and Amazon Cloudwatch logs for consistencies between bugs",
-              "Refined an Airtable database containing thousands of songs by removing duplicates and updating incorrect metadata",
-              "Enforced a high standard of quality by catching over a dozen code-breaking bugs during product testing"
+              "Analyzed data from AWS Lambda, Amplitude, and Cloudwatch logs for consistencies between bugs",
+              "Refined Airtable databases by removing duplicates and updating incorrect metadata",
+              "Enforced a high standard of quality by catching over a dozen code-breaking bugs"
             ]}
           />
         </VerticalTimelineElement>
@@ -151,15 +148,9 @@ export default function ExperienceTimeline() {
             company='MYMIC LLC'
             image={mymicLogo}
             highlights={[
-              "Developed two cross - platform augmented reality apps using Unity and Vuforia in partnership with the US Air Force",
-              "Constructed 3D models of heavy equipment and animated them in Blender for visual tutorials of repair and maintenance",
-              "Collaborated with a team to attend conferences, deliver demos, and provide updates to the NSF",
-              "Maintained the company's SQL databases for their iOS and Android apps, containing daily activity for over 90 companies",
-              "Designed and implemented scannable barcodes through augmented reality for use with mobile apps for ease of use",
-              "Resolved user requests for new features in the company's online OSHA training programs",
-              "Completed major updates to the HTML and CSS content of all company websites",
-              "Cataloged company websites based on domain name, hosting services, and content management system",
-              "Documented all company OSHA training videos with url, host platform, and duration in extensive Excel spreadsheets"
+              "Developed two cross-platform augmented reality apps using Unity and Vuforia in partnership with the US Air Force and the National Science Foundation",
+              "Constructed and animated 3D models in Blender for use in the company's training simulations",
+              "Queried and analyzed data from the company's SQL databases to identify trends and improve user experience",
             ]}
           />
         </VerticalTimelineElement>
@@ -179,9 +170,9 @@ export default function ExperienceTimeline() {
             company='Old Dominion University Department of Computer Science'
             image={oduLogo}
             highlights={[
-              "Published and presented findings of MRC bezier curve fitting using seven different algorithms of weighting inner - protein angles",
+              "Extended the Common Bioinformatics Library repository for PDB and MRC manipulation in C++",
               "Leveraged Python scripts in UCSF Chimera to demonstrate lateral and longitudinal discrepancies from protein analysis",
-              "Extended the Common Bioinformatics Library repository for PDB and MRC manipulation in C++"
+              "Published and presented findings of MRC bezier curve fitting using different algorithms of weighting inner-protein angles",
             ]}
           />
         </VerticalTimelineElement>
