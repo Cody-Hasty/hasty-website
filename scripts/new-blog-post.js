@@ -15,6 +15,8 @@ while (existingPostSlugs.includes(blogPageSlug)) {
   blogPageSlug = prompt("Enter the slug of the new blog post: ").replace(/ /g, "-").toLowerCase()
 }
 
+fs.mkdirSync(`public/images/blog/${blogPageSlug}/`, { recursive: true })
+
 const BLOG_PAGE_TITLE = prompt("Enter the title of the new blog post: ")
 const BLOG_PAGE_EXCERPT = prompt("Enter the excerpt of the new blog post: ")
 const BLOG_PAGE_IMAGE = prompt("Enter the image of the new blog post (relative to public/images): ")
