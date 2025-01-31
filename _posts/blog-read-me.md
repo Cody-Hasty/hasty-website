@@ -5,7 +5,7 @@ blogImage: "/images/thumbnail.png"
 date: "2024-08-22T08:00:00.000Z"
 ogImage:
   url: "/images/thumbnail.png"
-tags: ["typescript", "design", "nextjs"]
+tags: ["typescript", "design", "nextjs", "tailwindcss"]
 ---
 
 #  Table of Contents
