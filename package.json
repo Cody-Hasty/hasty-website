@@ -11,7 +11,8 @@
     "build": "next build",
     "prod-test": "next start",
     "start": "next start -p $PORT",
-    "lint": "next lint"
+    "lint": "next lint",
+    "new-blog-post": "node scripts/new-blog-post.js"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
@@ -44,6 +45,7 @@
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
     "postcss": "^8",
+    "prompt-sync": "^4.2.0",
     "sass": "^1.77.8",
     "tailwindcss": "^3",
     "typescript": "^5",
