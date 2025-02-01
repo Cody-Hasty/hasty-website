@@ -13,11 +13,11 @@ const BlogImage = ({ title, src, slug }: Props) => {
     <Image
       src={src}
       alt={`Image for ${title}`}
-      className={cn('shadow-sm w-full rounded', {
+      className={cn('shadow-sm rounded aspect-video object-contain bg-neutral-100', {
         'hover:shadow-lg transition-shadow duration-200': slug,
       })}
-      width={1300}
-      height={630}
+      width={1280}
+      height={720}
       priority={true}
     />
   )
